@@ -49,6 +49,7 @@
 <style>
     @import url(http://fonts.googleapis.com/css?family=Roboto);
 
+    /** Login Modal CSS**/
     .loginmodal-container {
     padding: 30px;
     max-width: 350px;
@@ -143,6 +144,7 @@
     font-size: 12px;
     }
 
+    /** Navbar CSS**/
     .navbar {
         background-color: #333;
         color: black;
@@ -163,11 +165,8 @@
     .navbar-toggle {
         background-color: transparent;
     }
-    .logo {
-        margin-top: 10px;
-        height: 30px;
-        width: 30px;
-    }
+
+    /** Login Button CSS **/
     .btn {
         background-color: #0A8E62;
         color: white;
@@ -181,6 +180,8 @@
     .btn-group {
         float:right;
     }
+
+    /** Footer CSS**/
     footer {
         text-align: center;
         background-color: #333;
@@ -200,6 +201,8 @@
     footer p {
         margin:0;
     }
+
+    /** Body CSS**/
     * {
         margin: 0;
     }
@@ -222,6 +225,7 @@
         background-color: #0A8E62 !important;
     }
 
+    /** Logo CSS**/
     .logo {
         width: 25px;
         height: 40px;
@@ -234,12 +238,15 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="10" onload="content()">
+<!--Navbar-->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header pull-left">
+        <!--logo-->
             <img src="logo/logo.png" class="logo"> FridgeMates
         </div>
         <div class="navbar-header navbar-right">
+            <!--hamburger menu button-->
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -275,6 +282,7 @@
     </div>
 </nav>
 
+<!--Login Modal-->
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     <div class="modal-dialog">
         <div class="loginmodal-container">
@@ -292,10 +300,11 @@
     </div>
  </div>
 
-
+<!--body-->
 <div id="content" class="page-wrap">
 </div>
 
+<!--footer-->
 <footer class="site-footer">
     <a href="#">About Us</a> | <a href="affiliate.php">Affiliates</a> | <a href="#">Site Map</a>
     <p>Copyright &copy; 2017 FridgeMates </p>

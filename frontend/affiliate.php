@@ -145,6 +145,7 @@
             font-size: 12px;
         }
 
+        /** Navbar CSS **/
         .navbar {
             background-color: #333;
             color: black;
@@ -165,17 +166,8 @@
         .navbar-toggle {
             background-color: transparent;
         }
-        .logo {
-            margin-top: 10px;
-            height: 30px;
-            width: 30px;
-        }
 
-
-
-
-
-
+        /** login button CSS **/
         #loginbtn {
             background-color: #0A8E62;
             color: white;
@@ -190,6 +182,8 @@
             background-color: #20A378;
             color: white;
         }
+
+        /** jumbotron CSS **/
         .jumbotron {
             background-color: #05305B;
             margin-top: 50px;
@@ -200,7 +194,7 @@
 
 
 
-
+        /** Footer CSS **/
         footer {
             text-align: center;
             background-color: #333;
@@ -221,6 +215,7 @@
             margin: 0;
         }
 
+        /** panel CSS **/
         .panel {
             border: 0.5px solid #333;
             border-radius: 3.5px;
@@ -250,6 +245,7 @@
             background: linear-gradient(to bottom, #20A378, #026F4B);
         }
 
+        /** Learn More button CSS **/
         .lmorebtn {
             background: linear-gradient(to bottom, white, lightgrey);
             color: black;
@@ -269,6 +265,7 @@
             background: linear-gradient(to bottom, #fffff5, #f8f8f8);
         }
 
+        /** Logo CSS **/
         .logo {
             width: 25px;
             height: 40px;
@@ -281,9 +278,12 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="10">
+
+<!--the nav bar -->
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header pull-left">
+        	<!--hamburger menu button-->
             <img src="./logo/logo.png" class="logo">&nbsp;&nbsp;FridgeMates
         </div>
         <div class="navbar-header navbar-right">
@@ -307,6 +307,7 @@
         ?>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
+        <!--menu in the navbar/collapsible menu-->
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="index.php">HOME</a></li>
                 <?php
@@ -322,6 +323,7 @@
     </div>
 </nav>
 
+<!--login modal-->
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
     <div class="modal-dialog">
         <div class="loginmodal-container">
@@ -339,11 +341,13 @@
     </div>
 </div>
 
+<!--jumbotron of the title-->
 <div class="jumbotron text-center">
     <h1>Green Thumb Initiative</h1>
     <p>There is no 'i' in team.</p>
 </div>
 
+<!--first div to describe this page -->
 <div class="container-fluid bg4">
     <div class="row">
 
@@ -358,13 +362,18 @@
         </div>
     <div class="col-sm-2"></div>
     </div></div>
+
+<!--second div containing panels for affilate apps-->
 <div class="container-fluid bg5">
     <div clas="row">
+
+    	<!--first affilate app-->
         <div class="col-sm-4">
             <div class="panel">
                 <div class="panel-heading">
                     <h1>Grocery Buddy</h1>
                 </div>
+
                 <div class="panel-body">
                     <img src="./logo/grocerybuddylogo.png" height="150" width="150">
                     <p>Plan your shopping trips by creating, organizing, and saving grocery lists.
@@ -379,6 +388,7 @@
             </div>
         </div>
 
+        <!--second affiate app-->
         <div class="col-sm-4">
             <div class="panel">
                 <div class="panel-heading">
@@ -395,6 +405,7 @@
             </div>
         </div>
 
+        <!--third affiliate app-->
         <div class="col-sm-4">
             <div class="panel">
                 <div class="panel-heading">
