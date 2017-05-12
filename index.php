@@ -237,7 +237,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header pull-left">
-            <img src="frontend/logo/logo.png" class="logo"> FridgeMates
+            <img src="logo/logo.png" class="logo"> FridgeMates
         </div>
         <div class="navbar-header navbar-right">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -268,7 +268,7 @@
                         echo '<li><a href="fridge.php">MY FRIDGES</a></li>';
                     }
                 ?>
-                <li><a href="affiliate.html">AFFILIATES</a></li>
+                <li><a href="affiliate.php">AFFILIATES</a></li>
                 <li><a href="#bg3">ABOUT US</a></li>
             </ul>
         </div>
@@ -297,7 +297,7 @@
 </div>
 
 <footer class="site-footer">
-    <a href="#">About Us</a> | <a href="affiliate.html">Affiliates</a> | <a href="#">Site Map</a>
+    <a href="#">About Us</a> | <a href="affiliate.php">Affiliates</a> | <a href="#">Site Map</a>
     <p>Copyright &copy; 2017 FridgeMates </p>
 </footer>
 </body>

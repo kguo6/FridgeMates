@@ -184,6 +184,7 @@
             margin-top: 8px;
             margin-left: 25px;
             margin-right: 15px;
+            float:right;
         }
         #loginbtn:hover {
             background-color: #20A378;
@@ -279,7 +280,7 @@
     </style>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="10" onload="content()">
+<body data-spy="scroll" data-target=".navbar" data-offset="10">
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header pull-left">
