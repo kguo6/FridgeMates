@@ -220,6 +220,15 @@
         color: #ffffff !important;
         background-color: #0A8E62 !important;
     }
+
+    .logo {
+        width: 25px;
+        height: 40px;
+        border: 0;
+        margin-bottom: 0;
+        margin-top: 5px;
+        margin-left: 50px;
+    }
 </style>
 </head>
 
@@ -227,7 +236,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <div class="navbar-header pull-left">
-            <img src="fridge.png" class="logo">
+            <img src="frontend/logo/logo.png" class="logo"> FridgeMates
         </div>
         <div class="navbar-header navbar-right">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">

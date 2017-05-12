@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -17,14 +21,30 @@
         }
 
         function content() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if(this.readyState == 4 && this.status == 200) {
-                    $("content").innerHTML = this.responseText;
-                }
-            };
-            xhttp.open("GET", "loginform.php", true);
-            xhttp.send();        }
+        <?php
+            if(isset($_SESSION['USER_ID']) &&
+                (trim($_SESSION['USER_ID']) != '')) {
+                echo 'var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if(this.readyState == 4 && this.status == 200) {
+                        $("content").innerHTML = this.responseText;
+                    }
+                };
+                xhttp.open("GET", "welcome.php", true);
+                xhttp.send();';
+            }
+            else {
+                echo 'var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if(this.readyState == 4 && this.status == 200) {
+                        $("content").innerHTML = this.responseText;
+                    }
+                };
+                xhttp.open("GET", "loginform.php", true);
+                xhttp.send();';
+            }
+                ?>
+        }
     </script>
 
     <style>
@@ -126,24 +146,30 @@
         }
 
         .navbar {
-            background-color: #333333;
-            border: none;
-            color: white;
+            background-color: #333;
+            color: black;
+            border: 0;
         }
-        .navbar li a {
+        .navbar li a, .navbar {
             color: white !important;
             text-align:center;
-            background-color: #333333;
         }
-        .navbar-nav li a:hover {
-            color: #ffffff;
+        .navbar-nav li a:hover, .navbar-nav li.active a {
+            color: #ffffff !important;
             background-color: #0A8E62 !important;
         }
         .navbar-default .navbar-toggle {
             border-color: transparent;
             color: #fff !important;
         }
-
+        .navbar-toggle {
+            background-color: transparent;
+        }
+        .logo {
+            margin-top: 10px;
+            height: 30px;
+            width: 30px;
+        }
 
 
 
@@ -172,11 +198,7 @@
         }
 
 
-        .container-fluid {
-            padding: 30px 75px;
-            padding-left: 10%;
-            padding-right: 10%;
-        }
+
 
         footer {
             text-align: center;
@@ -247,45 +269,54 @@
         }
 
         .logo {
-            width: 100px;
+            width: 25px;
+            height: 40px;
             border: 0;
             margin-bottom: 0;
             margin-top: 5px;
             margin-left: 50px;
         }
-
-        .test {
-            width: 75px;
-            margin-right: 10px;
-        }
-        .test2 {
-            width:200px;
-        }
     </style>
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="10">
+<body data-spy="scroll" data-target=".navbar" data-offset="10" onload="content()">
 <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="nav ">
-            <div class="test2">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-            </div>
-
-            <div class="collapse navbar-collapse" id="myNavbar">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">INFORMATION</a></li>
-                    <li><a href="#">FEATURES</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="welcome.html">SIGN UP</a></li>
-                </ul>
-            </div>
+    <div class="container-fluid">
+        <div class="navbar-header pull-left">
+            <img src="./logo/logo.png" class="logo">&nbsp;&nbsp;FridgeMates
+        </div>
+        <div class="navbar-header navbar-right">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <?php
+                if(isset($_SESSION['USER_ID']) &&
+                (trim($_SESSION['USER_ID']) != '')) {
+                    echo '<div class="btn-group"><button type="button" id="loginbtn" class="btn dropdown-toggle" data-toggle="dropdown" style="margin-left:25px">'.$_SESSION["USER_NAME"].'</button>
+            <ul class="dropdown-menu">
+                <li><a href="#">ACCOUNT</a></li>
+                <li><a href="logout.php">LOGOUT</a></li>
+            </ul></div>';
+        }
+        else {
+        echo '<button type="button" id="loginbtn" class="btn" data-toggle="modal" data-target="#login-modal">Log In</button>';
+        }
+        ?>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="index.php">HOME</a></li>
+                <?php
+                    if(isset($_SESSION['USER_ID']) &&
+                    (trim($_SESSION['USER_ID']) != '')) {
+                        echo '<li><a href="fridge.php">MY FRIDGES</a></li>';
+                }
+                ?>
+                <li><a href="affiliate.html">AFFILIATES</a></li>
+                <li><a href="#bg3">ABOUT US</a></li>
+            </ul>
         </div>
     </div>
 </nav>
@@ -334,7 +365,7 @@
                     <h1>Grocery Buddy</h1>
                 </div>
                 <div class="panel-body">
-                    <img src="grocerybuddylogo.png" height="150" width="150">
+                    <img src="./logo/grocerybuddylogo.png" height="150" width="150">
                     <p>Plan your shopping trips by creating, organizing, and saving grocery lists.
                         Store information about what you buy in a virtual fridge with tracking bars to show how fresh your food is.
                         Worried about your food going bad? Grocery Buddy will send you notifications if anything in your virtual fridge is nearing its expiry date.
@@ -353,7 +384,7 @@
                     <h1>Freshness</h1>
                 </div>
                 <div class="panel-body">
-                    <img src="freshnesslogo.png" height="150" width="150">
+                    <img src="./logo/freshnesslogo.png" height="150" width="150">
                     <p>Freshness provides the food preservation methods for you to keep the food fresh as long as you can.
                         Your new best friend for planning what food to buy and making sure you use it.</p>
                 </div>
@@ -369,7 +400,7 @@
                     <h1>Phoenix Recipes</h1>
                 </div>
                 <div class="panel-body">
-                    <img src="phoenixrecipeslogo.png" height="150" width="150">
+                    <img src="./logo/phoenixrecipeslogo.png" height="150" width="150">
                     <p>A user friendly mobile cookbook that helps you discover
                         new and delicious ways to use your leftovers, and track your food waste</p>
                 </div>
