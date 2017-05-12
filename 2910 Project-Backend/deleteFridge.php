@@ -12,7 +12,7 @@
     $response=@mysqli_query($dbc, $query);
     $response2=@mysqli_query($dbc, $query2);
 
-    if($response && $response2 && $response3) {
+    if($response && $response2) {
         header("location: manage.php");
         mysqli_close($dbc);
     }
