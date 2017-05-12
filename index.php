@@ -176,6 +176,7 @@
         margin-top: 8px;
         margin-left: 25px;
         margin-right: 15px;
+        float:right;
     }
     .btn-group {
         float:right;
