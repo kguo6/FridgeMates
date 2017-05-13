@@ -1,3 +1,4 @@
+    /** header CSS **/
     #header_nav {
         background-color: #333;
         color: white !important;
@@ -25,6 +26,8 @@
         margin-top: 5px;
         margin-left: 50px;
     }
+
+    /** login CSS **/
     #login_btn {
         background-color: #0A8E62;
         color: white;
@@ -35,6 +38,12 @@
         margin-right: 15px;
         float:right;
     }
+    #login_btn:hover {
+        background-color: #20A378;
+        color: white;
+    }
+
+    /** account dropdown CSS **/
     #account_group {
         float:right;
     }
@@ -45,6 +54,8 @@
         color: #ffffff !important;
         background-color: #0A8E62 !important;
     }
+
+    /** footer CSS **/
     footer {
         text-align: center;
         background-color: #333;

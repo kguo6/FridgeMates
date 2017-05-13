@@ -234,6 +234,20 @@
         margin-top: 5px;
         margin-left: 50px;
     }
+
+        #loginbtn {
+        background-color: #0A8E62;
+        color: white;
+        border: 0;
+        margin-bottom: 0;
+        margin-top: 8px;
+        margin-left: 25px;
+        margin-right: 15px;
+    }
+    #loginbtn:hover {
+        background-color: #20A378;
+        color: white;
+    }
 </style>
 </head>
 
@@ -262,7 +276,7 @@
                               </ul></div>';
                 }
                 else {
-                    echo '<button type="button" class="btn" data-toggle="modal" data-target="#login-modal">Log In</button>';
+                    echo '<button type="button" id="loginbtn" class="btn" data-toggle="modal" data-target="#login-modal">Log In</button>';
                 }
             ?>
         </div>

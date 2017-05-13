@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>FridgeMates-Home</title>
+<title>FridgeMates-Affiliate Apps</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -108,7 +108,9 @@
                         food waste and promote environmental conservation.</p>
                 </div>
             <div class="col-sm-2"></div>
-            </div></div>
+            </div>
+        </div>
+        
         <div class="container-fluid bg5">
             <div clas="row">
                 <div class="col-sm-4">
