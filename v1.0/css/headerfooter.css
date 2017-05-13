@@ -1,0 +1,80 @@
+    #header_nav {
+        background-color: #333;
+        color: white !important;
+        border: 0;
+        border-color:transparent;
+    }
+    #header_nav li a {
+        color: white !important;
+        text-align:center;
+    }
+    #nav_list li a:hover, #nav_list li.active a {
+        color: #ffffff !important;
+        background-color: #0A8E62 !important;
+    }
+    #nav_toggle {
+        border-color: transparent;
+        color: #fff !important;
+        background-color: transparent;
+    }
+    #nav_logo {
+        width: 25px;
+        height: 40px;
+        border: 0;
+        margin-bottom: 0;
+        margin-top: 5px;
+        margin-left: 50px;
+    }
+    #login_btn {
+        background-color: #0A8E62;
+        color: white;
+        border: 0;
+        margin-bottom: 0;
+        margin-top: 8px;
+        margin-left: 25px;
+        margin-right: 15px;
+        float:right;
+    }
+    #account_group {
+        float:right;
+    }
+    #account_dropdown {
+        background-color: #333;
+    }
+    #account_dropdown li a:hover, #account_dropdown li.active a {
+        color: #ffffff !important;
+        background-color: #0A8E62 !important;
+    }
+    footer {
+        text-align: center;
+        background-color: #333;
+        color: white;
+        height: 50px;
+        width: 100%;
+        padding: 5px;
+        position: relative;
+        bottom: 0;
+    }
+    footer a {
+        color: white;
+    }
+    footer a:hover {
+        color: #0A8E62;
+    }
+    footer p {
+        margin:0;
+    }
+    * {
+        margin: 0;
+    }
+    html, body {
+        height: 100%;
+    }
+    .page-wrap {
+        padding-top:50px;
+        min-height: calc(100% - 50px);
+    }
+    .page-wrap:after {
+        content: "";
+        display: block;
+    }
