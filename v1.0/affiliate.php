@@ -9,8 +9,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="loginmodal.css">
-<link rel="stylesheet" href="headerfooter.css">
+<link rel="stylesheet" href="css/loginmodal.css">
+<link rel="stylesheet" href="css/headerfooter.css">
+<link rel="stylesheet" href="css/affiliates.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script>
@@ -37,59 +38,6 @@
         xhttp.send();
     }
 </script>
-    <style>
-        .jumbotron {
-            background-color: #05305B;
-            margin:0;
-            padding: 120px 25px;
-            color: white;
-        }
-        .panel {
-            border: 0.5px solid #333;
-            border-radius: 3.5px;
-            transition: box-shadow 0.2s;
-        }
-        .panel:hover {
-            box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.3);
-        }
-        .panel-heading {
-            background: #20A378;
-            background: linear-gradient(to bottom, #20A378, #026F4B);
-            text-align: center;
-            color: white;
-
-        }
-        .panel-body {
-            background-color: #FFFFFF;
-            min-height: 375px;
-            text-align:center;
-        }
-        .panel-body p{
-            text-align: left;
-        }
-        .panel-footer {
-            background: #20A378;
-            text-align: center;
-            background: linear-gradient(to bottom, #20A378, #026F4B);
-        }
-        .lmorebtn {
-            background: linear-gradient(to bottom, white, lightgrey);
-            color: black;
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-        }
-
-        .lmorebtn:active {
-            background-color: white;
-        }
-        .bg4{
-            background-color: #fffff5;
-            padding-top: 0;
-            text-align:center;
-        }
-        .bg5 {
-            background: linear-gradient(to bottom, #fffff5, #f8f8f8);
-        }
-    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="10" onload="login();">
     <!-- navigation bar -->
