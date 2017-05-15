@@ -15,16 +15,16 @@
     $user = mysqli_fetch_assoc($response);
 
     if(isset($user)) {
-            session_regenerate_id();
-            $_SESSION['USER_ID'] = $user['user_id'];
-            $_SESSION['USER_NAME'] = $user['name'];
-            session_write_close();
-            header("location: index.php");
+        session_regenerate_id();
+        $_SESSION['USER_ID'] = $user['user_id'];
+        $_SESSION['USER_NAME'] = $user['name'];
+        session_write_close();
     }
     else {
-        echo "Login Error";
+        $_SESSION['ERROR'] = 1;
     }
     
     mysqli_close($dbc);
+    header("location: index.php");
 
 ?>

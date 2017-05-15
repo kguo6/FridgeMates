@@ -26,9 +26,29 @@
         document.getElementById("registerContainer").style.display ="none";
         document.getElementById("loginContainer").style.display ="block";
     }
+    //check for alerts
+    function alerts() {
+        var error_num = <?php echo $_SESSION['ERROR'] ?>;
+        if(error_num == 1) {
+            alert("Login Error");
+        }
+        if(error_num == 2) {
+            alert("User Already Exists");
+        }
+        if(error_num == 3) {
+            alert("Registration Successful");
+        }
+        <?php $_SESSION['ERROR'] = 0; ?>
+    }
 </script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="10" onload="login();">
+    <?php
+        //check for alert variable and sets it to 0 if none
+        if($_SESSION['ERROR'] != 1 || $_SESSION['ERROR'] != 2 || $_SESSION['ERROR'] != 3) {
+            $_SESSION['ERROR'] = 0;
+        }
+    ?>
     <!-- navigation bar -->
     <nav class="navbar navbar-default navbar-fixed-top" id="header_nav">
         <div class="container-fluid">
@@ -78,9 +98,9 @@
                     <h1>Register a New Account</h1><br>
                     <form  action="register.php" method="POST" id="registerForm">
                         <input type="email" name="register_username" placeholder="Email">
-                        <input type="password" id="register_password" name="register_password" placeholder="Password(Min. 6 Characters)">
+                        <input type="password" id="register_password" name="register_password" placeholder="Password (Min. 6 Characters)">
                         <input type="password" name="confirm_password" placeholder="Confirm Password">
-                        <input type="text" name="register_name" placeholder="Username(Min. 4 Characters)">
+                        <input type="text" name="register_name" placeholder="Username (Min. 4 Characters)">
                         <input type="submit" name="login" class="login loginmodal-submit" id="register_btn" value="Register">
                     </form>
                                         

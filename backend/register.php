@@ -1,5 +1,6 @@
 <?php
-
+    session_start();
+    
     require_once("config.php");
 
     $email = $_POST["register_username"];
@@ -16,19 +17,18 @@
     $stmt = @mysqli_prepare($dbc, $query2);
 
     if(isset($row)) {
-        echo "User already exists";
+        $_SESSION['ERROR'] = 2;
     }
     else {
         mysqli_stmt_bind_param($stmt, "sss", $email, md5($password), $name);
 	
     	mysqli_stmt_execute($stmt);
 			
-        echo "Registration Successful";
-
-        echo '<a href="index.php">Home</a>';
+        $_SESSION['ERROR'] = 3;
     }
 
     mysqli_close($dbc);
+    header("location: index.php");
 
 
 ?>
