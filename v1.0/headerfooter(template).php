@@ -71,7 +71,7 @@
                                 </ul></div>';
                     }
                     else {
-                        echo '<button type="button" class="btn" id="login_btn" data-toggle="modal" data-target="#login-modal">Log In</button>';
+                        echo '<button type="button" class="btn" id="login_btn" data-toggle="modal" data-target="#login-modal" onclick="login()">Log In</button>';
                     }
                 ?>
             </div>
