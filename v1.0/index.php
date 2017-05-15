@@ -12,7 +12,9 @@
 <link rel="stylesheet" href="css/loginmodal.css">
 <link rel="stylesheet" href="css/headerfooter.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/register-validate.js"></script>
 <script>
     //index page function to load pre/post login homepage
     function content() {
@@ -42,25 +44,13 @@
     }
     //load register form on login modal
     function register() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if(this.readyState == 4 && this.status == 200) {
-                document.getElementById("loginmodal-container").innerHTML = this.responseText;
-            }
-        };
-        xhttp.open("GET", "register.html", true);
-        xhttp.send();
+        document.getElementById("loginContainer").style.display ="none";
+        document.getElementById("registerContainer").style.display ="block";
     }
     //load login form on login modal
     function login() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if(this.readyState == 4 && this.status == 200) {
-                document.getElementById("loginmodal-container").innerHTML = this.responseText;
-            }
-        };
-        xhttp.open("GET", "loginform.html", true);
-        xhttp.send();
+        document.getElementById("registerContainer").style.display ="none";
+        document.getElementById("loginContainer").style.display ="block";
     }
 </script>
 </head>
@@ -110,6 +100,32 @@
     <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
             <div class="loginmodal-container" id="loginmodal-container">
+                <div id="registerContainer">
+                    <h1>Register a New Account</h1><br>
+                    <form  action="register.php" method="POST" id="registerForm">
+                        <input type="email" name="register_username" placeholder="Email">
+                        <input type="password" id="register_password" name="register_password" placeholder="Password(Min. 6 Characters)">
+                        <input type="password" name="confirm_password" placeholder="Confirm Password">
+                        <input type="text" name="register_name" placeholder="Username(Min. 4 Characters)">
+                        <input type="submit" name="login" class="login loginmodal-submit" id="register_btn" value="Register">
+                    </form>
+                                        
+                    <div class="login-help">
+                        <a href="#" onclick="login()">Login</a>
+                    </div>
+                </div>
+                <div id="loginContainer">
+                    <h1>Login to Your Account</h1><br>
+                    <form action="login.php" method="POST" id="loginForm">
+                        <input type="email" name="login_username" placeholder="Email">
+                        <input type="password" name="login_password" placeholder="Password">
+                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                    </form>
+                                        
+                    <div class="login-help">
+                        <a href="#" id="registerLink" onclick="register()">Register</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
