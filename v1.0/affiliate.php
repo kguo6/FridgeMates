@@ -34,7 +34,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" id="header_nav">
         <div class="container-fluid">
             <div class="navbar-header pull-left">
-                <img src="logo/logo.png" class="logo" id="nav_logo"> FridgeMates
+                <img src="logo/logoblue.png" class="logo" id="nav_logo">
             </div>
             <div class="navbar-header navbar-right">
                 <button type="button" id="nav_toggle" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
