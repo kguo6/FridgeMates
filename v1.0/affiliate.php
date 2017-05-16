@@ -16,16 +16,23 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/register-validate.js"></script>
+<script src="js/login-validate.js"></script>
 <script>
     //load register form on login modal
     function register() {
         document.getElementById("loginContainer").style.display ="none";
         document.getElementById("registerContainer").style.display ="block";
+        document.getElementById("errorContainer").style.display ="none";
+        document.getElementById("loginForm").reset();
+        document.getElementById("registerForm").reset();
     }
     //load login form on login modal
     function login() {
         document.getElementById("registerContainer").style.display ="none";
         document.getElementById("loginContainer").style.display ="block";
+        document.getElementById("errorContainer").style.display ="none";
+        document.getElementById("registerForm").reset();
+        document.getElementById("loginForm").reset();
     }
 </script>
 </head>
@@ -77,8 +84,8 @@
             <div class="loginmodal-container" id="loginmodal-container">
                 <div id="registerContainer">
                     <h1>Register a New Account</h1><br>
-                    <form  action="register.php" method="POST" id="registerForm">
-                        <input type="email" name="register_username" placeholder="Email">
+                    <form method="POST" id="registerForm">
+                        <input type="text" name="register_username" placeholder="Email">
                         <input type="password" id="register_password" name="register_password" placeholder="Password (Min. 6 Characters)">
                         <input type="password" name="confirm_password" placeholder="Confirm Password">
                         <input type="text" name="register_name" placeholder="Username (Min. 4 Characters)">
@@ -91,8 +98,8 @@
                 </div>
                 <div id="loginContainer">
                     <h1>Login to Your Account</h1><br>
-                    <form action="login.php" method="POST" id="loginForm">
-                        <input type="email" name="login_username" placeholder="Email">
+                    <form method="POST" id="loginForm">
+                        <input type="text" name="login_username" placeholder="Email">
                         <input type="password" name="login_password" placeholder="Password">
                         <input type="submit" name="login" class="login loginmodal-submit" value="Login">
                     </form>
@@ -100,6 +107,8 @@
                     <div class="login-help">
                         <a href="#" id="registerLink" onclick="register()">Register</a>
                     </div>
+                </div>
+                <div id="errorContainer">
                 </div>
             </div>
         </div>
