@@ -10,10 +10,12 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/loginmodal.css">
 <link rel="stylesheet" href="css/headerfooter.css">
+<link rel="stylesheet" type="text/css" href="css/makeItRain.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/register-validate.js"></script>
+<script src="js/makeItRain.js"></script>
 <script>
     //index page function to load pre/post login homepage
     function content() {
@@ -65,6 +67,9 @@
         }
         <?php $_SESSION['ERROR'] = 0; ?>
     }
+    $(function(){
+        $('span.click').makeItRain();
+    });
 </script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="10" onload="content();login();alerts();">
@@ -150,11 +155,12 @@
     </div>
     <!-- wrapper for content of the page -->
     <div id="content" class="page-wrap">
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
     <!-- footer -->
     <footer>
         <a href="about.php">About Us</a> | <a href="sitemap.php">Site Map</a>
-        <p>Copyright &copy; 2017 FridgeMates </p>
+        <p>Copyright <span class="click">&copy;</span> 2017 FridgeMates </p>
     </footer>
 </body>
 </html>

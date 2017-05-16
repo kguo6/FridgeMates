@@ -2,7 +2,7 @@
 
 @-webkit-keyframes sway {
 	0%{
-		top:-20px;
+		top:-40px;
 		-webkit-transform: rotateX(-20deg);
         transform: rotateX(-20deg);
 	}
@@ -14,7 +14,7 @@
 	}
 
 	7% {
-		margin-left:1%
+		margin-left:1%;
 		 -webkit-transform: rotateX(-170deg);
           transform: rotateX(-170deg);
 	}
@@ -79,14 +79,14 @@
 
   100% {
     margin-left: 3%;
-    top: 100%; } 
+    top: 100%;}
 }
 
 
 span.billsBillsBills {
   padding: 5px;
   display: block;
-  position: absolute;
+  position: fixed;
   z-index: 100;
   -webkit-animation: sway 30s ease-out;
   animation: sway 30s ease-out;
