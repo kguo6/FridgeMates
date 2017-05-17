@@ -67,8 +67,21 @@
         }
         <?php $_SESSION['ERROR'] = 0; ?>
     }
-    $(function(){
-        $('span.click').makeItRain();
+
+
+    // counter for clicks
+    // invokes js when click condition is met
+    var counter=0;
+    $(document).ready(function(){
+        $("#click").on(
+            "click",function(){
+                 if(counter == 4) {
+                     $(this).makeItRain();
+                 }
+                 else {
+                     counter++;
+                 }
+        });
     });
 </script>
 </head>
@@ -160,7 +173,7 @@
     <!-- footer -->
     <footer>
         <a href="about.php">About Us</a> | <a href="sitemap.php">Site Map</a>
-        <p>Copyright <span class="click">&copy;</span> 2017 FridgeMates </p>
+        <p>Copyright <span id="click">&copy;</span> 2017 FridgeMates </p>
     </footer>
 </body>
 </html>

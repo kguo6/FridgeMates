@@ -9,8 +9,8 @@
 
 	3%{
 		 margin-left: -2%;
-		     -webkit-transform: rotateX(-80deg);
-          transform: rotateX(-80deg);
+         -webkit-transform: rotateX(-80deg);
+         transform: rotateX(-80deg);
 	}
 
 	7% {
@@ -20,7 +20,7 @@
 	}
   10% {
     margin-left: 2%;
-	  -webkit-transform: rotateX(-230deg);
+	  /webkit-transform: rotateX(-230deg);
           transform: rotateX(-230deg);
      }
    16% {
@@ -103,7 +103,7 @@ span.billsBillsBills {
 }
 
 
-   span.coinsCoinsCoins{
+span.coinsCoinsCoins{
   padding: 5px;
   display: block;
   position: absolute;
@@ -111,3 +111,11 @@ span.billsBillsBills {
   -webkit-animation: drop 4s linear;
   animation: drop 4s linear;
    }
+span.foodFoodFood{
+    padding:5px;
+    display:block;
+    position:fixed;
+    z-index:100;
+    -webkit-animation: drop 2s linear;
+    animation: drop 2s linear;
+}
