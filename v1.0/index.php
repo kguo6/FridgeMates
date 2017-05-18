@@ -168,7 +168,6 @@
     </div>
     <!-- wrapper for content of the page -->
     <div id="content" class="page-wrap">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     </div>
     <!-- footer -->
     <footer>
