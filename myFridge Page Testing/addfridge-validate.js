@@ -3,16 +3,18 @@ $().ready(function() {
         rules: {
             fridge_name: {
                 required: true,
+                maxlength: 40
             }
         },
         messages: {
             fridge_name: {
-                required: "Please enter a fridge name"
+                required: "Please enter a fridge name",
+                maxlength: "Maximum length is 40 characters"
             }
         },
-        submitHandler: submitLogin
+        submitHandler: submitAddFridge
     });
-    function submitLogin() {
+    function submitAddFridge() {
         var data = $("#addFridgeForm").serialize();
         $.ajax({
             type : 'POST',

@@ -1,0 +1,21 @@
+#addFridgeHeader {
+    border: 0;
+    padding-bottom: 0;
+}
+#addFridgeBody {
+    text-align:center;
+}
+#addFridgeButtons {
+    border: 0;
+    padding-top: 0;
+}
+#fridge_name {
+    width: 75%;
+    display:inline-block;
+}
+#fridgeNameLabel {
+    display:inline-block;
+    width:75%;
+    text-align:left;
+    margin: 0 auto;
+}

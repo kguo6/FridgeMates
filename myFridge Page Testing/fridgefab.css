@@ -1,5 +1,8 @@
 #fabContainer, #fabButton, #fabNav{
     position: fixed;
+    -webkit-overflow-scrolling: touch;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
 }
 #fabContainer {
     margin: auto;
