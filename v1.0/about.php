@@ -11,12 +11,24 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/loginmodal.css">
 <link rel="stylesheet" href="css/headerfooter.css">
+<link rel="stylesheet" href="css/about.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/register-validate.js"></script>
 <script src="js/login-validate.js"></script>
 <script>
+    //function to load content of page on body load
+    function content() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if(this.readyState == 4 && this.status == 200) {
+                document.getElementById("content").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "aboutus.php", true);
+        xhttp.send();
+    }
     //load register form on login modal
     function register() {
         document.getElementById("loginContainer").style.display ="none";
@@ -35,12 +47,12 @@
     }
 </script>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="10" onload="login();">
+<body data-spy="scroll" data-target=".navbar" data-offset="10" onload="login();content();">
     <!-- navigation bar -->
     <nav class="navbar navbar-default navbar-fixed-top" id="header_nav">
         <div class="container-fluid">
             <div class="navbar-header pull-left">
-                <img src="logo/logo.png" class="logo" id="nav_logo"> FridgeMates
+                <img src="logo/logoblue.png" class="logo" id="nav_logo">
             </div>
             <div class="navbar-header navbar-right">
                 <button type="button" id="nav_toggle" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">

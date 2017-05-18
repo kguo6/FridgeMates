@@ -15,7 +15,10 @@ $('document').ready(function() {
         messages: {
             full_name: "Please enter your name",
 
-            email_address: "Please enter a valid email address",
+            email_address: {
+                required: "Please enter an email address",
+                email: "Please enter a valid email address"
+            },
 
             email_subject: "Please select a subject",
 
@@ -28,9 +31,13 @@ $('document').ready(function() {
                  type: "POST",
                  url: "email.php",
                  data: $("#feedback_form").serialize(),
+
+                 // Success Response
                  success: function(response) {
                     $('.success').html(response);
                  },
+
+                 // Error Response
                  error: function (jqXHR, exception) {
                     var error_msg = '';
                     if (jqXHR.status === 0) {
@@ -48,9 +55,8 @@ $('document').ready(function() {
                     } else {
                         error_msg = 'Uncaught Error.\n' + jqXHR.responseText;
                     }
-
                     $('.error').html(error_message);
-                  },
+                },
 
           }); /* Ajax request ends */
         }

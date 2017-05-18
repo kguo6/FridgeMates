@@ -10,13 +10,23 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/loginmodal.css">
 <link rel="stylesheet" href="css/headerfooter.css">
+<link rel="stylesheet" href="css/homepage.css">
 <link rel="stylesheet" type="text/css" href="css/makeItRain.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/register-validate.js"></script>
+<script src="js/login-validate.js"></script>
 <script src="js/makeItRain.js"></script>
 <script>
+    var $canvas
+    function scroll(){
+        if ($canvas.position().left!=-956){
+            $canvas.animate({left: "-=239"});
+        }else{
+            $canvas.animate({left: 0});
+        }
+    }
     //index page function to load pre/post login homepage
     function content() {
         <?php
@@ -36,9 +46,13 @@
                       xhttp.onreadystatechange = function() {
                           if(this.readyState == 4 && this.status == 200) {
                               document.getElementById("content").innerHTML = this.responseText;
+                              $(function(){
+                                  $canvas=$("div.canvas")
+                                  setInterval(scroll, 3000);
+                              });
                           }
                       };
-                      xhttp.open("GET", "loginform.php", true);
+                      xhttp.open("GET", "home.php", true);
                       xhttp.send();';
             }
         ?>
@@ -47,28 +61,18 @@
     function register() {
         document.getElementById("loginContainer").style.display ="none";
         document.getElementById("registerContainer").style.display ="block";
+        document.getElementById("errorContainer").style.display ="none";
+        document.getElementById("loginForm").reset();
+        document.getElementById("registerForm").reset();
     }
     //load login form on login modal
     function login() {
         document.getElementById("registerContainer").style.display ="none";
         document.getElementById("loginContainer").style.display ="block";
+        document.getElementById("errorContainer").style.display ="none";
+        document.getElementById("registerForm").reset();
+        document.getElementById("loginForm").reset();
     }
-    //check for alerts
-    function alerts() {
-        var error_num = <?php echo $_SESSION['ERROR'] ?>;
-        if(error_num == 1) {
-            alert("Login Error");
-        }
-        if(error_num == 2) {
-            alert("User Already Exists");
-        }
-        if(error_num == 3) {
-            alert("Registration Successful");
-        }
-        <?php $_SESSION['ERROR'] = 0; ?>
-    }
-
-
     // counter for clicks
     // invokes js when click condition is met
     var counter=0;
@@ -83,15 +87,9 @@
                  }
         });
     });
-</script>
+    </script>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="10" onload="content();login();alerts();">
-    <?php
-        //check for alert variable and sets it to 0 if none
-        if($_SESSION['ERROR'] != 1 || $_SESSION['ERROR'] != 2 || $_SESSION['ERROR'] != 3) {
-            $_SESSION['ERROR'] = 0;
-        }
-    ?>
+<body data-target=".navbar" data-offset="10" onload="content();login();">
     <!-- navigation bar -->
     <nav class="navbar navbar-default navbar-fixed-top" id="header_nav">
         <div class="container-fluid">
@@ -139,8 +137,8 @@
             <div class="loginmodal-container" id="loginmodal-container">
                 <div id="registerContainer">
                     <h1>Register a New Account</h1><br>
-                    <form  action="register.php" method="POST" id="registerForm">
-                        <input type="email" name="register_username" placeholder="Email">
+                    <form method="POST" id="registerForm">
+                        <input type="text" name="register_username" placeholder="Email">
                         <input type="password" id="register_password" name="register_password" placeholder="Password (Min. 6 Characters)">
                         <input type="password" name="confirm_password" placeholder="Confirm Password">
                         <input type="text" name="register_name" placeholder="Username (Min. 4 Characters)">
@@ -153,8 +151,8 @@
                 </div>
                 <div id="loginContainer">
                     <h1>Login to Your Account</h1><br>
-                    <form action="login.php" method="POST" id="loginForm">
-                        <input type="email" name="login_username" placeholder="Email">
+                    <form method="POST" id="loginForm">
+                        <input type="text" name="login_username" placeholder="Email">
                         <input type="password" name="login_password" placeholder="Password">
                         <input type="submit" name="login" class="login loginmodal-submit" value="Login">
                     </form>
@@ -162,6 +160,8 @@
                     <div class="login-help">
                         <a href="#" id="registerLink" onclick="register()">Register</a>
                     </div>
+                </div>
+                <div id="errorContainer">
                 </div>
             </div>
         </div>
