@@ -16,7 +16,7 @@ $().ready(function() {
             },
             register_name: {
                 required: true,
-                minlength: 4
+                minlength: 2
             }
         },
         messages: {
@@ -35,7 +35,7 @@ $().ready(function() {
             },
             register_name: {
                 required: "Please enter a username",
-                minlength: "Your username must be at least 4 characters"
+                minlength: "Your username must be at least 2 characters"
             }
         },
         submitHandler: submitRegister
