@@ -1,0 +1,105 @@
+        /** jumbotron CSS **/
+        .jumbotron {
+            background-color: #284B70;
+			width:100%;
+            margin:0;
+            padding: 120px 25px;
+            color: white;
+        }
+		
+		/** comment **/
+		.underline>span{
+			display:inline-block;
+			border-bottom:3px solid #ffffff;
+			font-weight:700;
+			line-height:1em;
+			letter-spacing:.135em;
+			padding-bottom:.125em;
+			text-transform:uppercase;
+		}
+		
+		.text-holder{
+			padding-top: 10%;
+		}
+		
+		.largetxt{
+			font-size:18px;
+			line-height:1.368em;
+		}
+		
+		.smalltxt{
+			font-size:15px;
+			line-height:1.368em;
+			padding-bottom:8px;
+		}
+
+        /** panel CSS **/
+        .panel {
+            border: 0.5px solid #333;
+            border-radius: 3.5px;
+            transition: box-shadow 0.2s;
+        }
+        .panel:hover {
+            box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.3);
+        }
+        .panel-heading {
+            background: #20A378;
+            background: linear-gradient(to bottom, #20A378, #026F4B);
+            text-align: center;
+            color: white;
+        }
+        .panel-body {
+            background-color: #FFFFFF;
+            min-height: 375px;
+            text-align:center;
+        }
+        .panel-body p{
+            text-align: left;
+        }
+        .panel-footer {
+            background: #20A378;
+            text-align: center;
+            background: linear-gradient(to bottom, #20A378, #026F4B);
+        }
+
+        /** learn more button CSS **/
+        .lmorebtn {
+            background: linear-gradient(to bottom, white, #DCDCDC);
+            color: black;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+            border: 0;
+        }
+
+        .lmorebtn:active {
+            background: linear-gradient(to bottom, white, silver);
+            color: black;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+            border: 0;
+        }
+
+        .lmorebtn:hover {
+            background: linear-gradient(to bottom, white, lightgrey);
+            color: black;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+            border: none;
+        }
+        .bg4{
+            background-color: #fffff5;
+            padding-top: 0;
+            text-align:center;
+        }
+        .bg5 {
+            background-color: #fffff5;
+            background: linear-gradient(to bottom, #fffff5, #f8f8f8);
+        }
+		.icon{
+			width: 160px;
+			height: 160px;
+			margin: 0 auto;
+			margin-bottom: 10px;
+			margin-top:20px;
+		}
+		.col-sm-4 p {
+			  max-width: 300px;
+			  margin: 50px auto 20px auto;
+		}
