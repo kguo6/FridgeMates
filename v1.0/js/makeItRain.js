@@ -15,18 +15,17 @@ $.fn.makeItRain = function(){
                     var randomTime = Math.random() * 10;
                     var randomSpeed = (Math.random() * 10) + 10;
                     if (i < maxFood) {
-                        var foods = $("<span class='foodFoodFood'>")
+                        var chicken = $("<span class='foodFoodFood'>")
                             .css({
                                 left: randomPosition,
                                 top: '-150px',
                                 "-webkit-animation-delay": randomTime + 2 + "s",
                                 "-webkit-animation-duration": 7 + "s"
                             });
+                        $(chicken).prepend('<img class = fallingstuff style ="width:80px;"src="images/chicken.svg" alt="leftover chicken">');
 
-                        $(foods).prepend('<img class = fallingstuff style ="width:80px;"src="images/apple.svg" alt="leftover food">');
+                        $('body').append(chicken);
 
-
-                        $('body').append(foods);
                     }
 
 
