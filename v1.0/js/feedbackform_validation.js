@@ -28,9 +28,13 @@ $('document').ready(function() {
                  type: "POST",
                  url: "email.php",
                  data: $("#feedback_form").serialize(),
+
+                 // Success Response
                  success: function(response) {
                     $('.success').html(response);
                  },
+
+                 // Error Response
                  error: function (jqXHR, exception) {
                     var error_msg = '';
                     if (jqXHR.status === 0) {
@@ -47,10 +51,9 @@ $('document').ready(function() {
                         error_msg = 'Ajax request aborted.';
                     } else {
                         error_msg = 'Uncaught Error.\n' + jqXHR.responseText;
-                    }
-
+                    },
                     $('.error').html(error_message);
-                  },
+                },
 
           }); /* Ajax request ends */
         }
