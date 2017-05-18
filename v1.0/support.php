@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>FridgeMates-Home</title>
+    <title>FridgeMates-Support</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -42,7 +42,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" id="header_nav">
         <div class="container-fluid">
             <div class="navbar-header pull-left">
-                <img src="logo/logo.png" class="logo" id="nav_logo"> FridgeMates
+                <img src="logo/logoblue.png" class="logo" id="nav_logo">
             </div>
             <div class="navbar-header navbar-right">
                 <button type="button" id="nav_toggle" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">

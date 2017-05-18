@@ -11,5 +11,7 @@
 
       // Sends Email
       mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+      echo 'Message has been successfully sent!';
   };
 ?>
