@@ -1,7 +1,7 @@
 <?php
   // Checks if feedback form fields are set
   if(isset($_POST)) {
-      $recipient = "your@email.address";
+      $recipient = "support@fridgemates.ca";
       $subject = $_POST ["email_subject"];
       $sender = $_POST ["full_name"];
       $senderEmail = $_POST["email_address"];
@@ -11,8 +11,5 @@
 
       // Sends Email
       mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-      echo "Your Message successfully sent, we will get back to you ASAP.";
-  }
-
+  };
 ?>
