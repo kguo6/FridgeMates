@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/loginmodal.css">
 <link rel="stylesheet" href="css/headerfooter.css">
+<link rel="stylesheet" href="css/homepage.css">
 <link rel="stylesheet" type="text/css" href="css/makeItRain.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
@@ -18,6 +19,14 @@
 <script src="js/login-validate.js"></script>
 <script src="js/makeItRain.js"></script>
 <script>
+    var $canvas
+    function scroll(){
+        if ($canvas.position().left!=-956){
+            $canvas.animate({left: "-=239"});
+        }else{
+            $canvas.animate({left: 0});
+        }
+    }
     //index page function to load pre/post login homepage
     function content() {
         <?php
@@ -37,9 +46,13 @@
                       xhttp.onreadystatechange = function() {
                           if(this.readyState == 4 && this.status == 200) {
                               document.getElementById("content").innerHTML = this.responseText;
+                              $(function(){
+                                  $canvas=$("div.canvas")
+                                  setInterval(scroll, 3000);
+                              });
                           }
                       };
-                      xhttp.open("GET", "loginform.php", true);
+                      xhttp.open("GET", "home.php", true);
                       xhttp.send();';
             }
         ?>
@@ -76,7 +89,7 @@
     });
     </script>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="10" onload="content();login();">
+<body data-target=".navbar" data-offset="10" onload="content();login();">
     <!-- navigation bar -->
     <nav class="navbar navbar-default navbar-fixed-top" id="header_nav">
         <div class="container-fluid">
