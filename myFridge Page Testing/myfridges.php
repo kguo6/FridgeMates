@@ -4,6 +4,8 @@
 
     require_once("config.php");
 
+    date_default_timezone_set("America/Vancouver");
+
     $user_id = $_SESSION["USER_ID"];
     $fridge_id = $_GET["fridge_id"];
     $_SESSION['FRIDGE_ID'] = $fridge_id;
@@ -36,7 +38,39 @@
         echo '<div id="fridgetabitems">Items:</div>';
         echo '<div id="fridgeitems">';
         while($row2 = mysqli_fetch_array($response2)) {
-            echo '<div class="fridgeitems"><a href="#" onclick="showItem('.$row2['item_id'].')" data-toggle="modal" data-target="#itemModal">'.$row2['item_name'].'</a>
+
+            $query5 = "SELECT item_date FROM Items WHERE item_id =".$row2['item_id'];
+            $response5 = @mysqli_query($dbc, $query5);
+            $date = mysqli_fetch_assoc($response5);
+
+            $delta_seconds = time() - strtotime($date['item_date']);
+
+            $fresh_ratio = $delta_seconds / 604800; 
+
+            $red = 202;
+            $green = 244;
+            $blue = 211;
+
+            $red = $red + (int)(53 * $fresh_ratio);
+            $green = $green + (int)(11 * $fresh_ratio);
+            $blue = $blue + (int)(44 * $fresh_ratio);
+
+            if($fresh_ratio > 1) {
+                $fresh_ratio2 = ($delta_seconds - 604800) / 604800; 
+            }
+            else {
+                $fresh_ratio2 = 0; 
+            }
+
+            $red2 = 202;
+            $green2 = 244;
+            $blue2 = 211;
+
+            $red2 = $red2 + (int)(53 * $fresh_ratio2);
+            $green2 = $green2 + (int)(11 * $fresh_ratio2);
+            $blue2 = $blue2 + (int)(44 * $fresh_ratio2);
+
+            echo '<div class="fridgeitems"><div style="display:inline-block;background:linear-gradient(to right, rgb('.$red2.','.$green2.','.$blue2.') , rgb('.$red.','.$green.','.$blue.'));width:calc(100% - 60px);height:100%;"><a href="#" onclick="showItem('.$row2['item_id'].')" data-toggle="modal" data-target="#itemModal">'.$row2['item_name'].'</a></div>
                   <a href="#" onclick="deleteItem('.$row2['item_id'].')" class="pull-right"><button type="button" class="btn deleteUser"></button></a></div><hr><div style="clear:both;"></div>';
         }
         echo '</div>';

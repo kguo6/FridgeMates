@@ -207,6 +207,9 @@
         margin-left:auto;
         margin-right:auto;
     }
+    #content h2, #content ul, #fridgetabitems, #managetabhistory, #managetabuser {
+        font-weight: bolder;
+    }
     .tab-content {
         min-height:calc(100vh - 205px);
         border-left:1px solid #ddd;
@@ -308,6 +311,18 @@
         border: 0;
         padding-top: 0;
     }
+    #addFridgeModal .modal-dialog, #addUserModal .modal-dialog, #addItemModal .modal-dialog, #deleteFridgeModal .modal-dialog, #leaveFridgeModal .modal-dialog, #itemModal .modal-dialog {
+        margin-top:100px;
+    }
+    #itemTable {
+        width:100%;
+    }
+    #itemTable tr {
+        width:25%;
+    }
+    #itemTable td {
+        width:75%;
+    }
     @media(min-width:768px) {
         #content {
             width:60%;
@@ -315,11 +330,11 @@
             margin-right:auto;
         }
         #manage, #fridge {
-            padding: 50px 30px 30px 30px;
+            padding: 50px 60px 30px 60px;
         }
         #fridgeusers, #fridgeitems, #history {
-            margin-left:40px;
-            margin-right:40px;
+            margin-left:70px;
+            margin-right:70px;
         }
     }
 </style>
