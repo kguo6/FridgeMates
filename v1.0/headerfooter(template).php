@@ -18,7 +18,6 @@
 <script src="js/login-validate.js"></script>
 <script>
     //load register form on login modal
-    //load register form on login modal
     function register() {
         document.getElementById("loginContainer").style.display ="none";
         document.getElementById("registerContainer").style.display ="block";
