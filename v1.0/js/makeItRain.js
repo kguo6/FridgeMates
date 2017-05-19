@@ -14,19 +14,51 @@ $.fn.makeItRain = function(){
                     var randomPosition = Math.floor((random - 150) * Math.random());
                     var randomTime = Math.random() * 10;
                     var randomSpeed = (Math.random() * 10) + 10;
-                   // if (i < maxFood) {
-                        var chicken = $("<span class='billsBillsBills'>")
+
+                    if(i == 19){
+                        position = random - random*0.5;
+                        randomTime = Math.random() * 10;
+                        randomSpeed = (Math.random() * 10) + 10;
+
+                        var chris = $("<span class='faceFaceFace'>")
+                            .css({
+                                left: position,
+                                top: '-150px',
+                                "-webkit-animation-delay": 10 + "s",
+                                "-webkit-animation-duration": 10 + "s"
+                            });
+                        $(chris).prepend('<img class = fallingstuff style ="width:100px;"src="images/chris.png" alt="chris">');
+
+                        $('body').append(chris);
+                        position = random - random *0.9;
+                        randomTime = Math.random() * 10;
+                        randomSpeed = (Math.random() * 10) + 10;
+                        var carly = $("<span class='faceFaceFace'>")
+                            .css({
+                                left: position,
+                                top: '-150px',
+                                "-webkit-animation-delay": 10 + "s",
+                                "-webkit-animation-duration": 10 + "s"
+                            });
+                        $(carly).prepend('<img class = fallingstuff style ="width:80px;"src="images/carly.png" alt="carly">');
+
+                        $('body').append(carly);
+                    }
+                    if (i < maxFood) {
+                        randomPosition = Math.floor((random - 150) * Math.random());
+                        randomTime = Math.random() * 10;
+                        randomSpeed = (Math.random() * 10) + 10;
+                        var chicken = $("<span class='foodFoodFood'>")
                             .css({
                                 left: randomPosition,
                                 top: '-150px',
-                                "-webkit-animation-delay": randomTime + "s",
-                                "-webkit-animation-duration": randomSpeed + "s"
+                                "-webkit-animation-delay": randomTime + 2 + "s",
+                                "-webkit-animation-duration": 6 + "s"
                             });
-                        $(chicken).prepend('<img class = fallingstuff style ="width:40px;"src="images/chris.png" alt="leftover chicken">');
+                        $(chicken).prepend('<img class = fallingstuff style ="width:80px;"src="images/chicken.svg" alt="leftover chicken">');
 
                         $('body').append(chicken);
-
-                   // }
+                   }
 
                     randomPosition = Math.floor((random - 150) * Math.random());
                     randomTime = Math.random() * 10;
@@ -40,7 +72,7 @@ $.fn.makeItRain = function(){
 
                         });
 
-                    $(bills).prepend('<img class = fallingstuff style ="width:40px;"src="images/carly.png" alt="a dollar bill">');
+                    $(bills).prepend('<img class = fallingstuff style ="width:80px;"src="images/bills.svg" alt="a dollar bill">');
 
 
                     $('body').append(bills);

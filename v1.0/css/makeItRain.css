@@ -3,14 +3,97 @@
 @-webkit-keyframes sway {
     0%{
         top:-20px;
+        -webkit-transform: rotateY(-20deg);
+        transform: rotateY(-20deg);
+    }
+
+    3%{
+        margin-left: -2%;
+        -webkit-transform: rotateY(-80deg);
+        transform: rotateY(-80deg);
+    }
+
+    7% {
+        margin-left:1%;
+        -webkit-transform: rotateY(-170deg);
+        transform: rotateY(-170deg);
+    }
+    10% {
+        margin-left: 2%;
+        -webkit-transform: rotateY(-230deg);
+        transform: rotateY(-230deg);
+    }
+    16% {
+        margin-left: 5%;
+        -webkit-transform: rotateY(-250deg);
+        transform: rotateY(-250deg);
+    }
+    22% {
+        margin-left: 3%;
+        -webkit-transform: rotateY(-280deg);
+        transform: rotateY(-280deg);
+    }
+
+    28% {
+        margin-left: 0%;
+        -webkit-transform: rotateY(-300deg);
+        transform: rotateY(-300deg);
+    }
+
+    35% {
+        margin-left: 3.5%;
+        -webkit-transform: rotateY(-310deg);
+        transform: rotateY(-310deg);
+    }
+
+    48% {
+        margin-left: 1%;
+        -webkit-transform: rotateY(-350deg);
+        transform: rotateY(-350deg);
+    }
+
+    58% {
+        margin-left: 3.5%;
+        -webkit-transform: rotateY(-310deg);
+        transform: rotateY(-310deg);
+    }
+
+    70%{
+        margin-left: 0.5%;
+        -webkit-transform: rotateY(-280deg);
+        transform: rotateY(-280deg);
+    }
+
+    83% {
+        margin-left: -2%;
+        -webkit-transform: rotateY(-230deg);
+        transform: rotateY(-230deg);
+
+    }
+
+    95% {
+        margin-left: 2%;
+        -webkit-transform: rotateY(-200deg);
+        transform: rotateY(-200deg);
+    }
+
+    100% {
+        margin-left: 3%;
+        top: 100%; }
+}
+
+
+@-webkit-keyframes fall {
+    0%{
+        top:-20px;
         /*-webkit-transform: rotateY(-20deg);
         transform: rotateY(-20deg);*/
     }
 
     3%{
         margin-left: -2%;
-       /*-webkit-transform: rotateY(-80deg);
-        transform: rotateY(-80deg);*/
+        /*-webkit-transform: rotateY(-80deg);
+         transform: rotateY(-80deg);*/
     }
 
     7% {
@@ -42,8 +125,8 @@
 
     35% {
         margin-left: 3.5%;
-       /* -webkit-transform: rotateY(-310deg);
-        transform: rotateY(-310deg);*/
+        /* -webkit-transform: rotateY(-310deg);
+         transform: rotateY(-310deg);*/
     }
 
     48% {
@@ -82,7 +165,6 @@
         top: 100%; }
 }
 
-
 span.billsBillsBills {
   padding: 5px;
   display: block;
@@ -118,4 +200,13 @@ span.foodFoodFood{
     z-index:100;
     -webkit-animation: drop 2s linear;
     animation: drop 2s linear;
+}
+
+span.faceFaceFace{
+    padding: 5px;
+    display: block;
+    position: fixed;
+    z-index: 100;
+    -webkit-animation: sway 30s ease-out;
+    animation: fall 30s ease-out;
 }
