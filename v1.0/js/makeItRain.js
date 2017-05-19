@@ -22,7 +22,7 @@ $.fn.makeItRain = function(){
                                 "-webkit-animation-delay": randomTime + 2 + "s",
                                 "-webkit-animation-duration": 7 + "s"
                             });
-                        $(chicken).prepend('<img class = fallingstuff style ="width:80px;"src="images/chicken.svg" alt="leftover chicken">');
+                        $(chicken).prepend('<img class = fallingstuff style ="width:80px;"src="images/chris.svg" alt="leftover chicken">');
 
                         $('body').append(chicken);
 
@@ -38,7 +38,7 @@ $.fn.makeItRain = function(){
 
                         });
 
-                    $(bills).prepend('<img class = fallingstuff style ="width:80px;"src="images/bills.svg" alt="a dollar bill">');
+                    $(bills).prepend('<img class = fallingstuff style ="width:80px;"src="images/carly.svg" alt="a dollar bill">');
 
 
                     $('body').append(bills);
