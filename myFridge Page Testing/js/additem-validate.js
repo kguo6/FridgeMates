@@ -34,14 +34,14 @@ $().ready(function() {
             data : data,
             success: function(data) {
                 if(data == 1) {
-                    $("#addItemResponse").html('<p style="text-align:center">Item Added</p><br><a href="#" onclick="showAddItem()">Back</a>');
+                    $("#addItemResponse").html('<p style="text-align:center">Item Added</p><br><button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button><button type="button" class="btn btn-default pull-left" onclick="showAddItem()">Back</button><div style="clear:both"></div>');
                     $("#addItemResponse").show();
                     $("#addItemForm").hide();
                     $("#addItemButtons").hide();
                     $("#content").load("myfridges.php?fridge_id=" + window.fridge_id);
                 }
                 else {
-                    $("#addItemResponse").html('<p style="text-align:center">Error Adding Item</p><br><a href="#" onclick="showAddItem()">Back</a>');
+                    $("#addItemResponse").html('<p style="text-align:center">Error Adding Item</p><br><button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button><button type="button" class="btn btn-default pull-left" onclick="showAddItem()">Back</button><div style="clear:both"></div>');
                     $("#addItemResponse").show();
                     $("#addItemForm").hide();
                     $("#addItemButtons").hide();
