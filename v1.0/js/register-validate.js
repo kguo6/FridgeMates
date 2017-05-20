@@ -1,4 +1,12 @@
 $().ready(function() {
+    $.validator.addMethod("noSpace", function(value, element) { 
+        return value.indexOf(" ") < 0 && value != ""; 
+    }, "No space please and don't leave it empty");
+
+    $.validator.addMethod( "nowhitespace", function( value, element ) {
+        return this.optional( element ) || /^\S+$/i.test( value );
+    }, "No white space please" );
+
     $('#registerForm').validate({
         rules: {
             register_username: {
@@ -7,15 +15,16 @@ $().ready(function() {
             },
             register_password: {
                 required: true,
+                nowhitespace: true,
                 minlength: 6
             },
             confirm_password: {
                 required: true,
-                minlength: 6,
                 equalTo: "#register_password"
             },
             register_name: {
                 required: true,
+                noSpace: true,
                 minlength: 2
             }
         },
@@ -26,15 +35,16 @@ $().ready(function() {
             },
             register_password: {
                 required: "Please enter a password",
+                nowhitespace: "Please enter a valid password",
                 minlength: "Your password must be at least 6 characters"
             },
             confirm_password: {
                 required: "Please confirm your password",
-                minlength: "Your password must be at least 6 characters",
                 equalTo: "Please make sure your password matches"
             },
             register_name: {
                 required: "Please enter a username",
+                noSpace: "Please enter a valid username",
                 minlength: "Your username must be at least 2 characters"
             }
         },

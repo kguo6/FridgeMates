@@ -1,14 +1,20 @@
 $().ready(function() {
+    $.validator.addMethod("noSpace", function(value, element) { 
+        return value.indexOf(" ") < 0 && value != ""; 
+    }, "No space please and don't leave it empty");
+
     $('#addFridgeForm').validate({
         rules: {
             fridge_name: {
                 required: true,
+                noSpace: true,
                 maxlength: 40
             }
         },
         messages: {
             fridge_name: {
                 required: "Please enter a fridge name",
+                noSpace: "Please enter a valid fridge name",
                 maxlength: "Maximum length is 40 characters"
             }
         },

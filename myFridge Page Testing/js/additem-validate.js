@@ -1,8 +1,13 @@
 $().ready(function() {
+    $.validator.addMethod("noSpace", function(value, element) { 
+        return value.indexOf(" ") < 0 && value != ""; 
+    }, "No space please and don't leave it empty");
+
     $('#addItemForm').validate({
         rules: {
             item_name: {
                 required: true,
+                noSpace: true,
                 maxlength: 40
             },
             item_comment: {
@@ -12,6 +17,7 @@ $().ready(function() {
         messages: {
             item_name: {
                 required: "Please enter an item name",
+                noSpace: "Please enter a valid item name",
                 maxlength: "Maximum length is 40 characters"
             },
             item_comment: {

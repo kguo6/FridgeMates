@@ -38,7 +38,6 @@
 <script src="js/additem-validate.js"></script>
 <script src="js/adduser-validate.js"></script>
 <script>
-    var visibility = 0;
     //load register form on login modal
     function register() {
         document.getElementById("loginContainer").style.display ="none";
@@ -56,14 +55,19 @@
         document.getElementById("loginForm").reset();
     }
     //toggle function for fridge fab
-    function fridges() {
-        if(visibility == 0){
+    function fridges(event) {
+        if($('#fabNav').css('display') == "none"){
             document.getElementById("fabNav").style.display = "block";
-            visibility = 1;
         }
-        else if(visibility == 1){
+        else if($('#fabNav').css('display') == "block"){
             document.getElementById("fabNav").style.display = "none";
-            visibility = 0;
+        }
+        event.stopPropagation();
+    }
+    //hides fridge fab
+    function hidefab() {
+        if(document.getElementById("fabNav").style.display == "block"){
+            document.getElementById("fabNav").style.display = "none";
         }
     }
     //resets the add fridge modal
@@ -339,7 +343,7 @@
     }
 </style>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="10" onload="login();<?php if($_SESSION['HAS_FRIDGE'] == 1) { echo 'getfridges('.$_SESSION['FRIDGE_ID'].');';} else { echo 'firstFridge();';}?>">
+<body data-spy="scroll" data-target=".navbar" data-offset="10" onclick="hidefab()" onload="login();<?php if($_SESSION['HAS_FRIDGE'] == 1) { echo 'getfridges('.$_SESSION['FRIDGE_ID'].');';} else { echo 'firstFridge();';}?>">
     <!-- navigation bar -->
     <nav class="navbar navbar-default navbar-fixed-top" id="header_nav">
         <div class="container-fluid">
@@ -421,8 +425,7 @@
     </div>
     <!-- floating action button for fridge selection -->
     <div id="fabContainer">
-        <input type="checkbox" id="toggle" onchange="fridges()"/>
-            <label id="fabButton" for="toggle"></label>
+        <button id="fabButton" onclick="fridges(event)"></button>
         <nav id="fabNav">
             <?php
                 require_once("config.php");
@@ -431,9 +434,9 @@
                                     WHERE authorized = 'Yes' && user_id = '".$user_id."'";
                 $response = @mysqli_query($dbc, $query);
                 while($row = mysqli_fetch_array($response)) {
-                    echo '<a href="#" onclick="getfridges('.$row['fridge_id'].');fridges();">'.$row['fridge_name'].'</a>';
+                    echo '<a href="#" onclick="getfridges('.$row['fridge_id'].');">'.$row['fridge_name'].'</a>';
                 }
-                echo '<a href="#" data-toggle="modal" data-target="#addFridgeModal" onclick="showAddFridge();fridges();">ADD FRIDGE</a>';
+                echo '<a href="#" data-toggle="modal" data-target="#addFridgeModal" onclick="showAddFridge();">ADD FRIDGE</a>';
             ?>
         </nav>
     </div>
