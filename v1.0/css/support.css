@@ -80,9 +80,9 @@ body {
 }
 
 fieldset {
-    padding: .35em .625em .75em;
-    margin: auto;
-    border: 1px solid silver;
+  padding: .35em .625em .75em;
+  margin: auto;
+  border: 1px solid silver;
 }
 
 legend {

@@ -14,6 +14,7 @@ $.fn.makeItRain = function(){
                     var randomPosition = Math.floor((random - 150) * Math.random());
                     var randomTime = Math.random() * 10;
                     var randomSpeed = (Math.random() * 10) + 10;
+                    // food
                     if (i < maxFood) {
                         var chicken = $("<span class='foodFoodFood'>")
                             .css({
@@ -28,7 +29,7 @@ $.fn.makeItRain = function(){
 
                     }
 
-
+                    // bills
                     var bills = $("<span class='billsBillsBills'>")
                         .css({
                             left: randomPosition,
@@ -46,7 +47,8 @@ $.fn.makeItRain = function(){
 
 
                 }; // end click function
-                counter++;
+                
+                counter++;  // increments clicks on item
 			}
 			$('.fallingstuff').on("click", function(){
 				$(this).hide();
