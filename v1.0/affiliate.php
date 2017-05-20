@@ -152,7 +152,7 @@
                                 Make the most out of the food you buy!</p>
                         </div>
                         <div class="panel-footer">
-                            <a href="#"><button class="btn btn-lg lmorebtn">Learn More</button></a>
+                            <a href="https://grocerybuddy-fe337.firebaseapp.com/main"><button class="btn btn-lg lmorebtn">Learn More</button></a>
                         </div>
                     </div>
                 </div>
@@ -168,7 +168,7 @@
                                 Your new best friend for planning what food to buy and making sure you use it.</p>
                         </div>
                         <div class="panel-footer">
-                            <a href="#"><button class="btn btn-lg lmorebtn">Learn More</button></a>
+                            <a href="http://xyz-online.xyz"><button class="btn btn-lg lmorebtn">Learn More</button></a>
                         </div>
                     </div>
                 </div>
@@ -184,7 +184,7 @@
                                 new and delicious ways to use your leftovers, and track your food waste</p>
                         </div>
                         <div class="panel-footer">
-                            <a href="#"><button class="btn btn-lg lmorebtn">Learn More</button></a>
+                            <a href="https://phoenix-recipes.firebaseapp.com"><button class="btn btn-lg lmorebtn">Learn More</button></a>
                         </div>
                     </div>
                 </div>
