@@ -237,11 +237,6 @@
                 margin-right: 12%;
                 height: 430px;
             }
-            .card_two {
-                width:100%;
-                background-color: white;
-                margin: 10px 1.66%;
-            }
         }
         /** CSS for screens with resolution same as iphone 6 **/
         @media only screen and (min-width: 360px) and (max-width: 375px) {
@@ -250,23 +245,23 @@
                 margin-right: 18%;
                 height: 430px;
             }
-            .card_two {
-                width:100%;
-                background-color: white;
-                margin: 10px 1.66%;
-            }
         }
         /** CSS for screens with resolution same as iphone 7 plus **/
-        @media only screen and (min-width: 400px) {
+        @media only screen and (min-width: 400px) and (max-width: 425px) {
             .card_three {
                 margin-left: 22%;
                 margin-right: 22%;
                 height: 430px;
             }
+        }
+
+        @media (max-width: 768px) {
             .card_two {
                 width:100%;
+                min-height: 1px;
                 background-color: white;
-                margin: 10px 1.66%;
+                margin: 20px 0;
+                padding: 1px 15px;
             }
         }
 
