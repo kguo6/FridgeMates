@@ -131,7 +131,7 @@
                 font-size: 1.5em;
             }
         }
-/** Affiliate logo CSS **/
+        /** Affiliate logo CSS **/
         .afflogo {
             height: 100px;
             width: 100px;
@@ -165,6 +165,7 @@
         .card_two {
             width: 90%;
             background-color: white;
+            box-shadow: 0 0 20px silver;
         }
         /** third info card CSS (iphone demo) **/
         .card_three {
@@ -241,4 +242,34 @@
                 margin-right: 22%;
                 height: 430px;
             }
+        }
+
+        /** desktop button CSS **/
+        .button_desktop {
+            color: white;
+            background-color: #3A6A9B;
+            height: 175px;
+            width: 175px;
+            border: white solid 4px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        /** container CSS for desktop view **/.
+        .desktop {
+            width: 80%;
+            margin-left: 12%;
+            margin-right: 15%;
+        }
+
+        /** button CSS for desktop **/
+        .icon_desktop {
+            font-size: 5em;
+            margin-top: 30px
+        }
+
+        /** text CSS for desktop **/
+        .text_desktop {
+            margin-top: 10px;
+            font-size: 1.5em;
         }

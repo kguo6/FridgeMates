@@ -340,7 +340,7 @@
         }
 
         /** CSS for screens with resolution same as iphone7plus **/
-        @media only screen and (min-width: 400px) {
+        @media only screen and (min-width: 400px) and (max-width: 450px) {
             .container-fluid {
                 width: 100%;
             }
@@ -386,6 +386,30 @@
             }
 
 
+        }
+
+        .button_desktop {
+            color: white;
+            background-color: #3A6A9B;
+            height: 175px;
+            width: 175px;
+            border: white solid 4px;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .desktop {
+            width: 80%;
+            margin-left: 12%;
+            margin-right: 15%;
+        }
+        .icon_desktop {
+            font-size: 5em;
+            margin-top: 30px
+        }
+        .text_desktop {
+            margin-top: 10px;
+            font-size: 1.5em;
         }
 
     </style>
@@ -471,7 +495,28 @@
                 <a href="#"><div class="button_right"><span class="glyphicon glyphicon-comment icon_mobile"></span><p class="text_mobile">CONTACT</p></div></a>
             </div>
         </div>
-</div>
+
+
+        <div class="row desktop">
+            <div class="col-xs-6 col-md-3">
+                <a href="#"><div class="visible-lg visible-md visible-sm button_desktop"><span class="glyphicon glyphicon-apple icon_desktop"></span><p class="text_desktop">FRIDGES</p></div></a>
+            </div>
+
+
+            <div class="col-xs-6 col-md-3">
+                <a href="#"><div class="visible-lg visible-md visible-sm button_desktop"><span class="glyphicon glyphicon-user icon_desktop"></span><p class="text_desktop">ACCOUNT</p></div></a>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <a href="#"><div class="visible-lg visible-md visible-sm button_desktop"><span class="glyphicon glyphicon-info-sign icon_desktop"></span><p class="text_desktop">INFORMATION</p></div></a>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+                <a href="#"><div class="visible-lg visible-md visible-sm button_desktop"><span class="glyphicon glyphicon-comment icon_desktop"></span><p class="text_desktop">CONTACT</p></div></a>
+            </div>
+        </div>
+        </div>
+    </div>
 </div>
 <!--footer-->
 <footer class="site-footer">
