@@ -1,10 +1,10 @@
-        /** jumbotron CSS **/
+        /** Body CSS **/
+        body {
+        	background-color: #cbebf5;
+        }
+        /** title jumbotron CSS **/
         .jumbotron {
-            background-color: #05305B;
             text-align: center;
-            margin:0;
-            padding: 120px 25px;
-            color: white;
         }
 
         /** panel CSS **/
@@ -52,11 +52,7 @@
             color: white;
         }
         .card_one {
-            background-color: #fffff5;
+            background-color: white;
             padding-top: 0;
             text-align:center;
-        }
-        .card_two {
-            background-color: #fffff5;
-            background: linear-gradient(to bottom, #fffff5, #f8f8f8);
         }

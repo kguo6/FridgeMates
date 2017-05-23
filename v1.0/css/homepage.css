@@ -1,4 +1,8 @@
-/** pagelayout and background CSS **/
+        /** body CSS **/
+        body {
+            background-color: #cbebf5;
+        }
+        /** pagelayout and background CSS **/
         #welcome-container {
             width: 95%;
             margin-top: 25px;
@@ -13,7 +17,7 @@
         }
         /** button and button layout CSS **/
         .row {
-             margin-top: 10px;
+            margin-top: 10px;
          }
         .button_left {
             color: white;
@@ -167,6 +171,8 @@
 
         /** intro card CSS **/
         .card_intro {
+            width: 90%;
+            box-shadow: 0 0 20px silver;
             background-color: white;
         }
         /** second info card CSS (fridgemate info) **/
@@ -190,6 +196,7 @@
             background-color: white;
             text-align: left;
             margin-bottom: 20px;
+            box-shadow: 0 0 20px silver;
             padding: 10px 0px 10px;
         }
         /** learn more button CSS **/
@@ -237,6 +244,11 @@
                 margin-right: 12%;
                 height: 430px;
             }
+            .card_two {
+                width:100%;
+                background-color: white;
+                margin: 10px 1.66%;
+            }
         }
         /** CSS for screens with resolution same as iphone 6 **/
         @media only screen and (min-width: 360px) and (max-width: 375px) {
@@ -245,23 +257,23 @@
                 margin-right: 18%;
                 height: 430px;
             }
+            .card_two {
+                width:100%;
+                background-color: white;
+                margin: 10px 1.66%;
+            }
         }
         /** CSS for screens with resolution same as iphone 7 plus **/
-        @media only screen and (min-width: 400px) and (max-width: 425px) {
+        @media only screen and (min-width: 400px) {
             .card_three {
                 margin-left: 22%;
                 margin-right: 22%;
                 height: 430px;
             }
-        }
-
-        @media (max-width: 768px) {
             .card_two {
                 width:100%;
-                min-height: 1px;
                 background-color: white;
-                margin: 20px 0;
-                padding: 1px 15px;
+                margin: 10px 1.66%;
             }
         }
 
