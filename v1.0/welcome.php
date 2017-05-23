@@ -16,13 +16,13 @@
         </div>
         <div class="col-xs-2 visible-xs"></div>
         <div class="col-xs-5 visible-xs">
-            <a href="account.php"><div class="button_right"><span class="glyphicon glyphicon-user icon_mobile"></span><p class="text_mobile">ACCOUNT</p></div></a>
+            <a href="account.php"><div class="button_right"><span class="glyphicon glyphicon-group icon_mobile"></span><p class="text_mobile">AFFILIATES</p></div></a>
         </div>
     </div>
     <!-- bottom row of buttons -->
     <div class="row">
         <div class="col-xs-5 visible-xs">
-            <a href="affiliate.php"><div class="button_left"><span class="glyphicon glyphicon-info-sign icon_mobile"></span><p class="text_mobile">AFFILIATES</p></div></a>
+            <a href="affiliate.php"><div class="button_left"><span class="glyphicon glyphicon-info-sign icon_mobile"></span><p class="text_mobile">ABOUT US</p></div></a>
         </div>
         <div class="col-xs-2 visible-xs"></div>
         <div class="col-xs-5 visible-xs">
@@ -37,11 +37,11 @@
 
 
         <div class="col-xs-6 col-md-3">
-            <a href="account.php"><div class="visible-lg visible-md visible-sm button_desktop"><span class="glyphicon glyphicon-user icon_desktop"></span><p class="text_desktop">ACCOUNT</p></div></a>
+            <a href="account.php"><div class="visible-lg visible-md visible-sm button_desktop"><span class="glyphicon glyphicon-group icon_desktop"></span><p class="text_desktop">AFFILIATES</p></div></a>
         </div>
 
         <div class="col-xs-6 col-md-3">
-            <a href="affiliate.php"><div class="visible-lg visible-md visible-sm button_desktop"><span class="glyphicon glyphicon-info-sign icon_desktop"></span><p class="text_desktop">AFFILIATES</p></div></a>
+            <a href="affiliate.php"><div class="visible-lg visible-md visible-sm button_desktop"><span class="glyphicon glyphicon-info-sign icon_desktop"></span><p class="text_desktop">ABOUT US</p></div></a>
         </div>
 
         <div class="col-xs-6 col-md-3">

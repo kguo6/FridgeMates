@@ -1,6 +1,7 @@
 /** pagelayout and background CSS **/
         #welcome-container {
             width: 95%;
+            margin-top: 25px;
         }
         #content a:hover {
             text-decoration: none;
@@ -51,6 +52,7 @@
         @media only screen and (max-width: 320px) {
             #welcome-container {
                 width: 100%;
+                margin-top: 25px;
             }
             .row {
                 margin-top: 10px;
@@ -93,6 +95,7 @@
         @media only screen and (min-width: 400px) {
             #welcome-container {
                 width: 100%;
+                margin-top: 25px;
             }
             .row {
                 margin-top: 10px;
@@ -161,14 +164,22 @@
             width: 100%;
             text-align: right;
         }
+
+        /** intro card CSS **/
+        .card_intro {
+            background-color: white;
+        }
         /** second info card CSS (fridgemate info) **/
         .card_two {
-            width: 90%;
+            width: 30%;
+            margin: 0px 1.66%;
             background-color: white;
             box-shadow: 0 0 20px silver;
+            min-height: 320px;
         }
         /** third info card CSS (iphone demo) **/
         .card_three {
+            background-color: white;
             width:200px;
             margin-left: 50%;
             margin-right: 50%;
@@ -176,6 +187,7 @@
         /** fourth info card CSS (affiliates) **/
         .card_four {
             width: 90%;
+            background-color: white;
             text-align: left;
             margin-bottom: 20px;
             padding: 10px 0px 10px;
@@ -186,7 +198,7 @@
             text-align: center;
             background-color: transparent;
             color: black;
-            border-radius:10px;
+            border-radius:25px;
             border: solid black 3px;
             padding: 10px 20px;
             font-size: 1.2em;
@@ -209,7 +221,6 @@
         /** where the screenshots will cycle CSS **/
         .canvas {
             position: absolute;
-
             width: 2195px;
             height: 325px;
         }
@@ -253,6 +264,8 @@
             border: white solid 4px;
             margin-top: 10px;
             text-align: center;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         /** container CSS for desktop view **/.
@@ -272,4 +285,8 @@
         .text_desktop {
             margin-top: 10px;
             font-size: 1.5em;
+        }
+
+        #afflogo {
+            height: 200px;
         }
