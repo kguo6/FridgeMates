@@ -14,7 +14,7 @@
 <!-- fridgemate webapp info card -->
 <div class="container-fluid card_intro">
     <h2>TEST</h2>
-    <p><Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -40,22 +40,22 @@
 </div>
 
 <div class="container-fluid">
-    <div class="col-sm-4">
+    <div class="col-sm-4 card_two">
         <h3>Know what is in your Fridge?</h3>
-        <hr class="card_one_line card_two">
+        <hr class="card_one_line">
         <p>Keep track of items that are in your fridge that you
             share with your family!  FridgeMates can let you know
             what food is in your fridge and how long it's been sitting in there.</p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 card_two">
         <h3>Sharing a Fridge with Roommates?</h3>
-        <hr class="card_one_line card_two">
+        <hr class="card_one_line">
         <p>Always wondering what can be eaten? Don't fret! FridgeMates is here to let you and your
             fridgemate know what food is available for eating!</p>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 card_two">
         <h3>Get to know your Community!</h3>
-        <hr class="card_one_line card_two">
+        <hr class="card_one_line">
         <p>Are you new to the office? Make new friends and connect with them over delicious food!
     </div>
 </div>
