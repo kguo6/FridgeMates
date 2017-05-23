@@ -105,7 +105,7 @@
                 <?php
                     if(isset($_SESSION['USER_ID']) &&
                     (trim($_SESSION['USER_ID']) != '')) {
-                        echo '<div class="btn-group" id="account_group"><button type="button" class="btn" id="login_btn" dropdown-toggle" data-toggle="dropdown" style="margin-left:25px">'.$_SESSION["USER_NAME"].'</button>
+                        echo '<div class="btn-group" id="account_group"><button type="button" class="btn" id="login_btn" dropdown-toggle" data-toggle="dropdown">'.$_SESSION["USER_NAME"].'</button>
                                 <ul class="dropdown-menu" id="account_dropdown">
                                     <li><a href="account.php">ACCOUNT</a></li>
                                     <li><a href="logout.php">LOGOUT</a></li>
