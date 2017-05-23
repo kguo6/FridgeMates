@@ -2,6 +2,9 @@
         #welcome-container {
             width: 95%;
         }
+        #content a:hover {
+            text-decoration: none;
+        }
         /** jumbotron CSS **/
         #welcome-header {
             color: black;

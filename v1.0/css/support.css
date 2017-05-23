@@ -61,7 +61,7 @@ body {
 .faq ,
 .contactus {
   margin: 5% auto;
-  width: 80%;
+  width: 90%;
 }
 
 .faq h1 ,
@@ -106,5 +106,9 @@ legend {
 @media (min-width: 1000px) {
     fieldset {
       max-width: 60%;
+    }
+    .faq, .contactus {
+      margin: 5% auto;
+      width: 80%;
     }
 }
