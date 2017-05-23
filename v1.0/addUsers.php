@@ -6,7 +6,7 @@
 
     if($_POST) {
         $fridge_id = $_SESSION["FRIDGE_ID"];
-        $email = $_POST["email"];
+        $email = htmlspecialchars($_POST["email"]);
 
         $query1 = "SELECT user_id FROM Users WHERE email = '".$email."'";
 

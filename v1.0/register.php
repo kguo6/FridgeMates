@@ -4,9 +4,9 @@
     require_once("config.php");
 
     if($_POST) {
-        $email = trim($_POST["register_username"]);
-        $password = trim($_POST["register_password"]);
-        $name = trim($_POST["register_name"]);
+        $email = trim(htmlspecialchars($_POST["register_username"]));
+        $password = trim(htmlspecialchars($_POST["register_password"]));
+        $name = trim(htmlspecialchars($_POST["register_name"]));
 
         $query1="SELECT user_id FROM Users
                 WHERE email = \"".$email."\"";

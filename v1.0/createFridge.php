@@ -5,7 +5,7 @@
     require_once("config.php");
 
     if($_POST) {
-        $fridge_name = $_POST["fridge_name"];
+        $fridge_name = htmlspecialchars($_POST["fridge_name"]);
         $user_id = $_SESSION["USER_ID"];
 
         $query1="INSERT INTO Fridges (fridge_id, fridge_name)

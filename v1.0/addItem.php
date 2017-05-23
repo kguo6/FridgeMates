@@ -7,10 +7,10 @@
     require_once("config.php");
 
     if($_POST) {
-        $item_name = $_POST["item_name"];
-        $fridge_id = $_SESSION["FRIDGE_ID"];
+        $item_name = htmlspecialchars($_POST["item_name"]);
+        $fridge_id = htmlspecialchars($_SESSION["FRIDGE_ID"]);
         $user_id = $_SESSION["USER_ID"];
-        $item_comment = $_POST["item_comment"];
+        $item_comment = htmlspecialchars($_POST["item_comment"]);
         $timestamp  = date('Y-m-d G:i:s');
 
         $query="INSERT INTO Items (item_id, user_id, fridge_id, item_name, item_comment, item_date, deleted)
