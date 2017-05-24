@@ -16,7 +16,7 @@
         </div>
         <div class="col-xs-2 visible-xs"></div>
         <div class="col-xs-5 visible-xs">
-            <a href="account.php"><div class="button_right"><span class="glyphicon glyphicon-group icon_mobile"></span><p class="text_mobile">AFFILIATES</p></div></a>
+            <a href="account.php"><div class="button_right"><span class="glyphicon glyphicon-globe icon_mobile"></span><p class="text_mobile">AFFILIATES</p></div></a>
         </div>
     </div>
     <!-- bottom row of buttons -->
@@ -37,7 +37,7 @@
 
 
         <div class="col-xs-6 col-md-3">
-            <a href="account.php"><div class="visible-lg visible-md visible-sm button_desktop"><span class="glyphicon glyphicon-group icon_desktop"></span><p class="text_desktop">AFFILIATES</p></div></a>
+            <a href="account.php"><div class="visible-lg visible-md visible-sm button_desktop"><span class="glyphicon glyphicon-globe icon_desktop"></span><p class="text_desktop">AFFILIATES</p></div></a>
         </div>
 
         <div class="col-xs-6 col-md-3">
