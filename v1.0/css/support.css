@@ -1,18 +1,20 @@
 body {
-  background-color: #e3e3e3;
+  background-color: #cbebf5;
 }
 
 /* Heading Screen */
 .jumbotron {
-  background-color: black;
-  margin:0;
-  padding: 120px 25px;
+  margin-top: 25px;
+  background-color:#05305B;
   color: white;
 }
 
 /*FAQ Section*/
 .faq {
-  background-color: #FAFAFA;
+  background-color: #FFFFFF;
+  border-radius: 3.5px;
+  transition: box-shadow 0.2s;
+  box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.3);
 }
 
 .panel-default>.panel-heading {
@@ -30,8 +32,11 @@ body {
 
 /*Contact Us Section */
 .contactus {
-  background-color: #FAFAFA;
+  background-color: white;
   padding-bottom: 4%;
+  border-radius: 3.5px;
+  transition: box-shadow 0.2s;
+  box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.3);
 }
 
 .contactus-container {
@@ -66,11 +71,11 @@ body {
 
 .faq h1 ,
 .contactus h1 {
-  background: #20A378;
-  background: linear-gradient(to bottom, #20A378, #026F4B);
-  color: white;
-  padding: 0% 2%;
+  background: #67CAA9;
+  color: #FFFFFF;
+  padding: 15px 20px;
   margin:0;
+  font-size: 36px;
 }
 
 /*Form */
@@ -92,6 +97,10 @@ legend {
   font-size: 1.3em;
 }
 
+textarea {
+  resize: none;
+}
+
 /* Validation Color */
 .error {
   color:#FF0000;
@@ -109,6 +118,6 @@ legend {
     }
     .faq, .contactus {
       margin: 5% auto;
-      width: 80%;
+      width: 90%;
     }
 }

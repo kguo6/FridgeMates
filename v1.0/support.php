@@ -48,7 +48,7 @@
                 <button type="button" id="nav_toggle" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span>
                 </button>
                 <?php
                     if(isset($_SESSION['USER_ID']) &&
@@ -92,7 +92,7 @@
                         <input type="text" name="register_name" placeholder="Username (Min. 4 Characters)">
                         <input type="submit" name="login" class="login loginmodal-submit" id="register_btn" value="Register">
                     </form>
-                                        
+
                     <div class="login-help">
                         <a href="#" onclick="login()">Login</a>
                     </div>
@@ -104,7 +104,7 @@
                         <input type="password" name="login_password" placeholder="Password">
                         <input type="submit" name="login" class="login loginmodal-submit" value="Login">
                     </form>
-                                        
+
                     <div class="login-help">
                         <a href="#" id="registerLink" onclick="register()">Register</a>
                     </div>
@@ -116,61 +116,63 @@
     </div>
     <!-- wrapper for content of the page -->
     <div id="content" class="page-wrap">
+      <div class = "container-fluid ">
         <!-- Jumbotron -->
         <div class="jumbotron text-center">
             <h1>Support</h1>
             <p>Got a question? Need a hand? Check us out </p>
         </div>
+      </div>
         <!-- Frequently Asked Questions Section -->
         <div class = "faq">
             <h1> F.A.Q. </h1>
-            <div class = "panel-group" id = "accordian">
+              <div class = "panel-group" id = "accordian">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
                         Q: How do I add users to a Fridge?</a>
                         </h4>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse">
+                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.
                     </div>
-                    <div id="collapse1" class="panel-collapse collapse">
-                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat.
-                        </div>
-                    </div>
+                  </div>
                 </div>
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
                         Q: How do I remove a fridge?</a>
-                        </h4>
+                      </h4>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.
                     </div>
-                    <div id="collapse2" class="panel-collapse collapse">
-                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat.
-                        </div>
-                    </div>
+                  </div>
                 </div>
                 <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4 class="panel-title">
-                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
                         Q: How do I leave a fridge that I'm in charge of?</a>
-                        </h4>
+                    </h4>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                      commodo consequat.
                     </div>
-                    <div id="collapse3" class="panel-collapse collapse">
-                        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat.
-                        </div>
-                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
         </div>
         <!-- Contact Us Section -->
         <div class = "contactus">
@@ -181,6 +183,7 @@
                     <h3> Our Address </h3>
                     <p>3700 Willingdon Ave</p>
                     <p>Burnaby, BC V5G 3H2</p>
+                    <p>Email Address: <a href = "mailto:support@fridgemates.ca">support@fridgemates.ca</a></p>
                   </div>
                   <div class = "contact-spacer">
                     <h3> Call Us </h3>
@@ -197,47 +200,47 @@
                 <!-- Feedback Form Secion -->
                 <form method = "post" id = "feedback_form">
                   <fieldset>
-                  <legend> Send Us Your Feedback</legend>
-                  <div class = "form-group row ">
-                    <label for = "name" class = "col-sm-3 col-form-label">Name:</label>
-                    <div class = "col-sm-9">
-                      <input class="form-control" type = "text" name = "full_name" id = "name" maxlength = "100" >
-                    </div>
-                  </div>
-                  <div class = "form-group row">
-                    <label for = "emailaddress" class = "col-sm-3 col-form-label">Email Address: </label>
-                    <div class = "col-sm-9">
-                      <input class="form-control" type = "email" name = "email_address" id = "emailaddress" maxlength = "100">
-                    </div>
-                  </div>
-                  <div class = "form-group row">
-                    <label for = "subject" class = "col-sm-3 col-form-label"> Subject: </label>
-                    <div class = "col-sm-9">
-                      <select class="form-control" name="email_subject" id = "emailsubject" >
-                        <option disabled selected value> -- select an option -- </option>
-                        <option value="Product Questions">Product Questions</option>
-                        <option value="Bug Report">Bug Report</option>
-                        <option value="Customer Service">Feedback</option>
-                        <option value="Other">Other</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class = "form-group row">
-                    <label  for = "comment" class = "col-sm-3 col-form-label">Comment:</label>
-                    <div class = "col-sm-9">
-                      <textarea class="form-control" rows="3" cols="50" name="email_comment" id = "emailcomment"></textarea>
-                    </div>
-                  </div>
-                  <div class="form-group row">
-                    <div class="col-sm-offset-3 col-sm-9">
-                      <!-- Success Message -->
-                      <div class = "success">
-                        <button type="submit" class = "btn btn-primary" name = "submit">Submit</button>
-                        <!-- Error Message -->
-                        <div class = "error"></div>
+                    <legend> Send Us Your Feedback</legend>
+                    <div class = "form-group row ">
+                      <label for = "name" class = "col-sm-3 col-form-label">Name:</label>
+                      <div class = "col-sm-9">
+                        <input class="form-control" type = "text" name = "full_name" id = "name" maxlength = "100" >
                       </div>
                     </div>
-                  </div>
+                    <div class = "form-group row">
+                      <label for = "emailaddress" class = "col-sm-3 col-form-label">Email Address: </label>
+                      <div class = "col-sm-9">
+                        <input class="form-control" type = "email" name = "email_address" id = "emailaddress" maxlength = "100">
+                      </div>
+                    </div>
+                    <div class = "form-group row">
+                      <label for = "subject" class = "col-sm-3 col-form-label"> Subject: </label>
+                      <div class = "col-sm-9">
+                        <select class="form-control" name="email_subject" id = "emailsubject" >
+                          <option disabled selected value> -- select an option -- </option>
+                          <option value="Product Questions">Product Questions</option>
+                          <option value="Bug Report">Bug Report</option>
+                          <option value="Customer Service">Feedback</option>
+                          <option value="Other">Other</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class = "form-group row">
+                      <label  for = "comment" class = "col-sm-3 col-form-label">Comment:</label>
+                      <div class = "col-sm-9">
+                        <textarea class="form-control" rows="3" cols="50" name="email_comment" id = "emailcomment"></textarea>
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="col-sm-offset-3 col-sm-9">
+                        <!-- Success Message -->
+                        <div class = "success">
+                          <button type="submit" class = "btn btn-primary" name = "submit">Submit</button>
+                          <!-- Error Message -->
+                          <div class = "error"></div>
+                        </div>
+                      </div>
+                    </div>
                   </fieldset>
                 </form>
             </div>
