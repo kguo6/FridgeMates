@@ -24,6 +24,8 @@
 
 <!-- iphone screenshot demo info card -->
 <div class="container-fluid card_three">
+    <div class="row">
+    <div class="col-sm-3" id="iphone">
     <!-- iphone mockup wireframe -->
     <img src="./logo/iphone.png">
     <!-- where the screenshots will cycle  -->
@@ -36,6 +38,25 @@
             <div class="page"><img src="./logo/test2.png" height="322" width="188"></div>
             <div class="page"><img src="./logo/test2.png" height="322" width="188"></div>
         </div>
+    </div>
+    </div>
+    <div class="col-sm-9">
+        <div id="slider" class="description visible-sm visible-md visible-lg">
+            <ul>
+                <li class='active'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
+
+            </ul>
+    </div>
+    </div>
     </div>
 </div>
 
