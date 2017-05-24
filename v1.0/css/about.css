@@ -1,70 +1,74 @@
-        /** jumbotron CSS **/
-        .jumbotron {
-            background-color: #284B70;
-			width:100%;
-            margin:0;
-            padding: 120px 25px;
-            color: white;
-        }
-		
-		.underline>span{
-			display:inline-block;
-			border-bottom:3px solid #ffffff;
-			font-weight:700;
-			line-height:1em;
-			letter-spacing:.135em;
-			padding-bottom:.125em;
-			text-transform:uppercase;
-		}
-		
-		/** Section: Description about our goal and objective **/
-		.container-fluid_bg1{
-			background-color: #C7D3C8;  
-			padding:40px;
-		}
-				
-		.text-holder{
-			padding-top: 10%;
-		}
-		
-		.largetxt{
-			font-size:18px;
-			line-height:1.368em;
-		}
-		
-		.smalltxt{
-			font-size:15px;
-			line-height:1.368em;
-			padding-bottom:8px;
-		}
+body {
+  background-color: #cbebf5;
+}
 
-		/** meet the team section **/
-		.container-fluid_bg2{
-			background-color: #3BB245; 
-			padding-bottom: 40px
-		}
-		
-		.container-fluid_bg2 h2{
-			display:inline-block; 
-			border-bottom:3px solid #3BB245;
-		}
-		
-		.container-fluid_bg2 h3{
-			text-align:center;
-		}
-		
-		.container-fluid_bg2 p{
-			text-align:center;
-		}
-		
-		.icon{
-			width: 160px;
-			height: 160px;
-			margin: 0 auto;
-			margin-bottom: 10px;
-			margin-top:20px;
-		}
-		.col-sm-4 p {
-			  max-width: 300px;
-			  margin: 50px auto 20px auto;
-		}
+/* About Us Jumbotron Styling */
+.jumbotron {
+  margin-top: 25px;
+  background-color:#05305B;
+  color: #FFFFFF;
+}
+
+/* Mission Statement and Introduction Styling*/
+.intro {
+  box-shadow: 0 0 20px silver;
+  background-color: #FFFFFF;
+  width:90%;
+  margin:3% auto 5%;
+}
+
+.intro h1 {
+  background: #67CAA9;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  margin: 0;
+  font-size: 36px;
+  text-align: center;
+}
+
+.intro p {
+  font-size: 1.em;
+  padding: 4%;
+  text-align: left;
+}
+
+/* Team Member Section Styling */
+.team {
+  box-shadow: 0 0 20px silver;
+  background-color: white;
+  width:90%;
+  margin:5% auto;
+}
+
+.team h1 {
+  background: #67CAA9;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  margin: 0;
+  font-size: 36px;
+  text-align: center;
+}
+
+.profile h3 {
+  text-align:center;
+}
+
+.profie p {
+  text-align: left;
+}
+
+.profile img {
+  display: block;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 5%;
+}
+
+/* Style Both Intro and Team */
+.container-fluid.intro,
+.container-fluid.team {
+  padding-right: 0px;
+  padding-left: 0px;
+}
