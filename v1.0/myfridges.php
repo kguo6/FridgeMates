@@ -31,7 +31,7 @@
     //echos out the fridge name for display on page and sets up page to be tabs
     echo '<h2>'.strtoupper($fridge['fridge_name']).'</h2>';
     echo '<ul class="nav nav-tabs">';
-        echo '<li class="active"><a data-toggle="tab" href="#fridge">Fridge</a></li>';
+        echo '<li class="active"><a data-toggle="tab" href="#fridge" id="fridgetab">Fridge</a></li>';
         echo '<li><a data-toggle="tab" href="#manage" id="managetab">Manage</a></li>';
     echo '</ul>';
     echo '<div class="tab-content">';

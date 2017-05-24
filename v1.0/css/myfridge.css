@@ -1,3 +1,6 @@
+    body {
+        background-color:#cbebf5;
+    }
     #content {
         padding-left:15px;
         padding-right:15px;
@@ -7,10 +10,18 @@
     #content h2, #content ul, #fridgetabitems, #managetabhistory, #managetabuser {
         font-weight: bolder;
     }
+    #managetab, #fridgetab {
+        background-color:white;
+    }
+    label {
+        display:block;
+    }
     .tab-content {
         min-height:calc(100vh - 205px);
         border-left:1px solid #ddd;
         border-right:1px solid #ddd;
+        border-top:1px solid #ddd;
+        background-color:white;
     }
     #manage, #fridge {
         padding: 30px 15px 15px 15px;
@@ -24,7 +35,7 @@
         margin-top:180px;
     }
     .deleteUser{
-        border-radius:100%;
+        background-color:white;
         background-image: url("../logo/delete.png");
         background-repeat: no-repeat;
         background-size: contain;
@@ -33,7 +44,7 @@
         margin: 0 10px;
     }
     .passAuthority{
-        border-radius:100%;
+        background-color:white;
         background-image: url("../logo/transfer.png");
         background-repeat: no-repeat;
         background-size: contain;
@@ -66,12 +77,16 @@
         background-color: #0A8E62;
         color: white;
     }
-    #addFridgeButton:hover, #deleteFridgeButton:hover, #leaveFridgeButton:hover {
+    #addFridgeButton:hover {
         background-color: #20A378;
         color: white;
     }
+    #deleteFridgeButton:hover, #leaveFridgeButton:hover {
+        background-color: #f4b2b0;
+        color: white;
+    }
     #deleteFridgeButton, #leaveFridgeButton {
-        background-color: #0A8E62;
+        background-color: #f28f8c;
         color: white;
         margin-top:40px;
     }

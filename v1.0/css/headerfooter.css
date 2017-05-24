@@ -1,3 +1,18 @@
+    @import url('https://fonts.googleapis.com/css?family=Baloo|Open+Sans|Oxygen');
+    body {
+        font-family: 'Baloo', cursive !important;
+    }
+    #content p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+    }
+    .row p {
+        font-family: 'Baloo', sans-serif !important;
+        font-size: 20px !important;
+    }
+    .dropdown-menu {
+        min-width: 110px !important;
+    }
     /** header CSS **/
     #header_nav {
         background-color: #333;
