@@ -53,7 +53,7 @@
             //calculates how much time the item has been in the fridge and sets corresponding values for gradient to fade as time increases
             $delta_seconds = time() - strtotime($date['item_date']);
 
-            $fresh_ratio = $delta_seconds / 604800; 
+            $fresh_ratio = $delta_seconds / 302400; 
 
             $red = 202;
             $green = 244;
@@ -64,7 +64,7 @@
             $blue = $blue + (int)(44 * $fresh_ratio);
 
             if($fresh_ratio > 1) {
-                $fresh_ratio2 = ($delta_seconds - 604800) / 604800; 
+                $fresh_ratio2 = ($delta_seconds - 302400) / 302400; 
             }
             else {
                 $fresh_ratio2 = 0; 
@@ -79,7 +79,7 @@
             $blue2 = $blue2 + (int)(44 * $fresh_ratio2);
 
             //creates a row for every item with the background as a gradient of how long it's been in the fridge and a delete button 
-            echo '<div class="fridgeitems"><div class="masterTooltip" title="This is floating text" style="display:inline-block;background:linear-gradient(to right, rgb('.$red2.','.$green2.','.$blue2.') , rgb('.$red.','.$green.','.$blue.'));width:calc(100% - 60px);height:100%;"><a href="#" onclick="showItem('.$row2['item_id'].')" data-toggle="modal" data-target="#itemModal" class="itemname">'.$row2['item_name'].'</a></div>
+            echo '<div class="fridgeitems"><div style="display:inline-block;background:linear-gradient(to right, rgb('.$red2.','.$green2.','.$blue2.') , rgb('.$red.','.$green.','.$blue.'));width:calc(100% - 60px);height:100%;"><a href="#" onclick="showItem('.$row2['item_id'].')" data-toggle="modal" data-target="#itemModal" class="itemname">'.$row2['item_name'].'</a></div>
                   <a href="#" onclick="deleteItem('.$row2['item_id'].')" class="pull-right"><button type="button" class="btn deleteUser"></button></a></div><hr><div style="clear:both;"></div>';
         }
         echo '</div>';
