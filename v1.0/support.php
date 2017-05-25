@@ -236,9 +236,24 @@
                       </div>
                     </a>
                   <div id="collapse7" class="panel-collapse collapse">
-                    <div class="panel-body">In the manage tab, under users, all authorized persons will be displayed.
+                    <div class="panel-body">In the manage tab, under users, all authorized users will be displayed.
                         To transfer ownership, click on the transfer button on the right side of the authorized person
                         you want to make the new owner.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+
+                            Q: WHERE DID MY GREEN BAR GO?!?!
+                        </h4>
+                      </div>
+                    </a>
+                  <div id="collapse8" class="panel-collapse collapse">
+                    <div class="panel-body"> The green bar indicates how long your food item has been in the fridge.  As time goes by, the green bar will fade to white as it can give you an idea of how long your food has been in the fridges.  Currently, it is assumed all food items are ready to eat and the estimated storage duration  is set to one week.  Once the bar has turned fully white, it means your items have stayed in the fridge for one or more weeks, so you probably shouldn't touch those.
                     </div>
                   </div>
                 </div>
@@ -258,7 +273,7 @@
                   <div class = "contact-spacer">
                     <h3> Call Us </h3>
                     <p> Can't find what you're looking for? </p>
-                    <p> Call us at: <a href = "tel:+180012345678">1-800-1234-5678</a></p>
+                    <p> Call us at: <a href = "tel:+18003743437">1-800-FRIDGES</a></p>
                   </div>
                 </div>
                 <div class = "col-sm-6 contactus-text">

@@ -13,13 +13,14 @@
 </div>
 <!-- fridgemate webapp info card -->
 <div class="container-fluid card_intro">
-    <h2>TEST</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    <h2>Making a Splash</h2>
+    <p class="join_txt">FridgeMates is a small start up company that has entered the fray to solve global food waste. Our web application allows users to share food and leftover items in a shared fridge.</p>
+
+    <p class="join_txt">By becoming a Fridge Leader in your community, you can contribute to the reduction of food waste and help promote environmentally sustainable behavior. Furthermore, FridgeMates hopes to bring individual communities closer together by sharing food.</p>
+
+    <h4>Join us today and help us fight this global issue.</h4>
+
+    <button type="button" class="btn btn-primary lmore_btn join_btn" data-toggle="modal" data-target="#login-modal" onclick="register()">Start Sharing!</button>
 </div>
 
 <!-- iphone screenshot demo info card -->
@@ -55,7 +56,17 @@
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
 
             </ul>
-    </div>
+            </div>
+        <div id="slider" class="description visible-xs">
+            <ul>
+                <li class='active'>Lorem ipsum dolor sit amet, consectetur  </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
+                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
+          </ul>
+
+        </div>
     </div>
     </div>
 </div>

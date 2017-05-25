@@ -179,6 +179,7 @@
             width: 80%;
             box-shadow: 0 0 20px silver;
             background-color: white;
+            text-align: center;
         }
         /** second info card CSS (fridgemate info) **/
         .card_two {
@@ -186,7 +187,7 @@
             margin: 0px 1.66%;
             background-color: white;
             box-shadow: 0 0 20px silver;
-            min-height: 320px;
+            min-height: 275px;
         }
         /** third info card CSS (iphone demo) **/
         .card_three {
@@ -374,9 +375,17 @@
             margin-top: auto;
             margin-bottom: auto;
             padding-top: 10px;
+
+            display: none;
         }
 
         .active {
             color: black;
         }
-  
+
+        .join_txt {
+            text-align: left;
+        }
+        .join_btn {
+            margin-bottom: 10px;
+        }
