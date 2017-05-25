@@ -346,7 +346,7 @@
                             Comment:
                         </label>
                         <br>
-                        <textarea name="item_comment" id="item_comment"></textarea>
+                        <textarea name="item_comment" id="item_comment" style="resize:none"></textarea>
                     </form>
                     <div id="addItemResponse"></div>
                 </div>

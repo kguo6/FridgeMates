@@ -23,14 +23,6 @@
                         <div class="modal-body" id="itemBody">    
                             <table id="itemTable">
                                 <tr>
-                                    <th>Comments: </th>
-                                    <td>'.$row['item_comment'].'</td>
-                                </tr>
-                                <tr>
-                                    <th>Added By: </th>
-                                    <td>'.$row['name'].'</td>
-                                </tr>
-                                <tr>
                                     <th>Added: </th>
                                     <td>';
                                     
@@ -52,6 +44,14 @@
             }               
 
         echo                            '</td>
+                                </tr>
+                                <tr>
+                                    <th>Added By: </th>
+                                    <td>'.$row['name'].'</td>
+                                </tr>
+                                <tr>
+                                    <th>Comments: </th>
+                                    <td>'.$row['item_comment'].'</td>
                                 </tr>
                             </table>   
                         </div>
