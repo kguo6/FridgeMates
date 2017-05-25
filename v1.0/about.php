@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>FridgeMates-Home</title>
+<title>FridgeMates-About Us</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -58,7 +58,7 @@
                 <button type="button" id="nav_toggle" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span>
                 </button>
                 <?php
                     if(isset($_SESSION['USER_ID']) &&
@@ -102,7 +102,7 @@
                         <input type="text" name="register_name" placeholder="Username (Min. 4 Characters)">
                         <input type="submit" name="login" class="login loginmodal-submit" id="register_btn" value="Register">
                     </form>
-                                        
+
                     <div class="login-help">
                         <a href="#" onclick="login()">Login</a>
                     </div>
@@ -114,7 +114,7 @@
                         <input type="password" name="login_password" placeholder="Password">
                         <input type="submit" name="login" class="login loginmodal-submit" value="Login">
                     </form>
-                                        
+
                     <div class="login-help">
                         <a href="#" id="registerLink" onclick="register()">Register</a>
                     </div>

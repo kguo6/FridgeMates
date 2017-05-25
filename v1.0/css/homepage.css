@@ -162,6 +162,7 @@
         /** title jumbotron CSS **/
         .jumbotron {
             text-align: center;
+            margin-top: 25px;
         }
         /** first info card CSS (title) **/
         .card_one {
@@ -171,7 +172,7 @@
 
         /** intro card CSS **/
         .card_intro {
-            width: 90%;
+            width: 80%;
             box-shadow: 0 0 20px silver;
             background-color: white;
         }
@@ -185,34 +186,44 @@
         }
         /** third info card CSS (iphone demo) **/
         .card_three {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-right: auto;
+            margin-left: auto;
+            box-shadow: 0 0 20px silver;
             background-color: white;
-            width:200px;
-            margin-left: 50%;
-            margin-right: 50%;
+            width:80%;
+            height: 475px;
+            padding-top: 25px;
+
+      
         }
         /** fourth info card CSS (affiliates) **/
         .card_four {
+            text-align: center;
             width: 90%;
             background-color: white;
-            text-align: left;
             margin-bottom: 20px;
+            margin-top: 25px;
             box-shadow: 0 0 20px silver;
-            padding: 10px 0px 10px;
+            padding: auto;
+            padding-bottom: 10px;
+
         }
         /** learn more button CSS **/
         .lmore_btn {
             display: inline-block;
             text-align: center;
             background-color: transparent;
-            color: black;
+            color: #05305B;
             border-radius:25px;
-            border: solid black 3px;
+            border: solid #05305B 2px;
             padding: 10px 20px;
             font-size: 1.2em;
-            margin-left: 30%;
+
         }
         .lmore_btn:hover {
-            background-color: silver;
+            background-color: #7FD64B;
             border-color: black;
         }
         /** iphone window CSS **/
@@ -238,42 +249,76 @@
             float:left;
         }
         /** CSS for screens with resolution same as iphone5 **/
-        @media only screen and (max-width: 320px) {
+        @media only screen and (max-width: 321px) {
             .card_three {
-                margin-left: 12%;
-                margin-right: 12%;
-                height: 430px;
+                width: 80%;
+                height: 500px;
             }
             .card_two {
-                width:100%;
+                width: 80%;
+                margin-top: 25px;
                 background-color: white;
-                margin: 10px 1.66%;
+                padding-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                box-shadow: 0 0 20px silver;
+   
             }
+            #afflogo {
+                height: 200px;
+        }
         }
         /** CSS for screens with resolution same as iphone 6 **/
         @media only screen and (min-width: 360px) and (max-width: 375px) {
             .card_three {
-                margin-left: 18%;
-                margin-right: 18%;
-                height: 430px;
+                width: 80%;
+                padding-left: 11%;
+                height: 525px;
             }
             .card_two {
-                width:100%;
+                width:80%;
+                padding-top: 20px;
                 background-color: white;
-                margin: 10px 1.66%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
             }
+            #afflogo {
+                height: 200px;
+        }
         }
         /** CSS for screens with resolution same as iphone 7 plus **/
-        @media only screen and (min-width: 400px) {
+        @media only screen and (min-width: 400px) and (max-width: 425px){
             .card_three {
-                margin-left: 22%;
-                margin-right: 22%;
-                height: 430px;
+                height: 525px;
+                padding-left: 15%;
+                width: 80%;
             }
             .card_two {
-                width:100%;
+                width:80%;
+                padding-top: 20px;
                 background-color: white;
-                margin: 10px 1.66%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+            }
+
+                    #afflogo {
+            height: 200px;
+        }
+        }
+
+        @media only screen and (min-width: 426px) and (max-width: 768px){
+            .card_two {
+                margin-top: 25px;
+                margin-bottom: 25px;
+                margin-right: auto;
+                margin-left: auto;
+                box-shadow: 0 0 20px silver;
+                background-color: white;
+                width:80%;
+              
+                padding-top: 25px;
             }
         }
 
@@ -312,3 +357,22 @@
         #afflogo {
             height: 200px;
         }
+        #iphone {
+            height: 420px;
+        }
+
+        .description ul{
+            list-style-type: none;
+            padding-top: 10px;
+            color: silver;
+        }
+        .description li{
+            margin-top: auto;
+            margin-bottom: auto;
+            padding-top: 10px;
+        }
+
+        .active {
+            color: black;
+        }
+  

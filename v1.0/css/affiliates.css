@@ -4,6 +4,7 @@
         }
         /** title jumbotron CSS **/
         .jumbotron {
+            margin-top: 25px;
             text-align: center;
         }
 
@@ -56,9 +57,12 @@
             color: white;
         }
         .card_one {
+            width: 80%;
             background-color: white;
             padding-top: 0;
+            padding-bottom: 20px;
             text-align:center;
+<<<<<<< HEAD
         }
     @media(min-width:768px) {
         .panel {
@@ -69,3 +73,7 @@
             padding-left: 15px;
         }
     }
+=======
+            box-shadow: 0 0 20px silver;
+        }
+>>>>>>> 7478e97a1b8433c7593e8d922872886c78d2ad7a

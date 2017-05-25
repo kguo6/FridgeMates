@@ -18,7 +18,9 @@
 <script src="js/register-validate.js"></script>
 <script src="js/login-validate.js"></script>
 <script src="js/makeItRain.js"></script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 <script>
+
     var $canvas
     function scroll(){
         if ($canvas.position().left!=-956){
@@ -87,6 +89,12 @@
                  }
         });
     });
+
+        var toggleSlide = function(){
+        $("#slider li.active").removeClass()
+            .next().add("#slider li:first").last().addClass("active");
+    }
+    setInterval(toggleSlide, 3280);
     </script>
 </head>
 <body data-target=".navbar" data-offset="10" onload="content();login();">
@@ -94,7 +102,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" id="header_nav">
         <div class="container-fluid">
             <div class="navbar-header pull-left">
-                <img src="logo/logoblue.png" class="logo" id="nav_logo">
+                <a href="index.php"><img src="logo/logoblue.png" class="logo" id="nav_logo"></a>
             </div>
             <div class="navbar-header navbar-right">
                 <button type="button" id="nav_toggle" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">

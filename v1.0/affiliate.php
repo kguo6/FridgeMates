@@ -41,7 +41,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" id="header_nav">
         <div class="container-fluid">
             <div class="navbar-header pull-left">
-                <img src="logo/logoblue.png" class="logo" id="nav_logo">
+                <a href="index.php"><img src="logo/logoblue.png" class="logo" id="nav_logo"></a>
             </div>
             <div class="navbar-header navbar-right">
                 <button type="button" id="nav_toggle" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -115,12 +115,14 @@
     </div>
     <!-- wrapper for content of the page -->
     <div id="content" class="page-wrap">
-        <div class="jumbotron text-center">
-            <h1>Green Thumb Initiative</h1>
-            <p>There is no 'i' in team.</p>
-        </div>
+        <div class="container-fluid">
+            <div class="jumbotron">
+                <h1>Green Thumb Initiative</h1>
+                <p>There is no 'i' in team.</p>
+            </div>
+        </div> 
 
-        <div class="container-fluid bg4">
+        <div class="container-fluid card_one">
             <div class="row">
 
                 <div class="col-sm-2"></div>
@@ -144,7 +146,7 @@
                             <h1>Grocery Buddy</h1>
                         </div>
                         <div class="panel-body">
-                            <img src="./logo/grocerybuddylogo.png" height="150" width="150">
+                            <img src="./logo/grocerybuddylogo.png" height="150" width="150" alt="Grocery Buddy Logo">
                             <p>Plan your shopping trips by creating, organizing, and saving grocery lists.
                                 Store information about what you buy in a virtual fridge with tracking bars to show how fresh your food is.
                                 Worried about your food going bad? Grocery Buddy will send you notifications if anything in your virtual fridge is nearing its expiry date.
@@ -163,7 +165,7 @@
                             <h1>Freshness</h1>
                         </div>
                         <div class="panel-body">
-                            <img src="./logo/freshnesslogo.png" height="150" width="150">
+                            <img src="./logo/freshnesslogo.png" height="150" width="150" alt="Freshness Logo">
                             <p>Freshness provides the food preservation methods for you to keep the food fresh as long as you can.
                                 Your new best friend for planning what food to buy and making sure you use it.</p>
                         </div>
@@ -179,7 +181,7 @@
                             <h1>Phoenix Recipes</h1>
                         </div>
                         <div class="panel-body">
-                            <img src="./logo/phoenixrecipeslogo.png" height="150" width="150">
+                            <img src="./logo/phoenixrecipeslogo.png" height="150" width="150" alt="Phoenix Recipes Logo">
                             <p>A user friendly mobile cookbook that helps you discover
                                 new and delicious ways to use your leftovers, and track your food waste</p>
                         </div>
