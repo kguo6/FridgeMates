@@ -6,6 +6,12 @@
 <html lang="en">
 <head>
 <title>Home</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="theme-color" content="#ffffff">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -114,7 +120,7 @@
     /* border: 1px solid #3079ed; */
     border: 0px;
     color: #fff;
-    text-shadow: 0 1px rgba(0,0,0,0.1); 
+    text-shadow: 0 1px rgba(0,0,0,0.1);
     background-color: #4d90fe;
     padding: 17px 0px;
     font-family: roboto;
@@ -138,7 +144,7 @@
     display: inline-block;
     opacity: 0.6;
     transition: opacity ease 0.5s;
-    } 
+    }
 
     .login-help{
     font-size: 12px;
@@ -264,7 +270,7 @@
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
-                <span class="icon-bar"></span> 
+                <span class="icon-bar"></span>
             </button>
             <?php
                 if(isset($_SESSION['USER_ID']) &&
@@ -306,7 +312,7 @@
                  <input type="password" name="login_password" placeholder="Password">
                  <input type="submit" name="login" class="login loginmodal-submit" value="Login">
              </form>
-                     
+
              <div class="login-help">
                 <a href="#">Register</a> - <a href="#">Forgot Password</a>
              </div>
