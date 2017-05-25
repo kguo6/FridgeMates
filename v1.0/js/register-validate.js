@@ -11,12 +11,14 @@ $().ready(function() {
         rules: {
             register_username: {
                 required: true,
-                email: true
+                email: true,
+                maxlength: 40
             },
             register_password: {
                 required: true,
                 nowhitespace: true,
-                minlength: 6
+                minlength: 6,
+                maxlength: 40
             },
             confirm_password: {
                 required: true,
@@ -25,18 +27,21 @@ $().ready(function() {
             register_name: {
                 required: true,
                 noSpace: true,
-                minlength: 2
+                minlength: 2,
+                maxlength: 8
             }
         },
         messages: {
             register_username: {
                 required: "Please enter your email",
-                email: "Please enter a valid email"
+                email: "Please enter a valid email",
+                maxlength: "Maximum length is 40 characters"
             },
             register_password: {
                 required: "Please enter a password",
                 nowhitespace: "Please enter a valid password",
-                minlength: "Your password must be at least 6 characters"
+                minlength: "Your password must be at least 6 characters",
+                maxlength: "Maximum length is 40 characters"
             },
             confirm_password: {
                 required: "Please confirm your password",
@@ -45,7 +50,8 @@ $().ready(function() {
             register_name: {
                 required: "Please enter a username",
                 noSpace: "Please enter a valid username",
-                minlength: "Your username must be at least 2 characters"
+                minlength: "Your username must be at least 2 characters",
+                maxlength: "Your username must not exceed 8 characters"
             }
         },
         submitHandler: submitRegister

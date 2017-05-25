@@ -57,6 +57,12 @@
         vertical-align: middle;
         line-height:40px;
     }
+    .fridgeitems div {
+        border-radius:10px;
+    }
+    .itemname {
+        padding-left: 25px;
+    }
     .history {
         margin: 5px 0;
         height: 40px;

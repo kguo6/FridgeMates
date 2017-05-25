@@ -386,7 +386,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" id="deleteFridgeHeader">
-                    <h4 class="modal-title">Delete Fridge Confrimation</h4>
+                    <h4 class="modal-title">Delete Fridge Confirmation</h4>
                 </div>
                 <div class="modal-body" id="deleteFridgeBody">
                     Are you sure you want to delete this fridge?
@@ -403,7 +403,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" id="leaveFridgeHeader">
-                    <h4 class="modal-title">Leave Fridge Confrimation</h4>
+                    <h4 class="modal-title">Leave Fridge Confirmation</h4>
                 </div>
                 <div class="modal-body" id="leaveFridgeBody">
                     Are you sure you want to leave this fridge?

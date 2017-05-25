@@ -8,10 +8,14 @@
         }
 
         /** panel CSS **/
+        .col-sm-4 {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
         .panel {
         	margin: 30px auto;
             border: none;
-            width: 90%;
+            width: 100%;
             border-radius: 3.5px;
             transition: box-shadow 0.2s;
             box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.3);
@@ -56,3 +60,12 @@
             padding-top: 0;
             text-align:center;
         }
+    @media(min-width:768px) {
+        .panel {
+            width: 90%;
+        }
+        .col-sm-4 {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }

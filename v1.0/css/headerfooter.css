@@ -13,6 +13,9 @@
     .dropdown-menu {
         min-width: 110px !important;
     }
+    label.error {
+        color: red !important;
+    }
     /** header CSS **/
     #header_nav {
         background-color: #333;

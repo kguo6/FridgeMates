@@ -8,14 +8,14 @@ $().ready(function() {
             fridge_name: {
                 required: true,
                 noSpace: true,
-                maxlength: 40
+                maxlength: 15
             }
         },
         messages: {
             fridge_name: {
                 required: "Please enter a fridge name",
                 noSpace: "Please enter a valid fridge name",
-                maxlength: "Maximum length is 40 characters"
+                maxlength: "Maximum length is 15 characters"
             }
         },
         submitHandler: submitAddFridge

@@ -8,7 +8,7 @@ $().ready(function() {
             item_name: {
                 required: true,
                 noSpace: true,
-                maxlength: 40
+                maxlength: 20
             },
             item_comment: {
                 maxlength: 160
@@ -18,7 +18,7 @@ $().ready(function() {
             item_name: {
                 required: "Please enter an item name",
                 noSpace: "Please enter a valid item name",
-                maxlength: "Maximum length is 40 characters"
+                maxlength: "Maximum length is 20 characters"
             },
             item_comment: {
                 maxlength: "Comment can't exceed 160 characters"
