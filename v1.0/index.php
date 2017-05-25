@@ -19,7 +19,7 @@
 <script src="js/register-validate.js"></script>
 <script src="js/login-validate.js"></script>
 <script src="js/makeItRain.js"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 <script>
 
     var $canvas

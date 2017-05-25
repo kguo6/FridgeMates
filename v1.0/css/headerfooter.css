@@ -16,7 +16,7 @@
     }
     /** header CSS **/
     #header_nav {
-        background-color: #333;
+        background-color: #505050;
         color: white !important;
         border: 0;
         border-color:transparent;
@@ -65,7 +65,7 @@
         float:right;
     }
     #account_dropdown {
-        background-color: #333;
+        background-color: #505050;
     }
     #account_dropdown li a:hover, #account_dropdown li.active a {
         color: #ffffff !important;
@@ -75,7 +75,7 @@
     /** footer CSS **/
     footer {
         text-align: center;
-        background-color: #333;
+        background-color: #505050;
         color: white;
         height: 50px;
         width: 100%;
