@@ -308,6 +308,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" id="addFridgeHeader">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Add Fridge</h4>
                 </div>
                 <div class="modal-body" id="addFridgeBody">
@@ -332,6 +333,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" id="addItemHeader">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Add Item</h4>
                 </div>
                 <div class="modal-body" id="addItemBody">
@@ -362,6 +364,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" id="addUserHeader">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Add User</h4>
                 </div>
                 <div class="modal-body" id="addUserBody">
@@ -386,6 +389,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" id="deleteFridgeHeader">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Delete Fridge Confirmation</h4>
                 </div>
                 <div class="modal-body" id="deleteFridgeBody">
@@ -403,6 +407,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" id="leaveFridgeHeader">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Leave Fridge Confirmation</h4>
                 </div>
                 <div class="modal-body" id="leaveFridgeBody">

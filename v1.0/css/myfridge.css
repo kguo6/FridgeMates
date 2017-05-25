@@ -1,5 +1,5 @@
     body {
-        background-color:#cbebf5;
+        background-color:#cee8fa;
     }
     #content {
         padding-left:15px;
@@ -61,7 +61,7 @@
         border-radius:10px;
     }
     .itemname {
-        padding-left: 25px;
+        margin-left: 25px;
     }
     .history {
         margin: 5px 0;
@@ -88,11 +88,11 @@
         color: white;
     }
     #deleteFridgeButton:hover, #leaveFridgeButton:hover {
-        background-color: #f4b2b0;
+        background-color: #f28f8c;
         color: white;
     }
     #deleteFridgeButton, #leaveFridgeButton {
-        background-color: #f28f8c;
+        background-color: #e56a64;
         color: white;
         margin-top:40px;
     }
