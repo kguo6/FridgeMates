@@ -109,7 +109,7 @@
     .fb-like {
         position:absolute !important;
         top: 3.5px;
-        right: 2    px;
+        right: 2px;
     }
 
     @media(min-width:768px) {
