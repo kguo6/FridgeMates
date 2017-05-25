@@ -204,9 +204,40 @@
         xhttp.open("GET", "item.php?item_id=" + item_id, true);
         xhttp.send();
     }
+    //hover tooltip textbox
+    $(document).ready(function() {
+    // Tooltip only Text
+    $('.masterTooltip').hover(function(){
+            // Hover over code
+            var title = $(this).attr('title');
+            $(this).data('tipText', title).removeAttr('title');
+            $('<p class="tooltip"></p>')
+            .text(title)
+            .appendTo('body')
+            .fadeIn('slow');
+    }, function() {
+            // Hover out code
+            $(this).attr('title', $(this).data('tipText'));
+            $('.tooltip').remove();
+    }).mousemove(function(e) {
+            var mousex = e.pageX + 20; //Get X coordinates
+            var mousey = e.pageY + 10; //Get Y coordinates
+            $('.tooltip')
+            .css({ top: mousey, left: mousex })
+    });
+    });
 </script>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="10" onclick="hidefab()" onload="login();<?php if($_SESSION['HAS_FRIDGE'] == 1) { echo 'getfridges('.$_SESSION['FRIDGE_ID'].');';} else { echo 'firstFridge();';}?>">
+    <!-- facebook stuff -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <!-- navigation bar -->
     <nav class="navbar navbar-default navbar-fixed-top" id="header_nav">
         <div class="container-fluid">
@@ -424,8 +455,9 @@
     </div>
     <!-- footer -->
     <footer>
-        <a href="about.php">About Us</a> | <a href="tos.php">Terms of Service</a> | <a href="privacy.php">Privacy</a>
-        <p>Copyright &copy; 2017 FridgeMates </p>
+        <a href="about.php">About Us</a> | <a href="tos.php">Terms</a> | <a href="privacy.php">Privacy</a>
+        <p>Copyright <span id="click">&copy;</span> 2017 FridgeMates </p>
+        <div class="fb-like" data-href="https://www.facebook.com/fridgemates" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
     </footer>
 </body>
 </html>

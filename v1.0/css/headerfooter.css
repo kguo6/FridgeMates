@@ -106,8 +106,18 @@
         content: "";
         display: block;
     }
+    .fb-like {
+        position:absolute !important;
+        top: 3.5px;
+        right: 2    px;
+    }
+
     @media(min-width:768px) {
         #nav_list {
             margin-right:15px;
+        }
+        .fb-like {
+            top: 15px;
+            right: 120px;
         }
     }
