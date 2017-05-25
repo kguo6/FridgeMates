@@ -16,7 +16,7 @@
     z-index: 999;
     width: 60px;
     height: 60px;
-    background-color: #333;
+    background-color: #505050;
     background-image: url("../logo/icon.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -38,7 +38,7 @@
     display:none;
     bottom: 0px;
     right: 20%;
-    background-color: #333;
+    background-color: #505050;
     width: 150px;
     border-radius: 5px;
     box-shadow: 2px 3px 10px 0 rgba(0,0,0, 0.3);

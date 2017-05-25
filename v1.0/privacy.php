@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/loginmodal.css">
 <link rel="stylesheet" href="css/headerfooter.css">
-<link rel="stylesheet" href="css/privacy&tos.css">
+<link rel="stylesheet" href="css/privacytos.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -41,20 +41,19 @@
     <nav class="navbar navbar-default navbar-fixed-top" id="header_nav">
         <div class="container-fluid">
             <div class="navbar-header pull-left">
-                <img src="logo/logoblue.png" class="logo" id="nav_logo">
+                <a href="index.php"><img src="logo/logoblue.png" class="logo" id="nav_logo"></a>
             </div>
             <div class="navbar-header navbar-right">
                 <button type="button" id="nav_toggle" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
                 </button>
                 <?php
                     if(isset($_SESSION['USER_ID']) &&
                     (trim($_SESSION['USER_ID']) != '')) {
-                        echo '<div class="btn-group" id="account_group"><button type="button" class="btn" id="login_btn" dropdown-toggle" data-toggle="dropdown" style="margin-left:25px">'.$_SESSION["USER_NAME"].'</button>
+                        echo '<div class="btn-group" id="account_group"><button type="button" class="btn" id="login_btn" dropdown-toggle" data-toggle="dropdown">'.$_SESSION["USER_NAME"].'</button>
                                 <ul class="dropdown-menu" id="account_dropdown">
-                                    <li><a href="account.php">ACCOUNT</a></li>
                                     <li><a href="logout.php">LOGOUT</a></li>
                                 </ul></div>';
                     }
@@ -181,8 +180,8 @@
     </div>
     <!-- footer -->
     <footer>
-        <a href="about.php">About Us</a> | <a href="sitemap.php">Site Map</a>
-        <p>Copyright &copy; 2017 FridgeMates </p>
+        <a href="about.php">About Us</a> | <a href="tos.php">Terms of Service</a> | <a href="privacy.php">Privacy</a>
+        <p>Copyright <span id="click">&copy;</span> 2017 FridgeMates </p>
     </footer>
 </body>
 </html>

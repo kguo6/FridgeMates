@@ -42,7 +42,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" id="header_nav">
         <div class="container-fluid">
             <div class="navbar-header pull-left">
-                <img src="logo/logoblue.png" class="logo" id="nav_logo">
+                <a href="index.php"><img src="logo/logoblue.png" class="logo" id="nav_logo"></a>
             </div>
             <div class="navbar-header navbar-right">
                 <button type="button" id="nav_toggle" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -53,9 +53,8 @@
                 <?php
                     if(isset($_SESSION['USER_ID']) &&
                     (trim($_SESSION['USER_ID']) != '')) {
-                        echo '<div class="btn-group" id="account_group"><button type="button" class="btn" id="login_btn" dropdown-toggle" data-toggle="dropdown" style="margin-left:25px">'.$_SESSION["USER_NAME"].'</button>
+                        echo '<div class="btn-group" id="account_group"><button type="button" class="btn" id="login_btn" dropdown-toggle" data-toggle="dropdown">'.$_SESSION["USER_NAME"].'</button>
                                 <ul class="dropdown-menu" id="account_dropdown">
-                                    <li><a href="account.php">ACCOUNT</a></li>
                                     <li><a href="logout.php">LOGOUT</a></li>
                                 </ul></div>';
                     }
@@ -319,7 +318,7 @@
     </div>
     <!-- footer -->
     <footer>
-        <a href="about.php">About Us</a> | <a href="sitemap.php">Site Map</a>
+        <a href="about.php">About Us</a> | <a href="tos.php">Terms of Service</a> | <a href="privacy.php">Privacy</a>
         <p>Copyright &copy; 2017 FridgeMates </p>
     </footer>
 </body>

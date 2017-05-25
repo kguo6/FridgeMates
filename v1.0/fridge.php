@@ -19,7 +19,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>FridgeMates-Home</title>
+<title>FridgeMates-My Fridges</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -211,7 +211,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" id="header_nav">
         <div class="container-fluid">
             <div class="navbar-header pull-left">
-                <img src="logo/logoblue.png" class="logo" id="nav_logo">
+                <a href="index.php"><img src="logo/logoblue.png" class="logo" id="nav_logo"></a>
             </div>
             <div class="navbar-header navbar-right">
                 <button type="button" id="nav_toggle" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -222,9 +222,8 @@
                 <?php
                     if(isset($_SESSION['USER_ID']) &&
                     (trim($_SESSION['USER_ID']) != '')) {
-                        echo '<div class="btn-group" id="account_group"><button type="button" class="btn" id="login_btn" dropdown-toggle" data-toggle="dropdown" style="margin-left:25px">'.$_SESSION["USER_NAME"].'</button>
+                        echo '<div class="btn-group" id="account_group"><button type="button" class="btn" id="login_btn" dropdown-toggle" data-toggle="dropdown">'.$_SESSION["USER_NAME"].'</button>
                                 <ul class="dropdown-menu" id="account_dropdown">
-                                    <li><a href="account.php">ACCOUNT</a></li>
                                     <li><a href="logout.php">LOGOUT</a></li>
                                 </ul></div>';
                     }
@@ -308,6 +307,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" id="addFridgeHeader">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Add Fridge</h4>
                 </div>
                 <div class="modal-body" id="addFridgeBody">
@@ -332,6 +332,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" id="addItemHeader">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Add Item</h4>
                 </div>
                 <div class="modal-body" id="addItemBody">
@@ -346,7 +347,7 @@
                             Comment:
                         </label>
                         <br>
-                        <textarea name="item_comment" id="item_comment"></textarea>
+                        <textarea name="item_comment" id="item_comment" style="resize:none"></textarea>
                     </form>
                     <div id="addItemResponse"></div>
                 </div>
@@ -362,6 +363,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" id="addUserHeader">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Add User</h4>
                 </div>
                 <div class="modal-body" id="addUserBody">
@@ -386,6 +388,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" id="deleteFridgeHeader">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Delete Fridge Confirmation</h4>
                 </div>
                 <div class="modal-body" id="deleteFridgeBody">
@@ -403,6 +406,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" id="leaveFridgeHeader">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title">Leave Fridge Confirmation</h4>
                 </div>
                 <div class="modal-body" id="leaveFridgeBody">
@@ -420,7 +424,7 @@
     </div>
     <!-- footer -->
     <footer>
-        <a href="about.php">About Us</a> | <a href="sitemap.php">Site Map</a>
+        <a href="about.php">About Us</a> | <a href="tos.php">Terms of Service</a> | <a href="privacy.php">Privacy</a>
         <p>Copyright &copy; 2017 FridgeMates </p>
     </footer>
 </body>
