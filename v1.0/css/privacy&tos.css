@@ -1,0 +1,100 @@
+body {
+	background-color: #cbebf5;
+}
+
+/* Content Container */
+.panel {
+	font-family: Helvetica;
+	background-color: #FFFFFF;
+	margin: 5% auto;
+	padding: 5%;
+	border-radius: 3.5px;
+	transition: box-shadow 0.2s;
+	box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.3);
+	line-height: 2em;
+}
+
+.panel-heading {
+	padding:0;
+}
+
+.panel-heading h1 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.panel-body hr {
+	border-color: darkgrey;
+	margin: 2% 0;
+}
+
+.panel-body h3 {
+	text-transform: uppercase;
+	margin: 4% 0 2%;
+}
+
+.panel-body h3:first-child {
+	margin-top:2%;
+}
+
+.panel-body h4 {
+	margin: 3% 0;
+	font-weight: bold;
+}
+
+h4, p {
+	padding-left: 5%;
+}
+
+p {
+	font-style: italic;
+}
+
+.hyper {
+	color: blue;
+}
+
+/* Mobile Phone Styling */
+@media only screen and (max-width: 600px) {
+
+   .panel-body h3 {
+		 margin-top: 8%;
+		 font-size: 20px;
+		 text-align: center;
+	 }
+
+	 .panel-body hr {
+		 margin-bottom: 10%;
+	 }
+
+	 .panel-body h4 {
+		 margin: 8% auto;
+	 }
+
+}
+
+/* Tablet Styling */
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+
+		.panel-body h3 {
+			margin-top: 5%;
+			font-size: 20px;
+			text-align: left;
+		}
+
+		.panel-body hr {
+			margin-bottom: 5%;
+		}
+
+		.panel-body h4 {
+			margin: 3% auto;
+		}
+}
+
+/* TOS list modificaiton*/
+.panel-list {
+	padding-left: 12%;
+	font-size: 18px;
+	margin: 3% auto;
+	font-style: italic;
+}
