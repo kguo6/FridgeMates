@@ -57,13 +57,14 @@
             color: white;
         }
         .card_one {
-            width: 80%;
+            width: 90%;
             background-color: white;
             padding-top: 0;
             padding-bottom: 20px;
             text-align:center;
-<<<<<<< HEAD
+            box-shadow: 0 0 20px silver;
         }
+
     @media(min-width:768px) {
         .panel {
             width: 90%;
@@ -72,8 +73,8 @@
             padding-right: 15px;
             padding-left: 15px;
         }
-    }
-=======
-            box-shadow: 0 0 20px silver;
+        .card_one {
+            width: 80%;
         }
->>>>>>> 7478e97a1b8433c7593e8d922872886c78d2ad7a
+    }
+

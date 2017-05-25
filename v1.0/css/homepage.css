@@ -2,6 +2,10 @@
         body {
             background-color: #cee8fa;
         }
+        .homebuttons {
+            font-family: 'Baloo', sans-serif !important;
+            font-size: 20px !important;
+        }
         /** pagelayout and background CSS **/
         #welcome-container {
             width: 95%;
