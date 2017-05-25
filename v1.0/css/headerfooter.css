@@ -8,6 +8,8 @@
     }
     .dropdown-menu {
         min-width: 110px !important;
+        right:auto !important;
+        left:0 !important;
     }
     label.error {
         color: red !important;

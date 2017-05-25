@@ -116,7 +116,6 @@
                     (trim($_SESSION['USER_ID']) != '')) {
                         echo '<div class="btn-group" id="account_group"><button type="button" class="btn" id="login_btn" dropdown-toggle" data-toggle="dropdown">'.$_SESSION["USER_NAME"].'</button>
                                 <ul class="dropdown-menu" id="account_dropdown">
-                                    <li><a href="account.php">ACCOUNT</a></li>
                                     <li><a href="logout.php">LOGOUT</a></li>
                                 </ul></div>';
                     }
@@ -180,7 +179,7 @@
     </div>
     <!-- footer -->
     <footer>
-        <a href="about.php">About Us</a> | <a href="sitemap.php">Site Map</a>
+        <a href="about.php">About Us</a> | <a href="tos.php">Terms of Service</a> | <a href="privacy.php">Privacy</a>
         <p>Copyright <span id="click">&copy;</span> 2017 FridgeMates </p>
     </footer>
 </body>
