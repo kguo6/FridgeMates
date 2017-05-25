@@ -2,10 +2,6 @@
         body {
             background-color: #dbf0ff;
         }
-        .homebuttons {
-            font-family: 'Baloo', sans-serif !important;
-            font-size: 20px !important;
-        }
         /** pagelayout and background CSS **/
         #welcome-container {
             width: 95%;
@@ -53,8 +49,9 @@
             margin-top: 25px;
         }
         .text_mobile {
-            margin-top: 10px;
-            font-size: 1.2em;
+            font-family: 'Baloo', sans-serif !important;
+            margin-top: 15px !important;
+            font-size: 1.2em !important;
         }
         /** CSS for screens with resolution same as iphone5 **/
         @media only screen and (max-width: 320px) {
@@ -95,8 +92,9 @@
                 margin-top: 25px;
             }
             .text_mobile {
-                margin-top: 5px;
-                font-size: 1.2em;
+                font-family: 'Baloo', sans-serif !important;
+                margin-top: 10px !important;
+                font-size: 1.2em !important;
             }
         }
         /** CSS for screens with resolution same as iphone7plus **/
@@ -138,8 +136,9 @@
                 margin-top: 25px;
             }
             .text_mobile {
-                margin-top: 10px;
-                font-size: 1.5em;
+                font-family: 'Baloo', sans-serif !important;
+                margin-top: 15px !important;
+                font-size: 1.5em !important;
             }
         }
         /** Affiliate logo CSS **/
@@ -340,11 +339,11 @@
             margin-right: auto;
         }
 
-        /** container CSS for desktop view **/.
+        /** container CSS for desktop view **/
         .desktop {
             width: 80%;
-            margin-left: 12%;
-            margin-right: 15%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         /** button CSS for desktop **/
@@ -355,8 +354,9 @@
 
         /** text CSS for desktop **/
         .text_desktop {
-            margin-top: 10px;
-            font-size: 1.5em;
+            font-family: 'Baloo', sans-serif !important;            
+            margin-top: 15px !important;
+            font-size: 1.5em !important;
         }
 
         #afflogo {

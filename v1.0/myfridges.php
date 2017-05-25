@@ -53,7 +53,7 @@
             //calculates how much time the item has been in the fridge and sets corresponding values for gradient to fade as time increases
             $delta_seconds = time() - strtotime($date['item_date']);
 
-            $fresh_ratio = $delta_seconds / 604800; 
+            $fresh_ratio = $delta_seconds / 302400; 
 
             $red = 202;
             $green = 244;
@@ -64,7 +64,7 @@
             $blue = $blue + (int)(44 * $fresh_ratio);
 
             if($fresh_ratio > 1) {
-                $fresh_ratio2 = ($delta_seconds - 604800) / 604800; 
+                $fresh_ratio2 = ($delta_seconds - 302400) / 302400; 
             }
             else {
                 $fresh_ratio2 = 0; 
