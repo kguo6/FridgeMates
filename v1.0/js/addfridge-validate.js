@@ -28,14 +28,14 @@ $().ready(function() {
             data : data,
             success: function(data) {
                 if(data == 1) {
-                    $("#addFridgeResponse").html('<p style="text-align:center">Fridge Added</p><br><button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button><button type="button" class="btn btn-default pull-left" onclick="showAddFridge()">Back</button><div style="clear:both"></div>');
+                    $("#addFridgeResponse").html('<p style="text-align:center">Fridge Added</p><br><button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button><button type="button" class="btn btn-default pull-left" onclick="showAddFridge()"><img style="height:20px" src="logo/arrows.png"></button><div style="clear:both"></div>');
                     $("#addFridgeResponse").show();
                     $("#addFridgeForm").hide();
                     $("#addFridgeButtons").hide();
                     location.reload();
                 }
                 else {
-                    $("#addFridgeResponse").html('<p style="text-align:center">Error Creating Fridge</p><br><button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button><button type="button" class="btn btn-default pull-left" onclick="showAddFridge()">Back</button><div style="clear:both"></div>');
+                    $("#addFridgeResponse").html('<p style="text-align:center">Error Creating Fridge</p><br><button type="button" class="btn btn-default pull-right" data-dismiss="modal">Close</button><button type="button" class="btn btn-default pull-left" onclick="showAddFridge()"><img style="height:20px" src="logo/arrows.png"></button><div style="clear:both"></div>');
                     $("#addFridgeResponse").show();
                     $("#addFridgeForm").hide();
                     $("#addFridgeButtons").hide();

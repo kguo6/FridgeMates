@@ -6,19 +6,17 @@
         font-family: 'Open Sans', sans-serif;
         font-size: 16px;
     }
-    .row p {
-        font-family: 'Baloo', sans-serif !important;
-        font-size: 20px !important;
-    }
     .dropdown-menu {
         min-width: 110px !important;
+        right:auto !important;
+        left:0 !important;
     }
     label.error {
         color: red !important;
     }
     /** header CSS **/
     #header_nav {
-        background-color: #333;
+        background-color: #505050;
         color: white !important;
         border: 0;
         border-color:transparent;
@@ -67,7 +65,7 @@
         float:right;
     }
     #account_dropdown {
-        background-color: #333;
+        background-color: #505050;
     }
     #account_dropdown li a:hover, #account_dropdown li.active a {
         color: #ffffff !important;
@@ -77,7 +75,7 @@
     /** footer CSS **/
     footer {
         text-align: center;
-        background-color: #333;
+        background-color: #505050;
         color: white;
         height: 50px;
         width: 100%;

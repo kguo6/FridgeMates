@@ -42,7 +42,7 @@
     <nav class="navbar navbar-default navbar-fixed-top" id="header_nav">
         <div class="container-fluid">
             <div class="navbar-header pull-left">
-                <img src="logo/logoblue.png" class="logo" id="nav_logo">
+                <a href="index.php"><img src="logo/logoblue.png" class="logo" id="nav_logo"></a>
             </div>
             <div class="navbar-header navbar-right">
                 <button type="button" id="nav_toggle" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -53,9 +53,8 @@
                 <?php
                     if(isset($_SESSION['USER_ID']) &&
                     (trim($_SESSION['USER_ID']) != '')) {
-                        echo '<div class="btn-group" id="account_group"><button type="button" class="btn" id="login_btn" dropdown-toggle" data-toggle="dropdown" style="margin-left:25px">'.$_SESSION["USER_NAME"].'</button>
+                        echo '<div class="btn-group" id="account_group"><button type="button" class="btn" id="login_btn" dropdown-toggle" data-toggle="dropdown">'.$_SESSION["USER_NAME"].'</button>
                                 <ul class="dropdown-menu" id="account_dropdown">
-                                    <li><a href="account.php">ACCOUNT</a></li>
                                     <li><a href="logout.php">LOGOUT</a></li>
                                 </ul></div>';
                     }
@@ -128,47 +127,118 @@
             <h1> F.A.Q. </h1>
               <div class = "panel-group" id = "accordian">
                 <div class="panel panel-default">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
                   <div class="panel-heading">
                     <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
-                        Q: How do I add users to a Fridge?</a>
+
+                        Q: How do I add a fridge?
                         </h4>
                   </div>
+                </a>
                   <div id="collapse1" class="panel-collapse collapse">
-                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                      commodo consequat.
+                    <div class="panel-body">If you don’t have any fridges attached to your account,
+                          the web app will prompt you to create one. Simply press the “Add Fridge”
+                          button to create a fridge! Alternatively, you can click the bottom right
+                          fridge icon on the My Fridges page and create a fridge from there.
+
                     </div>
                   </div>
                 </div>
                 <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
-                        Q: How do I remove a fridge?</a>
-                      </h4>
-                  </div>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+
+                            Q: How do I add users to a Fridge?
+                          </h4>
+                      </div>
+                    </a>
                   <div id="collapse2" class="panel-collapse collapse">
-                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                      commodo consequat.
+                    <div class="panel-body">To add a user to your fridge, go to the My Fridges page
+                        and click the Manage tab. Click on “Add User” and enter the email address of
+                        the person you want to add. A user must have a FridgeMates account under the
+                        email entered to be successfully added to the fridge.
                     </div>
                   </div>
                 </div>
                 <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h4 class="panel-title">
-                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
-                        Q: How do I leave a fridge that I'm in charge of?</a>
-                    </h4>
-                  </div>
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+
+                            Q: How do I add or delete an item?
+                        </h4>
+                      </div>
+                    </a>
                   <div id="collapse3" class="panel-collapse collapse">
-                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                      commodo consequat.
+                    <div class="panel-body">Adding an item is easy! Simply click the “Add Item” button on
+                         the Fridge tab of the My Fridges page. A pop-up will appear for you to enter your
+                         item’s information. When you remove the item from the fridge, click on the red trash
+                         can beside the item and it will be added to the fridge history in your Manage tab.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+
+                            Q: Can I have access to multiple fridges?
+                        </h4>
+                      </div>
+                    </a>
+                  <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">Of course! The icon on the bottom right corner of the My Fridges page
+                            allows you to view any fridge you have access to.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+
+                            Q: What happens if I need to leave a fridge?
+                        </h4>
+                      </div>
+                    </a>
+                  <div id="collapse5" class="panel-collapse collapse">
+                    <div class="panel-body">If you need to leave a fridge, click on the “Leave Fridge” button on
+                        the Manage tab of the My Fridges page. After leaving, you will no longer have access to the
+                        fridge. If you are the owner of the fridge, you can either pass on the ownership of the fridge
+                        or delete the fridge.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+
+                            Q: Who deleted something from my fridge?
+                        </h4>
+                      </div>
+                    </a>
+                  <div id="collapse6" class="panel-collapse collapse">
+                    <div class="panel-body">You can check the deletion of an item on the History section of the Manage
+                        tab in the My Fridges Page. The History section will display the item name and the user that
+                        deleted the item.
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+
+                            Q: How do I pass on my ownership of the fridge?
+                        </h4>
+                      </div>
+                    </a>
+                  <div id="collapse7" class="panel-collapse collapse">
+                    <div class="panel-body">In the manage tab, under users, all authorized persons will be displayed.
+                        To transfer ownership, click on the transfer button on the right side of the authorized person
+                        you want to make the new owner.
                     </div>
                   </div>
                 </div>
@@ -248,7 +318,7 @@
     </div>
     <!-- footer -->
     <footer>
-        <a href="about.php">About Us</a> | <a href="sitemap.php">Site Map</a>
+        <a href="about.php">About Us</a> | <a href="tos.php">Terms of Service</a> | <a href="privacy.php">Privacy</a>
         <p>Copyright &copy; 2017 FridgeMates </p>
     </footer>
 </body>

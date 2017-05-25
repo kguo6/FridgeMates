@@ -12,13 +12,14 @@
 <link rel="stylesheet" href="css/headerfooter.css">
 <link rel="stylesheet" href="css/homepage.css">
 <link rel="stylesheet" type="text/css" href="css/makeItRain.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/register-validate.js"></script>
 <script src="js/login-validate.js"></script>
 <script src="js/makeItRain.js"></script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 <script>
 
     var $canvas
@@ -115,7 +116,6 @@
                     (trim($_SESSION['USER_ID']) != '')) {
                         echo '<div class="btn-group" id="account_group"><button type="button" class="btn" id="login_btn" dropdown-toggle" data-toggle="dropdown">'.$_SESSION["USER_NAME"].'</button>
                                 <ul class="dropdown-menu" id="account_dropdown">
-                                    <li><a href="account.php">ACCOUNT</a></li>
                                     <li><a href="logout.php">LOGOUT</a></li>
                                 </ul></div>';
                     }
@@ -179,7 +179,7 @@
     </div>
     <!-- footer -->
     <footer>
-        <a href="about.php">About Us</a> | <a href="sitemap.php">Site Map</a>
+        <a href="about.php">About Us</a> | <a href="tos.php">Terms of Service</a> | <a href="privacy.php">Privacy</a>
         <p>Copyright <span id="click">&copy;</span> 2017 FridgeMates </p>
     </footer>
 </body>

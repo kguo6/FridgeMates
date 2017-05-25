@@ -1,6 +1,10 @@
         /** body CSS **/
         body {
-            background-color: #cbebf5;
+            background-color: #dbf0ff;
+        }
+        .homebuttons {
+            font-family: 'Baloo', sans-serif !important;
+            font-size: 20px !important;
         }
         /** pagelayout and background CSS **/
         #welcome-container {

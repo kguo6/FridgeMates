@@ -23,35 +23,35 @@
                         <div class="modal-body" id="itemBody">    
                             <table id="itemTable">
                                 <tr>
-                                    <th>Comments: </th>
-                                    <td>'.$row['item_comment'].'</td>
+                                    <th>Added: </th>
+                                    <td>';
+                                    
+        $delta_seconds = time() - strtotime($row['item_date']);
+            if($delta_seconds < 60) {
+                echo $delta_seconds.' Second(s) Ago';
+            }  
+            else if ($delta_seconds < 3600) {
+                $delta_minutes = floor($delta_seconds / 60);
+                echo $delta_minutes.' Minute(s) Ago';
+            } 
+            else if ($delta_seconds < 86400) {
+                $delta_hours = floor($delta_seconds / 3600);
+                echo $delta_hours.' Hour(s) Ago';
+            }          
+            else {
+                $delta_days = floor($delta_seconds / 86400);
+                echo $delta_days.' Day(s) Ago';
+            }               
+
+        echo                            '</td>
                                 </tr>
                                 <tr>
                                     <th>Added By: </th>
                                     <td>'.$row['name'].'</td>
                                 </tr>
                                 <tr>
-                                    <th>Added: </th>
-                                    <td>';
-                                    
-        $delta_seconds = time() - strtotime($row['item_date']);
-            if($delta_seconds < 60) {
-                echo $delta_seconds.' Seconds Ago';
-            }  
-            else if ($delta_seconds < 3600) {
-                $delta_minutes = floor($delta_seconds / 60);
-                echo $delta_minutes.' Minutes Ago';
-            } 
-            else if ($delta_seconds < 86400) {
-                $delta_hours = floor($delta_seconds / 3600);
-                echo $delta_hours.' Hours Ago';
-            }          
-            else {
-                $delta_days = floor($delta_seconds / 86400);
-                echo $delta_days.' Days Ago';
-            }               
-
-        echo                            '</td>
+                                    <th>Comments: </th>
+                                    <td>'.$row['item_comment'].'</td>
                                 </tr>
                             </table>   
                         </div>
