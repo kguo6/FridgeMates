@@ -175,7 +175,7 @@
 
         /** intro card CSS **/
         .card_intro {
-            width: 80%;
+            width: 90%;
             box-shadow: 0 0 20px silver;
             background-color: white;
             text-align: center;
@@ -183,7 +183,7 @@
         /** second info card CSS (fridgemate info) **/
         .card_two {
             width: 30%;
-            margin: 0px 1.66%;
+            margin: 0px;
             background-color: white;
             box-shadow: 0 0 20px silver;
             min-height: 275px;
@@ -196,10 +196,9 @@
             margin-left: auto;
             box-shadow: 0 0 20px silver;
             background-color: white;
-            width:80%;
-            height: 475px;
+            width:90%;
             padding-top: 25px;
-
+            text-align:center;
       
         }
         /** fourth info card CSS (affiliates) **/
@@ -275,11 +274,11 @@
         /** CSS for screens with resolution same as iphone 6 **/
         @media only screen and (min-width: 360px) and (max-width: 375px) {
             .card_three {
-                width: 80%;
+                width: 90%;
                 height: 525px;
             }
             .card_two {
-                width:80%;
+                width:90%;
                 padding-top: 20px;
                 background-color: white;
                 margin-left: auto;
@@ -301,7 +300,7 @@
                 width: 80%;
             }
             .card_two {
-                width:80%;
+                width:90%;
                 padding-top: 20px;
                 background-color: white;
                 margin-left: auto;
@@ -326,7 +325,7 @@
                 margin-left: auto;
                 box-shadow: 0 0 20px silver;
                 background-color: white;
-                width:80%;
+                width:90%;
                 padding-top: 25px;
             }
             #iphone{
@@ -336,7 +335,30 @@
         }
         @media (min-width: 768px) {
             .col-sm-9 {
-                width: 450px;
+                width: auto;
+                margin-left:40px;
+                margin-top: 60px;
+            }
+            #iphone {
+                text-align:left;
+                margin-bottom:35px;
+            }
+            .row {
+                max-width: 800px;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            #feature_cards {
+                padding:0;
+                width:80%;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            .card_two:nth-child(2) {
+                margin: 0 5%;
+            }
+            .card_intro, #feature_cards, .card_three, .card_four {
+                width:80%;
             }
         }
 
@@ -402,7 +424,7 @@
             margin-bottom: 10px;
         }
         #slider ul {
-            width: 450px;
+            max-width: 450px;
             padding: 0;
             display: inline-block;
         }
@@ -422,6 +444,13 @@
         }
         #iphone {
             width:207px;
-            margin-left:60px;
+            margin-left:30px;
             padding:0;
+            text-align:left;
+        }
+        .card_intro, .card_two, .card_three, .card_four {
+            border-radius: 10px;
+        }
+        #feature_cards {
+            padding: 0;
         }

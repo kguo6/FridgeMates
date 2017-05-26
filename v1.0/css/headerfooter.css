@@ -1,4 +1,4 @@
-    @import url('https://fonts.googleapis.com/css?family=Baloo|Open+Sans|Oxygen');
+@import url('https://fonts.googleapis.com/css?family=Baloo|Open+Sans|Oxygen');
     body {
         font-family: 'Baloo', cursive !important;
     }
@@ -8,8 +8,8 @@
     }
     .dropdown-menu {
         min-width: 110px !important;
-        right:auto !important;
-        left:0 !important;
+        right:0 !important;
+        left:auto !important;
     }
     label.error {
         color: red !important;
