@@ -276,7 +276,6 @@
         @media only screen and (min-width: 360px) and (max-width: 375px) {
             .card_three {
                 width: 80%;
-                padding-left: 11%;
                 height: 525px;
             }
             .card_two {
@@ -289,13 +288,16 @@
             }
             #afflogo {
                 height: 200px;
-        }
+            }
+            #iphone{
+                margin-right:auto;
+                margin-left:auto !important;
+            }
         }
         /** CSS for screens with resolution same as iphone 7 plus **/
         @media only screen and (min-width: 400px) and (max-width: 425px){
             .card_three {
                 height: 525px;
-                padding-left: 15%;
                 width: 80%;
             }
             .card_two {
@@ -307,9 +309,13 @@
                 margin-top: 20px;
             }
 
-                    #afflogo {
-            height: 200px;
-        }
+            #afflogo {
+                height: 200px;
+            }
+            #iphone{
+                margin-right:auto;
+                margin-left:auto !important;
+            }
         }
 
         @media only screen and (min-width: 426px) and (max-width: 768px){
@@ -321,8 +327,16 @@
                 box-shadow: 0 0 20px silver;
                 background-color: white;
                 width:80%;
-              
                 padding-top: 25px;
+            }
+            #iphone{
+                margin-right:auto;
+                margin-left:auto !important;
+            }
+        }
+        @media (min-width: 768px) {
+            .col-sm-9 {
+                width: 450px;
             }
         }
 
@@ -366,19 +380,17 @@
             height: 420px;
         }
 
-        .description ul{
+        #slider ul, #slider_mobile ul {
             list-style-type: none;
             padding-top: 10px;
             color: silver;
         }
-        .description li{
+        #slider_mobile li {
             margin-top: auto;
             margin-bottom: auto;
             padding-top: 10px;
-
             display: none;
         }
-
         .active {
             color: black;
         }
@@ -388,4 +400,28 @@
         }
         .join_btn {
             margin-bottom: 10px;
+        }
+        #slider ul {
+            width: 450px;
+            padding: 0;
+            display: inline-block;
+        }
+        #slider {
+            width:450px;
+        }
+        #slider_mobile ul {
+            margin-right:auto;
+            margin-left:auto;
+            text-align:center;
+            padding: 0;
+        }
+        #slider_mobile .active {
+            width: 207px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        #iphone {
+            width:207px;
+            margin-left:60px;
+            padding:0;
         }

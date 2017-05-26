@@ -51,12 +51,7 @@
                               document.getElementById("content").innerHTML = this.responseText;
                               $(function(){
                                   $canvas=$("div.canvas")
-                                          var toggleSlide = function(){
-            $("#slider li.active").removeClass().next().add("#slider li:first").last().addClass("active").fadeIn().delay(2200).fadeOut();
-    }
-        var toggleSlide_mobile = function(){
-        $("#slider_mobile li.active").removeClass().next().add("#slider_mobile li:first").last().addClass("active").fadeIn().delay(2200).fadeOut();
-    }
+                                  $("#slider_mobile li.active").fadeIn().delay(2200).fadeOut();        
                                   setInterval(scroll, 3000);
                                   setInterval(toggleSlide, 3000);
                                   setInterval(toggleSlide_mobile, 3000);
@@ -98,8 +93,12 @@
                  }
         });
     });
-
-
+    var toggleSlide = function(){
+        $("#slider li.active").removeClass().next().add("#slider li:first").last().addClass("active").delay(2200);
+    }
+    var toggleSlide_mobile = function(){
+        $("#slider_mobile li.active").removeClass().next().add("#slider_mobile li:first").last().addClass("active").fadeIn().delay(2200).fadeOut();
+    }
     </script>
 </head>
 <body data-target=".navbar" data-offset="10" onload="content();login();">

@@ -26,48 +26,47 @@
 <!-- iphone screenshot demo info card -->
 <div class="container-fluid card_three">
     <div class="row">
-    <div class="col-sm-3" id="iphone">
-    <!-- iphone mockup wireframe -->
-    <img src="./logo/iphone.png">
-    <!-- where the screenshots will cycle  -->
-    <div class="mask">
-        <!-- what is shown in the mask-->
-        <div class="canvas">
-            <div class="page"><img src="./logo/test.png" height="322" width="188"></div>
-            <div class="page"><img src="./logo/test2.png" height="322" width="188"></div>
-            <div class="page"><img src="./logo/test.png" height="322" width="188"></div>
-            <div class="page"><img src="./logo/test2.png" height="322" width="188"></div>
-            <div class="page"><img src="./logo/test2.png" height="322" width="188"></div>
-        </div>
-    </div>
-    </div>
-    <div class="col-sm-9">
-        <div id="slider" class="description visible-sm visible-md visible-lg">
-            <ul>
-                <li class='active'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
-
-            </ul>
+        <div class="col-sm-3" id="iphone">
+            <!-- iphone mockup wireframe -->
+            <img src="./logo/iphone.png">
+            <!-- where the screenshots will cycle  -->
+            <div class="mask">
+                <!-- what is shown in the mask-->
+                <div class="canvas">
+                    <div class="page"><img src="./logo/test.png" height="322" width="188"></div>
+                    <div class="page"><img src="./logo/test2.png" height="322" width="188"></div>
+                    <div class="page"><img src="./logo/test.png" height="322" width="188"></div>
+                    <div class="page"><img src="./logo/test2.png" height="322" width="188"></div>
+                    <div class="page"><img src="./logo/test2.png" height="322" width="188"></div>
+                </div>
             </div>
-        <div id="slider" class="description visible-xs">
-            <ul>
-                <li class='active'>Lorem ipsum dolor sit amet, consectetur  </li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
-                <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
-          </ul>
-
+            </div>
+            <div class="col-sm-9">
+                <div id="slider" class="description visible-sm visible-md visible-lg">
+                    <ul>
+                        <li class='active'>1Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
+                        <li>2Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
+                        <li>3Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
+                        <li>4Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
+                        <li>5Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
+                    </ul>
+                </div>
+                <div id="slider_mobile" class="description visible-xs">
+                    <ul>
+                        <li class='active'>11Lorem ipsum dolor sit amet, consectetur  </li>
+                        <li>12Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
+                        <li>13Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
+                        <li>14Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
+                        <li>15Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div>
     </div>
 </div>
 
