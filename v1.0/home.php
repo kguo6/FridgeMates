@@ -6,14 +6,14 @@
 
 <!-- title info card -->
 <div class="container-fluid card_one">
-    <div class="jumbotron">
+    <div class="jumbotron" id="prelogin_jumbotron">
         <h1>FridgeMates</h1>
         <p>Sharing is caring.</p>
     </div>
 </div>
 <!-- fridgemate webapp info card -->
 <div class="container-fluid card_intro">
-    <h2>Making a Splash</h2>
+    <h2 id="introtitle">Making a Splash</h2>
     <p class="join_txt">FridgeMates is a small start up company that has entered the fray to solve global food waste. Our web application allows users to share food and leftover items in a shared fridge.</p>
 
     <p class="join_txt">By becoming a Fridge Leader in your community, you can contribute to the reduction of food waste and help promote environmentally sustainable behavior. Furthermore, FridgeMates hopes to bring individual communities closer together by sharing food.</p>
@@ -33,36 +33,31 @@
             <div class="mask">
                 <!-- what is shown in the mask-->
                 <div class="canvas">
-                    <div class="page"><img src="./logo/test.png" height="322" width="188"></div>
-                    <div class="page"><img src="./logo/test2.png" height="322" width="188"></div>
-                    <div class="page"><img src="./logo/test.png" height="322" width="188"></div>
-                    <div class="page"><img src="./logo/test2.png" height="322" width="188"></div>
-                    <div class="page"><img src="./logo/test2.png" height="322" width="188"></div>
+                    <div class="page"><img src="./logo/screenshot1.png" height="322" width="180"></div>
+                    <div class="page"><img src="./logo/screenshot2.png" height="322" width="180"></div>
+                    <div class="page"><img src="./logo/screenshot3.png" height="322" width="180"></div>
+                    <div class="page"><img src="./logo/screenshot4.png" height="322" width="180"></div>
+                    <div class="page"><img src="./logo/screenshot5.png" height="322" width="180"></div>
                 </div>
             </div>
             </div>
             <div class="col-sm-9">
                 <div id="slider" class="description visible-sm visible-md visible-lg">
                     <ul>
-                        <li class='active'>1Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
-                        <li>2Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
-                        <li>3Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
-                        <li>4Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
-                        <li>5Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </li>
+                        <li class='active'> FridgeMates feature simple and intuitive UI that concentrates on user experience!</li>
+                        <li>Add items that you want to share with your community!</li>
+                        <li>FridgeMates allows you to pass authorization to other users!</li>
+                        <li>The fridge icon allows you to switch between fridge quickly and simply!</li>
+                        <li>Someone is sharing leftover pizza and mashed potatoes inside of the fridge!</li>
                     </ul>
                 </div>
                 <div id="slider_mobile" class="description visible-xs">
                     <ul>
-                        <li class='active'>11Lorem ipsum dolor sit amet, consectetur  </li>
-                        <li>12Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
-                        <li>13Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
-                        <li>14Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
-                        <li>15Lorem ipsum dolor sit amet, consectetur adipisicing elit, </li>
+                        <li class='active'> FridgeMates feature simple and intuitive UI that concentrates on user experience!</li>
+                        <li>Add items that you want to share with your community!</li>
+                        <li>FridgeMates allows you to pass authorization to other users!</li>
+                        <li>The fridge icon allows you to switch between fridge quickly and simply!</li>
+                        <li>Someone is sharing leftover pizza and mashed potatoes inside of the fridge!</li>
                     </ul>
                 </div>
             </div>

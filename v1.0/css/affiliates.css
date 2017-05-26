@@ -6,12 +6,19 @@
         .jumbotron {
             margin-top: 25px;
             text-align: center;
+            background-color: #05305B;
+            color: white;
+            padding-top: 150px;
+            padding-bottom: 150px;
         }
-
+        .titletxt {
+            color: #67CAA9;
+        }
         /** panel CSS **/
         .col-sm-4 {
             padding-right: 0px;
             padding-left: 0px;
+        
         }
         .panel {
         	margin: 30px auto;
@@ -25,6 +32,7 @@
             background: #67CAA9;
             text-align: center;
             color: white;
+            min-height: 130px;
         }
         .panel-body {
             background-color: #FFFFFF;

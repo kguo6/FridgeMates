@@ -5,9 +5,7 @@
         /** pagelayout and background CSS **/
         #welcome-container {
             width: 95%;
-            padding-top: 0;
-
-       
+            margin-top: 25px;
         }
         #content a:hover {
             text-decoration: none;
@@ -16,9 +14,6 @@
         #welcome-header {
             color: black;
             text-align: center;
-            background-color: #05305B;
-            color: white;
-
         }
         /** button and button layout CSS **/
         .row {
@@ -62,6 +57,7 @@
         @media only screen and (max-width: 320px) {
             #welcome-container {
                 width: 100%;
+                margin-top: 25px;
             }
             .row {
                 margin-top: 10px;
@@ -105,6 +101,7 @@
         @media only screen and (min-width: 400px) {
             #welcome-container {
                 width: 100%;
+                margin-top: 25px;
             }
             .row {
                 margin-top: 10px;
@@ -178,7 +175,7 @@
 
         /** intro card CSS **/
         .card_intro {
-            width: 90%;
+            width: 80%;
             box-shadow: 0 0 20px silver;
             background-color: white;
             text-align: center;
@@ -186,7 +183,7 @@
         /** second info card CSS (fridgemate info) **/
         .card_two {
             width: 30%;
-            margin: 0px;
+            margin: 0px 1.66%;
             background-color: white;
             box-shadow: 0 0 20px silver;
             min-height: 275px;
@@ -199,9 +196,10 @@
             margin-left: auto;
             box-shadow: 0 0 20px silver;
             background-color: white;
-            width:90%;
+            width:80%;
+            height: 475px;
             padding-top: 25px;
-            text-align:center;
+
       
         }
         /** fourth info card CSS (affiliates) **/
@@ -220,21 +218,17 @@
         .lmore_btn {
             display: inline-block;
             text-align: center;
+            background-color: transparent;
+            color: #05305B;
             border-radius:25px;
             border: solid #05305B 2px;
             padding: 10px 20px;
             font-size: 1.2em;
 
-            background-color: transparent;
-            color: #0A8E62;
-            border: #0A8E62 solid 2px;
-
-
         }
         .lmore_btn:hover {
-            background-color: #20A378;
-            color: white;
-            border: #0A8E62 solid 2px;
+            background-color: #7FD64B;
+            border-color: black;
         }
         /** iphone window CSS **/
         .mask {
@@ -261,11 +255,11 @@
         /** CSS for screens with resolution same as iphone5 **/
         @media only screen and (max-width: 321px) {
             .card_three {
-                width: 90%;
+                width: 80%;
                 height: 500px;
             }
             .card_two {
-                width: 90%;
+                width: 80%;
                 margin-top: 25px;
                 background-color: white;
                 padding-top: 20px;
@@ -281,11 +275,11 @@
         /** CSS for screens with resolution same as iphone 6 **/
         @media only screen and (min-width: 360px) and (max-width: 375px) {
             .card_three {
-                width: 90%;
+                width: 80%;
                 height: 525px;
             }
             .card_two {
-                width:90%;
+                width:80%;
                 padding-top: 20px;
                 background-color: white;
                 margin-left: auto;
@@ -304,10 +298,10 @@
         @media only screen and (min-width: 400px) and (max-width: 425px){
             .card_three {
                 height: 525px;
-                width: 90%;
+                width: 80%;
             }
             .card_two {
-                width:90%;
+                width:80%;
                 padding-top: 20px;
                 background-color: white;
                 margin-left: auto;
@@ -332,7 +326,7 @@
                 margin-left: auto;
                 box-shadow: 0 0 20px silver;
                 background-color: white;
-                width:90%;
+                width:80%;
                 padding-top: 25px;
             }
             #iphone{
@@ -342,30 +336,7 @@
         }
         @media (min-width: 768px) {
             .col-sm-9 {
-                width: auto;
-                margin-left:40px;
-                margin-top: 60px;
-            }
-            #iphone {
-                text-align:left;
-                margin-bottom:35px;
-            }
-            .row {
-                max-width: 800px;
-                margin-left:auto;
-                margin-right:auto;
-            }
-            #feature_cards {
-                padding:0;
-                width:80%;
-                margin-left:auto;
-                margin-right:auto;
-            }
-            .card_two:nth-child(2) {
-                margin: 0 5%;
-            }
-            .card_intro, #feature_cards, .card_three, .card_four {
-                width:80%;
+                width: 450px;
             }
         }
 
@@ -429,24 +400,11 @@
         }
         .join_btn {
             margin-bottom: 10px;
-            background-color: transparent;
-            color: #0A8E62;
-            border: #0A8E62 solid 2px;
-        }
-        .join_btn:hover {
-            background-color: #20A378;
-            color: white;
-            border: #0A8E62 solid 2px;
         }
         #slider ul {
-            max-width: 450px;
-            padding:0;
+            width: 450px;
+            padding: 0;
             display: inline-block;
-            text-align: left;
-        }
-
-        #slider li {
-            padding-top: 15px;
         }
         #slider {
             width:450px;
@@ -454,7 +412,7 @@
         #slider_mobile ul {
             margin-right:auto;
             margin-left:auto;
-            text-align:;
+            text-align:center;
             padding: 0;
         }
         #slider_mobile .active {
@@ -464,23 +422,6 @@
         }
         #iphone {
             width:207px;
-            margin-left:30px;
+            margin-left:60px;
             padding:0;
-            text-align:left;
-        }
-        .card_intro, .card_two, .card_three, .card_four {
-            border-radius: 10px;
-        }
-        #feature_cards {
-            padding: 0;
-        }
-
-        #prelogin_jumbotron {
-            padding-top: 150px;
-            padding-bottom: 150px;
-            color: white;
-            background-color: #05305B;
-        }
-        #introtitle {
-            color: #0A8E62;
         }

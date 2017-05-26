@@ -7,7 +7,8 @@
 <div class="container-fluid" id="welcome-container">
     <!-- welcome user jumbotron -->
     <div class="jumbotron" id="welcome-header">
-        <h1>Welcome <?php echo $_SESSION['USER_NAME'] ?></h1>
+        <h1>Welcome 
+        <br><?php echo $_SESSION['USER_NAME'] ?></h1>
     </div>
     <!-- top row of buttons -->
     <div class="row">

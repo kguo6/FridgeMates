@@ -5,19 +5,31 @@
 <!doctype html>
 <html lang="en">
 <head>
-<title>FridgeMates-Affiliate Apps</title>
+<title>FridgeMates-About Us</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/loginmodal.css">
 <link rel="stylesheet" href="css/headerfooter.css">
-<link rel="stylesheet" href="css/affiliates.css">
+<link rel="stylesheet" href="css/about.css">
+<link rel="shortcut icon" type="image/png" href="./logo/favicon.png"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/register-validate.js"></script>
 <script src="js/login-validate.js"></script>
 <script>
+    //function to load content of page on body load
+    function content() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if(this.readyState == 4 && this.status == 200) {
+                document.getElementById("content").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "aboutus.php", true);
+        xhttp.send();
+    }
     //load register form on login modal
     function register() {
         document.getElementById("loginContainer").style.display ="none";
@@ -36,7 +48,7 @@
     }
 </script>
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="10" onload="login();">
+<body data-spy="scroll" data-target=".navbar" data-offset="10" onload="login();content();">
     <!-- facebook stuff -->
     <div id="fb-root"></div>
     <script>(function(d, s, id) {
@@ -56,7 +68,7 @@
                 <button type="button" id="nav_toggle" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                    <span class="icon-bar"></span> 
+                    <span class="icon-bar"></span>
                 </button>
                 <?php
                     if(isset($_SESSION['USER_ID']) &&
@@ -99,7 +111,7 @@
                         <input type="text" name="register_name" placeholder="Username (Min. 4 Characters)">
                         <input type="submit" name="login" class="login loginmodal-submit" id="register_btn" value="Register">
                     </form>
-                                        
+
                     <div class="login-help">
                         <a href="#" onclick="login()">Login</a>
                     </div>
@@ -111,7 +123,7 @@
                         <input type="password" name="login_password" placeholder="Password">
                         <input type="submit" name="login" class="login loginmodal-submit" value="Login">
                     </form>
-                                        
+
                     <div class="login-help">
                         <a href="#" id="registerLink" onclick="register()">Register</a>
                     </div>
@@ -123,80 +135,6 @@
     </div>
     <!-- wrapper for content of the page -->
     <div id="content" class="page-wrap">
-        <div class="container-fluid">
-            <div class="jumbotron">
-                <h1>Green Thumb Initiative</h1>
-                <p>There is no 'i' in team.</p>
-            </div>
-        </div> 
-
-        <div class="container-fluid card_one">
-            <div class="row">
-
-                <div class="col-sm-2"></div>
-
-                <div class="col-sm-8">
-                    <h2 class="titletxt">Going Green</h2>
-                    <p>Don’t wait any longer and become part of the Green Thumb Initiative.
-                        By using our app or any of our associated partners you can be part of
-                        the Green Thumb Initiative, a global movement to help raise awareness about
-                        food waste and promote environmental conservation.</p>
-                </div>
-            <div class="col-sm-2"></div>
-            </div>
-        </div>
-        
-        <div class="container-fluid bg5">
-            <div clas="row">
-                <div class="col-sm-4">
-                    <div class="panel">
-                        <div class="panel-heading">
-                            <h1 class="title">Grocery Buddy</h1>
-                        </div>
-                        <div class="panel-body">
-                            <img src="./logo/grocerybuddylogo.png" height="150" width="150" alt="Grocery Buddy Logo">
-                            <p>Plan your shopping trips by creating, organizing, and saving grocery lists.
-                                Store information about what you buy in a virtual fridge. Grocery Buddy will send you notifications if anything in your virtual fridge is nearing its expiry date.</p>
-                        </div>
-                        <div class="panel-footer">
-                            <a href="https://grocerybuddy-fe337.firebaseapp.com/main"><button class="btn btn-lg lmorebtn">Learn More</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="panel">
-                        <div class="panel-heading">
-                            <h1 class="title">Freshness</h1>
-                        </div>
-                        <div class="panel-body">
-                            <img src="./logo/freshnesslogo.png" height="150" width="150" alt="Freshness Logo">
-                            <p>Freshness provides the food preservation methods for you to keep the food fresh as long as you can.
-                                Your new best friend for planning what food to buy and making sure you use it.</p>
-                        </div>
-                        <div class="panel-footer">
-                            <a href="http://xyz-online.xyz"><button class="btn btn-lg lmorebtn">Learn More</button></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div class="panel">
-                        <div class="panel-heading">
-                            <h1 class="title">Phoenix Recipes</h1>
-                        </div>
-                        <div class="panel-body">
-                            <img src="./logo/phoenixrecipeslogo.png" height="150" width="150" alt="Phoenix Recipes Logo">
-                            <p>A user friendly mobile cookbook that helps you discover
-                                new and delicious ways to use your leftovers, and track your food waste</p>
-                        </div>
-                        <div class="panel-footer">
-                            <a href="https://phoenix-recipes.firebaseapp.com"><button class="btn btn-lg lmorebtn">Learn More</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- footer -->
     <footer>
