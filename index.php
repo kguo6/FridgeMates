@@ -1,333 +1,199 @@
 <?php
     session_start();
 ?>
-
 <!doctype html>
 <html lang="en">
 <head>
-<title>Home</title>
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
+<title>FridgeMates-Home</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="css/loginmodal.css">
+<link rel="stylesheet" href="css/headerfooter.css">
+<link rel="stylesheet" href="css/homepage.css">
+<link rel="stylesheet" type="text/css" href="css/makeItRain.css">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/register-validate.js"></script>
+<script src="js/login-validate.js"></script>
+<script src="js/makeItRain.js"></script>
 
 <script>
-        function $(id){
-			var element = document.getElementById(id);
-			if( element == null )
-			alert( "Programmer error: " + id + " does not exist." );
-			return element;
-		}
 
-        function content() {
-            <?php
+    var $canvas
+    function scroll(){
+        if ($canvas.position().left!=-956){
+            $canvas.animate({left: "-=239"});
+        }else{
+            $canvas.animate({left: 0});
+        }
+    }
+    //index page function to load pre/post login homepage
+    function content() {
+        <?php
             if(isset($_SESSION['USER_ID']) &&
-	           (trim($_SESSION['USER_ID']) != '')) {
-                   echo 'var xhttp = new XMLHttpRequest();
+	          (trim($_SESSION['USER_ID']) != '')) {
+                  echo 'var xhttp = new XMLHttpRequest();
                         xhttp.onreadystatechange = function() {
                             if(this.readyState == 4 && this.status == 200) {
-                                $("content").innerHTML = this.responseText;
+                                document.getElementById("content").innerHTML = this.responseText;
                             }
                         };
                         xhttp.open("GET", "welcome.php", true);
                         xhttp.send();';
-               }
-               else {
-                    echo 'var xhttp = new XMLHttpRequest();
-                        xhttp.onreadystatechange = function() {
-                            if(this.readyState == 4 && this.status == 200) {
-                                $("content").innerHTML = this.responseText;
-                            }
-                        };
-                        xhttp.open("GET", "loginform.php", true);
-                        xhttp.send();';
-               }
-               ?>
-        }
-</script>
-<style>
-    @import url(http://fonts.googleapis.com/css?family=Roboto);
-
-    /** Login Modal CSS**/
-    .loginmodal-container {
-    padding: 30px;
-    max-width: 350px;
-    width: 100% !important;
-    background-color: #F7F7F7;
-    margin: 0 auto;
-    border-radius: 2px;
-    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-    font-family: roboto;
+            }
+            else {
+                echo 'var xhttp = new XMLHttpRequest();
+                      xhttp.onreadystatechange = function() {
+                          if(this.readyState == 4 && this.status == 200) {
+                              document.getElementById("content").innerHTML = this.responseText;
+                              $(function(){
+                                  $canvas=$("div.canvas")
+                                  $("#slider_mobile li.active").fadeIn().delay(2200).fadeOut();        
+                                  setInterval(scroll, 3000);
+                                  setInterval(toggleSlide, 3000);
+                                  setInterval(toggleSlide_mobile, 3000);
+                              });
+                          }
+                      };
+                      xhttp.open("GET", "home.php", true);
+                      xhttp.send();';
+            }
+        ?>
     }
-
-    .loginmodal-container h1 {
-    text-align: center;
-    font-size: 1.8em;
-    font-family: roboto;
+    //load register form on login modal
+    function register() {
+        document.getElementById("loginContainer").style.display ="none";
+        document.getElementById("registerContainer").style.display ="block";
+        document.getElementById("errorContainer").style.display ="none";
+        document.getElementById("loginForm").reset();
+        document.getElementById("registerForm").reset();
     }
-
-    .loginmodal-container input[type=submit] {
-    width: 100%;
-    display: block;
-    margin-bottom: 10px;
-    position: relative;
+    //load login form on login modal
+    function login() {
+        document.getElementById("registerContainer").style.display ="none";
+        document.getElementById("loginContainer").style.display ="block";
+        document.getElementById("errorContainer").style.display ="none";
+        document.getElementById("registerForm").reset();
+        document.getElementById("loginForm").reset();
     }
-
-    .loginmodal-container input[type=text], .loginmodal-container input[type=password] {
-    height: 44px;
-    font-size: 16px;
-    width: 100%;
-    margin-bottom: 10px;
-    -webkit-appearance: none;
-    background: #fff;
-    border: 1px solid #d9d9d9;
-    border-top: 1px solid #c0c0c0;
-    /* border-radius: 2px; */
-    padding: 0 8px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
+    // counter for clicks
+    // invokes js when click condition is met
+    var counter=0;
+    $(document).ready(function(){
+        $("#click").on(
+            "click",function(){
+                 if(counter == 4) {
+                     $(this).makeItRain();
+                 }
+                 else {
+                     counter++;
+                 }
+        });
+    });
+    var toggleSlide = function(){
+        $("#slider li.active").removeClass().next().add("#slider li:first").last().addClass("active").delay(2200);
     }
-
-    .loginmodal-container input[type=text]:hover, .loginmodal-container input[type=password]:hover {
-    border: 1px solid #b9b9b9;
-    border-top: 1px solid #a0a0a0;
-    -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-    -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    var toggleSlide_mobile = function(){
+        $("#slider_mobile li.active").removeClass().next().add("#slider_mobile li:first").last().addClass("active").fadeIn().delay(2200).fadeOut();
     }
-
-    .loginmodal {
-    text-align: center;
-    font-size: 14px;
-    font-family: 'Arial', sans-serif;
-    font-weight: 700;
-    height: 36px;
-    padding: 0 8px;
-    /* border-radius: 3px; */
-    /* -webkit-user-select: none;
-    user-select: none; */
-    }
-
-    .loginmodal-submit {
-    /* border: 1px solid #3079ed; */
-    border: 0px;
-    color: #fff;
-    text-shadow: 0 1px rgba(0,0,0,0.1);
-    background-color: #4d90fe;
-    padding: 17px 0px;
-    font-family: roboto;
-    font-size: 14px;
-    /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#4787ed)); */
-    }
-
-    .loginmodal-submit:hover {
-    /* border: 1px solid #2f5bb7; */
-    border: 0px;
-    text-shadow: 0 1px rgba(0,0,0,0.3);
-    background-color: #357ae8;
-    /* background-image: -webkit-gradient(linear, 0 0, 0 100%,   from(#4d90fe), to(#357ae8)); */
-    }
-
-    .loginmodal-container a {
-    text-decoration: none;
-    color: #666;
-    font-weight: 400;
-    text-align: center;
-    display: inline-block;
-    opacity: 0.6;
-    transition: opacity ease 0.5s;
-    }
-
-    .login-help{
-    font-size: 12px;
-    }
-
-    /** Navbar CSS**/
-    .navbar {
-        background-color: #333;
-        color: black;
-        border: 0;
-    }
-    .navbar li a, .navbar {
-        color: white !important;
-        text-align:center;
-    }
-    .navbar-nav li a:hover, .navbar-nav li.active a {
-        color: #ffffff !important;
-        background-color: #0A8E62 !important;
-    }
-    .navbar-default .navbar-toggle {
-        border-color: transparent;
-        color: #fff !important;
-    }
-    .navbar-toggle {
-        background-color: transparent;
-    }
-
-    /** Login Button CSS **/
-    .btn {
-        background-color: #0A8E62;
-        color: white;
-        border: 0;
-        margin-bottom: 0;
-        margin-top: 8px;
-        margin-left: 25px;
-        margin-right: 15px;
-        float:right;
-    }
-    .btn-group {
-        float:right;
-    }
-
-    /** Footer CSS**/
-    footer {
-        text-align: center;
-        background-color: #333;
-        color: white;
-        height: 50px;
-        width: 100%;
-        padding: 5px;
-        position: relative;
-        bottom: 0;
-    }
-    footer a {
-        color: white;
-    }
-    footer a:hover {
-        color: #0A8E62;
-    }
-    footer p {
-        margin:0;
-    }
-
-    /** Body CSS**/
-    * {
-        margin: 0;
-    }
-    html, body {
-        height: 100%;
-    }
-    .page-wrap {
-        padding-top:70px;
-        min-height: calc(100% - 50px);
-    }
-    .page-wrap:after {
-        content: "";
-        display: block;
-    }
-    .dropdown-menu {
-        background-color: #333;
-    }
-    .dropdown-menu li a:hover, .dropdown-menu li.active a {
-        color: #ffffff !important;
-        background-color: #0A8E62 !important;
-    }
-
-    /** Logo CSS**/
-    .logo {
-        width: 25px;
-        height: 40px;
-        border: 0;
-        margin-bottom: 0;
-        margin-top: 5px;
-        margin-left: 50px;
-    }
-
-        #loginbtn {
-        background-color: #0A8E62;
-        color: white;
-        border: 0;
-        margin-bottom: 0;
-        margin-top: 8px;
-        margin-left: 25px;
-        margin-right: 15px;
-    }
-    #loginbtn:hover {
-        background-color: #20A378;
-        color: white;
-    }
-</style>
+    </script>
 </head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="10" onload="content()">
-<!--Navbar-->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header pull-left">
-        <!--logo-->
-            <img src="logo/logo.png" class="logo"> FridgeMates
-        </div>
-        <div class="navbar-header navbar-right">
-            <!--hamburger menu button-->
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <?php
-                if(isset($_SESSION['USER_ID']) &&
-                (trim($_SESSION['USER_ID']) != '')) {
-                    echo '<div class="btn-group"><button type="button" class="btn dropdown-toggle" data-toggle="dropdown" style="margin-left:25px">'.$_SESSION["USER_NAME"].'</button>
-                              <ul class="dropdown-menu">
-                                  <li><a href="#">ACCOUNT</a></li>
-                                  <li><a href="logout.php">LOGOUT</a></li>
-                              </ul></div>';
-                }
-                else {
-                    echo '<button type="button" id="loginbtn" class="btn" data-toggle="modal" data-target="#login-modal">Log In</button>';
-                }
-            ?>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.php">HOME</a></li>
+<body data-target=".navbar" data-offset="10" onload="content();login();">
+    <!-- facebook stuff -->
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <!-- navigation bar -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="header_nav">
+        <div class="container-fluid">
+            <div class="navbar-header pull-left">
+                <a href="index.php"><img src="logo/logoblue.png" class="logo" id="nav_logo"></a>
+            </div>
+            <div class="navbar-header navbar-right">
+                <button type="button" id="nav_toggle" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
                 <?php
                     if(isset($_SESSION['USER_ID']) &&
                     (trim($_SESSION['USER_ID']) != '')) {
-                        echo '<li><a href="fridge.php">MY FRIDGES</a></li>';
+                        echo '<div class="btn-group" id="account_group"><button type="button" class="btn" id="login_btn" dropdown-toggle" data-toggle="dropdown">'.$_SESSION["USER_NAME"].'</button>
+                                <ul class="dropdown-menu" id="account_dropdown">
+                                    <li><a href="logout.php">LOGOUT</a></li>
+                                </ul></div>';
+                    }
+                    else {
+                        echo '<button type="button" class="btn" id="login_btn" data-toggle="modal" data-target="#login-modal" onclick="login()">Log In</button>';
                     }
                 ?>
-                <li><a href="affiliate.php">AFFILIATES</a></li>
-                <li><a href="#bg3">ABOUT US</a></li>
-            </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" id="nav_list">
+                    <li><a href="index.php">HOME</a></li>
+                    <?php
+                        if(isset($_SESSION['USER_ID']) &&
+                        (trim($_SESSION['USER_ID']) != '')) {
+                            echo '<li><a href="fridge.php">MY FRIDGES</a></li>';
+                        }
+                    ?>
+                    <li><a href="affiliate.php">AFFILIATES</a></li>
+                    <li><a href="support.php">SUPPORT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- login/register modal -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+            <div class="loginmodal-container" id="loginmodal-container">
+                <div id="registerContainer">
+                    <h1>Register a New Account</h1><br>
+                    <form method="POST" id="registerForm">
+                        <input type="text" name="register_username" placeholder="Email">
+                        <input type="password" id="register_password" name="register_password" placeholder="Password (Min. 6 Characters)">
+                        <input type="password" name="confirm_password" placeholder="Confirm Password">
+                        <input type="text" name="register_name" placeholder="Username (Min. 4 Characters)">
+                        <input type="submit" name="login" class="login loginmodal-submit" id="register_btn" value="Register">
+                    </form>
+                                        
+                    <div class="login-help">
+                        <a href="#" onclick="login()">Login</a>
+                    </div>
+                </div>
+                <div id="loginContainer">
+                    <h1>Login to Your Account</h1><br>
+                    <form method="POST" id="loginForm">
+                        <input type="text" name="login_username" placeholder="Email">
+                        <input type="password" name="login_password" placeholder="Password">
+                        <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                    </form>
+                                        
+                    <div class="login-help">
+                        <a href="#" id="registerLink" onclick="register()">Register</a>
+                    </div>
+                </div>
+                <div id="errorContainer">
+                </div>
+            </div>
         </div>
     </div>
-</nav>
-
-<!--Login Modal-->
-<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
-    <div class="modal-dialog">
-        <div class="loginmodal-container">
-                <h1>Login to Your Account</h1><br>
-             <form action="login.php" method="POST">
-                 <input type="text" name="login_username" placeholder="Username">
-                 <input type="password" name="login_password" placeholder="Password">
-                 <input type="submit" name="login" class="login loginmodal-submit" value="Login">
-             </form>
-
-             <div class="login-help">
-                <a href="#">Register</a> - <a href="#">Forgot Password</a>
-             </div>
-        </div>
+    <!-- wrapper for content of the page -->
+    <div id="content" class="page-wrap">
     </div>
- </div>
-
-<!--body-->
-<div id="content" class="page-wrap">
-</div>
-
-<!--footer-->
-<footer class="site-footer">
-    <a href="#">About Us</a> | <a href="affiliate.php">Affiliates</a> | <a href="#">Site Map</a>
-    <p>Copyright &copy; 2017 FridgeMates </p>
-</footer>
+    <!-- footer -->
+    <footer>
+        <a href="about.php">About Us</a> | <a href="tos.php">Terms</a> | <a href="privacy.php">Privacy</a>
+        <p>Copyright <span id="click">&copy;</span> 2017 FridgeMates </p>
+        <div class="fb-like" data-href="https://www.facebook.com/fridgemates" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
+    </footer>
 </body>
 </html>
