@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo|Open+Sans|Oxygen');
+    /** body layout and CSS **/
+    body {
+        font-family: 'Baloo', cursive !important;
+    }
+
+    body a:hover {
+        text-decoration: none;
+    }
+    #content p {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+    }
+
+    /** dropdown manu CSS **/
+    .dropdown-menu {
+        min-width: 110px !important;
+        right:0 !important;
+        left:auto !important;
+    }
+    label.error {
+        color: red !important;
+    }
+    /** header CSS **/
+    #header_nav {
+        background-color: #505050;
+        color: white !important;
+        border: 0;
+        border-color:transparent;
+    }
+    #header_nav li a {
+        color: white !important;
+        text-align:center;
+    }
+    #nav_list li a:hover, #nav_list li.active a {
+        color: #ffffff !important;
+        background-color: #0A8E62 !important;
+    }
+    #nav_toggle {
+        border-color: transparent;
+        color: #fff !important;
+        background-color: transparent;
+    }
+
+    /* logo CSS */
+    #nav_logo {
+        width: 138px;
+        height: 40px;
+        border: 0;
+        margin-bottom: 0;
+        margin-top: 5px;
+        margin-left: 15px;
+    }
+
+    /** login CSS **/
+    #login_btn {
+        background-color: #0A8E62;
+        color: white;
+        border: 0;
+        margin-bottom: 0;
+        margin-top: 8px;
+        margin-left: 0;
+        margin-right: 10px;
+        float:right;
+        border-radius:4px;
+    }
+    #login_btn:hover {
+        background-color: #20A378;
+        color: white;
+    }
+
+    /** account dropdown CSS **/
+    #account_group {
+        float:right;
+    }
+    #account_dropdown {
+        background-color: #505050;
+    }
+    #account_dropdown li a:hover, #account_dropdown li.active a {
+        color: #ffffff !important;
+        background-color: #0A8E62 !important;
+    }
+
+    /** footer CSS **/
+    footer {
+        text-align: center;
+        background-color: #505050;
+        color: white;
+        height: 50px;
+        width: 100%;
+        padding: 5px;
+        position: relative;
+        bottom: 0;
+    }
+    footer a {
+        color: white;
+    }
+    footer a:hover {
+        color: #0A8E62;
+    }
+    footer p {
+        margin:0;
+    }
+    * {
+        margin: 0;
+    }
+
+    /* page layout and with AJAX*/
+    html, body {
+        height: 100%;
+    }
+    .page-wrap {
+        padding-top:50px;
+        min-height: calc(100% - 50px);
+    }
+    .page-wrap:after {
+        content: "";
+        display: block;
+    }
+
+    /* facebook button css */
+    .fb-like {
+        position:absolute !important;
+        top: 3.5px;
+        right: 2px;
+    }
+
+    /* CSS for desktop view */
+    @media(min-width:768px) {
+        #nav_list {
+            margin-right:15px;
+        }
+        .fb-like {
+            top: 15px;
+            right: 120px;
+        }
+    }

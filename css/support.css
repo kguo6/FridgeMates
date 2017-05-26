@@ -1,0 +1,148 @@
+body {
+  background-color: #dbf0ff;
+}
+
+body a:hover{ 
+  text-decoration: none;
+}
+
+/* Heading Screen */
+.jumbotron {
+  margin-top: 25px;
+  background-color:#05305B;
+  color: white;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-bottom: 10px;
+}
+
+/*FAQ Section*/
+.faq {
+  background-color: #FFFFFF;
+  border-radius: 3.5px;
+  transition: box-shadow 0.3s;
+  box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.3);
+}
+.panel-body {
+  font-family: 'Open Sans', sans-serif;
+}
+.panel a{
+  text-decoration:none;
+}
+
+.panel-heading {
+  background-color: #e4e4e4;
+  color: #05305B;
+}
+
+
+.panel-group .panel+.panel {
+  margin:0;
+}
+
+/*Contact Us Section */
+.contactus {
+  background-color: white;
+  padding-bottom: 4%;
+  border-radius: 3.5px;
+  transition: box-shadow 0.2s;
+  box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.3);
+}
+
+.contactus-container {
+  width: 90%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contactus-container h3 {
+  border-bottom: 1px solid black;
+  width:85%;
+  margin-top: 10px;
+}
+
+.contactus-text {
+  padding: 3% 0%;
+  font-size: 1.1em;
+}
+
+.contact-spacer {
+  margin-top:10%;
+}
+
+/* FAQ Section and Contact Us Section */
+.faq ,
+.contactus {
+  margin: 5% auto;
+  width: 90%;
+}
+
+.faq h1 ,
+.contactus h1 {
+  background: #67CAA9;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  margin:0;
+  font-size: 36px;
+}
+
+/*Form */
+#feedback_form {
+  margin: auto;
+  width: 90%;
+}
+
+fieldset {
+  padding: .35em .625em .75em;
+  margin: auto;
+  border: 1px solid silver;
+}
+
+legend {
+  border: none;
+  width: auto;
+  margin-left: 3%;
+  font-size: 1.3em;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Validation Color */
+.error {
+  color:#FF0000;
+}
+
+/* Contact Us and Form Rows */
+.row {
+  margin: 3%;
+}
+
+/* Adjust Form and Contact Us based on Screen Size*/
+@media (min-width: 1000px) {
+    fieldset {
+      max-width: 60%;
+    }
+    .faq, .contactus {
+      margin: 5% auto;
+      width: 90%;
+    }
+}
+
+/* Submit button CSS */
+
+.success {
+  border: none;
+  text-align: right;
+}
+.error {
+  text-align: right;
+}
+
+.submit_btn:hover {
+
+}
+

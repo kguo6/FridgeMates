@@ -1,0 +1,536 @@
+        /** body CSS **/
+        body {
+            background-color: #dbf0ff;
+        }
+        /** pagelayout and background CSS **/
+        #welcome-container {
+            width: 95%;
+            padding-top: 0;
+
+       
+        }
+        #content a:hover {
+            text-decoration: none;
+        }
+        /** jumbotron CSS **/
+        #welcome-header {
+            color: black;
+            text-align: center;
+            background-color: #05305B;
+            color: white;
+
+        }
+        /** button and button layout CSS **/
+        .row {
+            margin-top: 10px;
+         }
+        .button_left {
+            color: white;
+            background-color: #3A6A9B;
+            height: 150px;
+            width: 150px;
+            border: white solid 4px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .button_right {
+            color: white;
+            background-color: #3A6A9B;
+            float: right;
+            height: 150px;
+            width: 150px;
+            border: white solid 4px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        /** mouseover effect over buttons **/
+        .button_right:hover {
+            background-color: #5B86B2;
+        }
+        .button_left:hover {
+            background-color: #5B86B2;
+        }
+        /** button info CSS **/
+        .icon_mobile {
+            font-size: 4em;
+            margin-top: 25px;
+        }
+        .text_mobile {
+            font-family: 'Baloo', sans-serif !important;
+            margin-top: 15px !important;
+            font-size: 1.2em !important;
+        }
+        /** CSS for screens with resolution same as iphone5 **/
+        @media only screen and (max-width: 320px) {
+            #welcome-container {
+                width: 100%;
+            }
+            .row {
+                margin-top: 10px;
+            }
+            .button_left {
+                color: white;
+                background-color: #3A6A9B;
+                height: 130px;
+                width: 130px;
+                border: white solid 4px;
+                margin-left: 10px;
+                border-radius: 10px;
+                text-align: center;
+            }
+            .button_right {
+                color: white;
+                background-color: #3A6A9B;
+                height: 130px;
+                width: 130px;
+                border: white solid 4px;
+                margin-right: 10px;
+                border-radius: 10px;
+                text-align: center;
+            }
+            .button_right:hover {
+                background-color: #5B86B2;
+            }
+            .button_left:hover {
+                background-color: #5B86B2;
+            }
+            .icon_mobile {
+                font-size: 3.5em;
+                margin-left: 0px;
+                margin-top: 25px;
+            }
+            .text_mobile {
+                font-family: 'Baloo', sans-serif !important;
+                margin-top: 10px !important;
+                font-size: 1.2em !important;
+            }
+        }
+        /** CSS for screens with resolution same as iphone7plus **/
+        @media only screen and (min-width: 400px) {
+            #welcome-container {
+                width: 100%;
+            }
+            .row {
+                margin-top: 10px;
+            }
+            .button_left {
+                color: white;
+                background-color: #3A6A9B;
+                height: 175px;
+                width: 175px;
+                border: white solid 4px;
+                margin-left: 10px;
+                border-radius: 10px;
+                text-align: center;
+            }
+            .button_right {
+                color: white;
+                background-color: #3A6A9B;
+                height: 175px;
+                width: 175px;
+                border: white solid 4px;
+                margin-right: 10px;
+                border-radius: 10px;
+                text-align: center;
+            }
+            .button_right:hover {
+                background-color: #5B86B2;
+            }
+            .button_left:hover {
+                background-color: #5B86B2;
+            }
+            .icon_mobile {
+                font-size: 5em;
+                margin-left: 0px;
+                margin-top: 25px;
+            }
+            .text_mobile {
+                font-family: 'Baloo', sans-serif !important;
+                margin-top: 15px !important;
+                font-size: 1.5em !important;
+            }
+        }
+        /** Affiliate logo CSS **/
+        .afflogo {
+            height: 100px;
+            width: 100px;
+        }
+        .freshnesslogo {
+            height: 100px;
+            width: 125px;
+        }
+        /** horiztonal line break CSS **/
+        .card_one_line {
+            width: 25%;
+            border-color: silver;
+            padding: 0;
+        }
+        /** card line separator CSS **/
+        .card_line_separator {
+            width: 80%;
+            margin-left: 10%;
+            border: grey solid 1.2px;
+        }
+        /** title jumbotron CSS **/
+        .jumbotron {
+            text-align: center;
+            margin-top: 25px;
+        }
+        /** first info card CSS (title) **/
+        .card_one {
+            width: 100%;
+            text-align: right;
+        }
+
+        /** intro card CSS **/
+        .card_intro {
+            width: 90%;
+            box-shadow: 0 0 20px silver;
+            background-color: white;
+            text-align: center;
+        }
+        /** second info card CSS (fridgemate info) **/
+        .card_two {
+            width: 30%;
+            margin: 0px;
+            background-color: white;
+            box-shadow: 0 0 20px silver;
+            min-height: 275px;
+        }
+        /** third info card CSS (iphone demo) **/
+        .card_three {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-right: auto;
+            margin-left: auto;
+            box-shadow: 0 0 20px silver;
+            background-color: white;
+            width:90%;
+            padding-top: 25px;
+            text-align:center;
+      
+        }
+        /** fourth info card CSS (affiliates) **/
+        .card_four {
+            text-align: center;
+            width: 90%;
+            background-color: white;
+            margin-bottom: 20px;
+            margin-top: 25px;
+            box-shadow: 0 0 20px silver;
+            padding: auto;
+            padding-bottom: 10px;
+
+        }
+        /** learn more button CSS **/
+        .lmore_btn {
+            display: inline-block;
+            text-align: center;
+            border-radius:25px;
+            border: solid #05305B 2px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+
+            background-color: transparent;
+            color: #0A8E62;
+            border: #0A8E62 solid 2px;
+
+
+        }
+        .lmore_btn:hover {
+            background-color: #20A378;
+            color: white;
+            border: #0A8E62 solid 2px;
+        }
+        /** iphone window CSS **/
+        .mask {
+            position: relative;
+            left: 14px;
+            bottom: 371px;
+            width: 180px;
+            height: 322px;
+            overflow: hidden;
+
+        }
+        /** where the screenshots will cycle CSS **/
+        .canvas {
+            position: absolute;
+            width: 2195px;
+            height: 325px;
+        }
+        /** different screenshotsCSS **/
+        .page {
+            width: 239px;
+            height: 342px;
+            float:left;
+        }
+        /** CSS for screens with resolution same as iphone5 **/
+        @media only screen and (max-width: 321px) {
+            .card_three {
+                width: 90%;
+                height: 500px;
+            }
+            .card_two {
+                width: 90%;
+                margin-top: 25px;
+                background-color: white;
+                padding-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                box-shadow: 0 0 20px silver;
+   
+            }
+            #afflogo {
+                height: 200px;
+        }
+        }
+        /** CSS for screens with resolution same as iphone 6 **/
+        @media only screen and (min-width: 360px) and (max-width: 375px) {
+            .card_three {
+                width: 90%;
+                height: 525px;
+            }
+            .card_two {
+                width:90%;
+                padding-top: 20px;
+                background-color: white;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+            }
+            #afflogo {
+                height: 200px;
+            }
+            #iphone{
+                margin-right:auto;
+                margin-left:auto !important;
+            }
+        }
+        /** CSS for screens with resolution same as iphone 7 plus **/
+        @media only screen and (min-width: 400px) and (max-width: 425px){
+            .card_three {
+                height: 525px;
+                width: 90%;
+            }
+            .card_two {
+                width:90%;
+                padding-top: 20px;
+                background-color: white;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+            }
+
+            #afflogo {
+                height: 200px;
+            }
+            #iphone{
+                margin-right:auto;
+                margin-left:auto !important;
+            }
+        }
+        /** CSS for screens with resolution for phablets **/
+        @media only screen and (min-width: 426px) and (max-width: 768px){
+            .card_two {
+                margin-top: 25px;
+                margin-bottom: 25px;
+                margin-right: auto;
+                margin-left: auto;
+                box-shadow: 0 0 20px silver;
+                background-color: white;
+                width:90%;
+                padding-top: 25px;
+            }
+
+            #iphone{
+                margin-right:auto;
+                margin-left:auto !important;
+            }
+        }
+        /** CSS for screens with resolution larger than tablets**/
+        @media (min-width: 768px) {
+            .col-sm-9 {
+                width: auto;
+                margin-left:40px;
+                margin-top: 60px;
+            }
+            #iphone {
+                text-align:left;
+                margin-bottom:35px;
+            }
+            .row {
+                max-width: 800px;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            #feature_cards {
+                padding:0;
+                width:80%;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            .card_two:nth-child(2) {
+                margin: 0 5%;
+            }
+            .card_intro, #feature_cards, .card_three, .card_four {
+                width:80%;
+            }
+            #prelogin_jumbotron {
+                            padding-top: 150px;
+            padding-bottom: 150px;
+            color: white;
+            background-color: #05305B;
+            }
+        }
+
+        /** desktop button CSS **/
+        .button_desktop {
+            color: white;
+            background-color: #3A6A9B;
+            height: 175px;
+            width: 175px;
+            border: white solid 4px;
+            margin-top: 10px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /** container CSS for desktop view **/
+        .desktop {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /** button CSS for desktop **/
+        .icon_desktop {
+            font-size: 5em;
+            margin-top: 30px
+        }
+
+        /** text CSS for desktop **/
+        .text_desktop {
+            font-family: 'Baloo', sans-serif !important;            
+            margin-top: 15px !important;
+            font-size: 1.5em !important;
+        }
+
+        /** affiliate logo CSS **/
+        #afflogo {
+            height: 200px;
+        }
+
+        /** iphone mock up layout **/
+        #iphone {
+            height: 420px;
+        }
+
+        /** highlighting cycling list CSS **/
+        #slider ul, #slider_mobile ul {
+            list-style-type: none;
+            padding-top: 10px;
+            color: silver;
+        }
+                #slider ul {
+            max-width: 450px;
+            padding:0;
+            display: inline-block;
+            text-align: left;
+        }
+
+        #slider li {
+            padding-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        
+        #slider {
+            width: 450px;
+        }
+        /** highlighting cycling list for mobile CSS **/
+        #slider_mobile li {
+            margin-top: auto;
+            margin-bottom: auto;
+            padding-top: 10px;
+            display: none;
+        }
+
+        /** class for which ever list item is highlighted CSS **/
+        .active {
+            color: black;
+        }
+
+        /** welcome text and join us button CSS **/
+        .join_txt {
+            text-align: left;
+        }
+        .join_btn {
+            margin-bottom: 10px;
+            background-color: transparent;
+            color: #0A8E62;
+            border: #0A8E62 solid 2px;
+        }
+        .join_btn:hover {
+            background-color: #20A378;
+            color: white;
+            border: #0A8E62 solid 2px;
+        }
+
+        /* slider tablet layout CSS */
+        @media only screen and (max-width: 981px){
+        #slider {
+            width:300px;
+        }
+         #slider li {
+            padding-bottom: 15px;
+            font-size: 1.3em;
+        }
+    }
+        /* mobile slider CSS */
+        #slider_mobile ul {
+            margin-right:auto;
+            margin-left:auto;
+            text-align:;
+            padding: 0;
+        }
+
+        /* CSS for what the text that lights up */
+        #slider_mobile .active {
+            width: 207px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+
+        /* iphone mock up CSS */
+        #iphone {
+            width:207px;
+            margin-left:30px;
+            padding:0;
+            text-align:left;
+        }
+        /* card CSS */
+        .card_intro, .card_two, .card_three, .card_four {
+            border-radius: 10px;
+        }
+
+        /* feature card layout CSS */
+        #feature_cards {
+            padding: 0;
+        }
+
+        /* prelogin jumbotron CSS */
+        #prelogin_jumbotron {
+            padding-top: 150px;
+            padding-bottom: 150px;
+            color: white;
+            background-color: #05305B;
+        }
+        /* title CSS for the intro card */
+        #introtitle {
+            color: #0A8E62;
+        }
+        /* title CSS for feature card*/
+        .promo_text {
+            color: #5B86B2;
+        }

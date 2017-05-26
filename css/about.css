@@ -1,0 +1,130 @@
+body {
+  background-color: #dbf0ff;
+}
+body a:hover{
+  text-decoration: none;
+}
+
+/* About Us Jumbotron Styling */
+.jumbotron {
+  margin-top: 25px;
+  background-color:#05305B;
+  color: #FFFFFF;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+/* Mission Statement and Introduction Styling*/
+.intro {
+  box-shadow: 0 0 20px silver;
+  background-color: #FFFFFF;
+  width:90%;
+  margin:3% auto 5%;
+}
+
+.intro h1 {
+  background: #67CAA9;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  margin: 0;
+  font-size: 36px;
+  text-align: center;
+}
+
+.intro p {
+
+  text-align: left;
+}
+
+/* Team Member Section Styling */
+.team {
+  box-shadow: 0 0 20px silver;
+  background-color: white;
+  width:90%;
+  margin:5% auto;
+}
+
+.team h1 {
+  background: #67CAA9;
+  color: #FFFFFF;
+  padding: 15px 20px;
+  margin: 0;
+  font-size: 36px;
+  text-align: center;
+}
+
+.profile h3 {
+  text-align:center;
+}
+
+.profie p {
+  text-align: left;
+}
+
+.profile img {
+  display: block;
+  margin: 0 auto;
+}
+
+.row {
+  margin: 5%;
+}
+
+/* Style Both Intro and Team */
+.container-fluid.intro,
+.container-fluid.team {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.img-thumbnail {
+  width:236px !important;
+  height:192px !important;
+}
+.profile {
+  text-align:center;
+}
+.profile h2, .profile p {
+  text-align:left;
+}
+#ryan {
+  background-image:url("../images/ryan.jpg");
+  background-repeat:no-repeat;
+  background-size: 236px;
+  margin-right:auto;
+  margin-left:auto;
+}
+#kenny {
+  background-image:url("../images/kenny.jpg");
+  background-repeat:no-repeat;
+  background-size: 236px;
+  margin-right:auto;
+  margin-left:auto;
+}
+#wayne {
+  background-image:url("../images/wayne.jpg");
+  background-repeat:no-repeat;
+  background-size: 236px;
+  margin-right:auto;
+  margin-left:auto;
+}
+#vincent {
+  background-image:url("../images/vincent.jpg");
+  background-repeat:no-repeat;
+  background-size: 236px;
+  margin-right:auto;
+  margin-left:auto;
+}
+#shang {
+  background-image:url("../images/shang.jpg");
+  background-repeat:no-repeat;
+  background-size: 236px;
+  margin-right:auto;
+  margin-left:auto;
+}
+/* intro content CSS */
+.content {
+  padding: 40px 40px 40px 40px;
+}
+
+

@@ -1,0 +1,427 @@
+        /** body CSS **/
+        body {
+            background-color: #dbf0ff;
+        }
+        /** pagelayout and background CSS **/
+        #welcome-container {
+            width: 95%;
+            margin-top: 25px;
+        }
+        #content a:hover {
+            text-decoration: none;
+        }
+        /** jumbotron CSS **/
+        #welcome-header {
+            color: black;
+            text-align: center;
+        }
+        /** button and button layout CSS **/
+        .row {
+            margin-top: 10px;
+         }
+        .button_left {
+            color: white;
+            background-color: #3A6A9B;
+            height: 150px;
+            width: 150px;
+            border: white solid 4px;
+            text-align: center;
+        }
+        .button_right {
+            color: white;
+            background-color: #3A6A9B;
+            float: right;
+            height: 150px;
+            width: 150px;
+            border: white solid 4px;
+            text-align: center;
+        }
+        /** mouseover effect over buttons **/
+        .button_right:hover {
+            background-color: #5B86B2;
+        }
+        .button_left:hover {
+            background-color: #5B86B2;
+        }
+        /** button info CSS **/
+        .icon_mobile {
+            font-size: 4em;
+            margin-top: 25px;
+        }
+        .text_mobile {
+            font-family: 'Baloo', sans-serif !important;
+            margin-top: 15px !important;
+            font-size: 1.2em !important;
+        }
+        /** CSS for screens with resolution same as iphone5 **/
+        @media only screen and (max-width: 320px) {
+            #welcome-container {
+                width: 100%;
+                margin-top: 25px;
+            }
+            .row {
+                margin-top: 10px;
+            }
+            .button_left {
+                color: white;
+                background-color: #3A6A9B;
+                height: 130px;
+                width: 130px;
+                border: white solid 4px;
+                margin-left: 10px;
+                text-align: center;
+            }
+            .button_right {
+                color: white;
+                background-color: #3A6A9B;
+                height: 130px;
+                width: 130px;
+                border: white solid 4px;
+                margin-right: 10px;
+                text-align: center;
+            }
+            .button_right:hover {
+                background-color: #5B86B2;
+            }
+            .button_left:hover {
+                background-color: #5B86B2;
+            }
+            .icon_mobile {
+                font-size: 3.5em;
+                margin-left: 0px;
+                margin-top: 25px;
+            }
+            .text_mobile {
+                font-family: 'Baloo', sans-serif !important;
+                margin-top: 10px !important;
+                font-size: 1.2em !important;
+            }
+        }
+        /** CSS for screens with resolution same as iphone7plus **/
+        @media only screen and (min-width: 400px) {
+            #welcome-container {
+                width: 100%;
+                margin-top: 25px;
+            }
+            .row {
+                margin-top: 10px;
+            }
+            .button_left {
+                color: white;
+                background-color: #3A6A9B;
+                height: 175px;
+                width: 175px;
+                border: white solid 4px;
+                margin-left: 10px;
+                text-align: center;
+            }
+            .button_right {
+                color: white;
+                background-color: #3A6A9B;
+                height: 175px;
+                width: 175px;
+                border: white solid 4px;
+                margin-right: 10px;
+                text-align: center;
+            }
+            .button_right:hover {
+                background-color: #5B86B2;
+            }
+            .button_left:hover {
+                background-color: #5B86B2;
+            }
+            .icon_mobile {
+                font-size: 5em;
+                margin-left: 0px;
+                margin-top: 25px;
+            }
+            .text_mobile {
+                font-family: 'Baloo', sans-serif !important;
+                margin-top: 15px !important;
+                font-size: 1.5em !important;
+            }
+        }
+        /** Affiliate logo CSS **/
+        .afflogo {
+            height: 100px;
+            width: 100px;
+        }
+        .freshnesslogo {
+            height: 100px;
+            width: 125px;
+        }
+        /** horiztonal line break CSS **/
+        .card_one_line {
+            width: 25%;
+            border-color: silver;
+            padding: 0;
+        }
+        /** card line separator CSS **/
+        .card_line_separator {
+            width: 80%;
+            margin-left: 10%;
+            border: grey solid 1.2px;
+        }
+        /** title jumbotron CSS **/
+        .jumbotron {
+            text-align: center;
+            margin-top: 25px;
+        }
+        /** first info card CSS (title) **/
+        .card_one {
+            width: 100%;
+            text-align: right;
+        }
+
+        /** intro card CSS **/
+        .card_intro {
+            width: 80%;
+            box-shadow: 0 0 20px silver;
+            background-color: white;
+            text-align: center;
+        }
+        /** second info card CSS (fridgemate info) **/
+        .card_two {
+            width: 30%;
+            margin: 0px 1.66%;
+            background-color: white;
+            box-shadow: 0 0 20px silver;
+            min-height: 275px;
+        }
+        /** third info card CSS (iphone demo) **/
+        .card_three {
+            margin-top: 25px;
+            margin-bottom: 25px;
+            margin-right: auto;
+            margin-left: auto;
+            box-shadow: 0 0 20px silver;
+            background-color: white;
+            width:80%;
+            height: 475px;
+            padding-top: 25px;
+
+      
+        }
+        /** fourth info card CSS (affiliates) **/
+        .card_four {
+            text-align: center;
+            width: 90%;
+            background-color: white;
+            margin-bottom: 20px;
+            margin-top: 25px;
+            box-shadow: 0 0 20px silver;
+            padding: auto;
+            padding-bottom: 10px;
+
+        }
+        /** learn more button CSS **/
+        .lmore_btn {
+            display: inline-block;
+            text-align: center;
+            background-color: transparent;
+            color: #05305B;
+            border-radius:25px;
+            border: solid #05305B 2px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+
+        }
+        .lmore_btn:hover {
+            background-color: #7FD64B;
+            border-color: black;
+        }
+        /** iphone window CSS **/
+        .mask {
+            position: relative;
+            left: 14px;
+            bottom: 371px;
+            width: 180px;
+            height: 322px;
+            overflow: hidden;
+
+        }
+        /** where the screenshots will cycle CSS **/
+        .canvas {
+            position: absolute;
+            width: 2195px;
+            height: 325px;
+        }
+        /** different screenshotsCSS **/
+        .page {
+            width: 239px;
+            height: 342px;
+            float:left;
+        }
+        /** CSS for screens with resolution same as iphone5 **/
+        @media only screen and (max-width: 321px) {
+            .card_three {
+                width: 80%;
+                height: 500px;
+            }
+            .card_two {
+                width: 80%;
+                margin-top: 25px;
+                background-color: white;
+                padding-top: 20px;
+                margin-left: auto;
+                margin-right: auto;
+                box-shadow: 0 0 20px silver;
+   
+            }
+            #afflogo {
+                height: 200px;
+        }
+        }
+        /** CSS for screens with resolution same as iphone 6 **/
+        @media only screen and (min-width: 360px) and (max-width: 375px) {
+            .card_three {
+                width: 80%;
+                height: 525px;
+            }
+            .card_two {
+                width:80%;
+                padding-top: 20px;
+                background-color: white;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+            }
+            #afflogo {
+                height: 200px;
+            }
+            #iphone{
+                margin-right:auto;
+                margin-left:auto !important;
+            }
+        }
+        /** CSS for screens with resolution same as iphone 7 plus **/
+        @media only screen and (min-width: 400px) and (max-width: 425px){
+            .card_three {
+                height: 525px;
+                width: 80%;
+            }
+            .card_two {
+                width:80%;
+                padding-top: 20px;
+                background-color: white;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+            }
+
+            #afflogo {
+                height: 200px;
+            }
+            #iphone{
+                margin-right:auto;
+                margin-left:auto !important;
+            }
+        }
+
+        @media only screen and (min-width: 426px) and (max-width: 768px){
+            .card_two {
+                margin-top: 25px;
+                margin-bottom: 25px;
+                margin-right: auto;
+                margin-left: auto;
+                box-shadow: 0 0 20px silver;
+                background-color: white;
+                width:80%;
+                padding-top: 25px;
+            }
+            #iphone{
+                margin-right:auto;
+                margin-left:auto !important;
+            }
+        }
+        @media (min-width: 768px) {
+            .col-sm-9 {
+                width: 450px;
+            }
+        }
+
+        /** desktop button CSS **/
+        .button_desktop {
+            color: white;
+            background-color: #3A6A9B;
+            height: 175px;
+            width: 175px;
+            border: white solid 4px;
+            margin-top: 10px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /** container CSS for desktop view **/
+        .desktop {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /** button CSS for desktop **/
+        .icon_desktop {
+            font-size: 5em;
+            margin-top: 30px
+        }
+
+        /** text CSS for desktop **/
+        .text_desktop {
+            font-family: 'Baloo', sans-serif !important;            
+            margin-top: 15px !important;
+            font-size: 1.5em !important;
+        }
+
+        #afflogo {
+            height: 200px;
+        }
+        #iphone {
+            height: 420px;
+        }
+
+        #slider ul, #slider_mobile ul {
+            list-style-type: none;
+            padding-top: 10px;
+            color: silver;
+        }
+        #slider_mobile li {
+            margin-top: auto;
+            margin-bottom: auto;
+            padding-top: 10px;
+            display: none;
+        }
+        .active {
+            color: black;
+        }
+
+        .join_txt {
+            text-align: left;
+        }
+        .join_btn {
+            margin-bottom: 10px;
+        }
+        #slider ul {
+            width: 450px;
+            padding: 0;
+            display: inline-block;
+        }
+        #slider {
+            width:450px;
+        }
+        #slider_mobile ul {
+            margin-right:auto;
+            margin-left:auto;
+            text-align:center;
+            padding: 0;
+        }
+        #slider_mobile .active {
+            width: 207px;
+            margin-left:auto;
+            margin-right:auto;
+        }
+        #iphone {
+            width:207px;
+            margin-left:60px;
+            padding:0;
+        }
