@@ -41,6 +41,8 @@
                 </div>
             </div>
             </div>
+
+            <!-- list describing the screenshots in desktop-->
             <div class="col-sm-9">
                 <div id="slider" class="description visible-sm visible-md visible-lg">
                     <ul>
@@ -51,6 +53,8 @@
                         <li>Someone is sharing leftover pizza and mashed potatoes inside of the fridge!</li>
                     </ul>
                 </div>
+
+                <!-- list describing the screenshots in mobile -->
                 <div id="slider_mobile" class="description visible-xs">
                     <ul>
                         <li class='active'> FridgeMates feature simple and intuitive UI that concentrates on user experience!</li>
@@ -65,24 +69,25 @@
     </div>
 </div>
 
+<!-- feature cards telling visitors what our app can do -->
 <div class="container-fluid" id="feature_cards">
     <div class="col-sm-4 card_two">
-        <h3>Know what is in your Fridge?</h3>
+        <h3 class="promo_text">Know what is in your Fridge?</h3>
         <hr class="card_one_line">
-        <p>Keep track of items that are in your fridge that you
-            share with your family!  FridgeMates can let you know
-            what food is in your fridge and how long it's been sitting in there.</p>
+        <p>Keep track of items in your fridge that you share with others! FridgeMates can let you know what food is in your fridge, how long its been sitting there and can even track who has been eating what.
+</p>
     </div>
     <div class="col-sm-4 card_two">
-        <h3>Sharing a Fridge with Roommates?</h3>
+        <h3 class="promo_text" id="promo2">Sharing a Fridge with Roommates?</h3>
         <hr class="card_one_line">
         <p>Always wondering what can be eaten? Don't fret! FridgeMates is here to let you and your
             fridgemate know what food is available for eating!</p>
     </div>
     <div class="col-sm-4 card_two">
-        <h3>Get to know your Community!</h3>
+        <h3 class="promo_text">Get to know your Community!</h3>
         <hr class="card_one_line">
-        <p>Are you new to the office? Make new friends and connect with them over delicious food!
+        <p>Are you new to the office? Get to know new people and make new friends that you can connect with over delicious food! Or why not become a Fridge Leader and start bringing your community closer together. 
+
     </div>
 </div>
 
@@ -93,10 +98,9 @@
             <img src="./logo/affiliateslogos.png" alt="affiliate logo" id="afflogo">
         </div>
         <div class="col-sm-7">
-            <h3>Our Partners</h3>
-            <p>We have partnered up with some great people to help reduce food waste.
-                In concert with FridgeMates, we have developed a four-step preventative
-                measure in preventing wasting food.
+            <h3 class="introtitle">Our Partners</h3>
+            <p>We have partnered up with some of the greatest apps to bring you The Green Thumb Initiative. The Green Thumb Initiative, is a partnership program whose ultimate goal is to reduce food waste on a global scale.
+
             </p>
             <!-- hidden learn more button when in mobile resolution -->
             <a href="affiliate.php"><button type="button" class="btn btn-primary hidden-xs lmore_btn">Learn More</button></a>

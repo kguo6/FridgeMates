@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Baloo|Open+Sans|Oxygen');
+    /** body layout and CSS **/
     body {
         font-family: 'Baloo', cursive !important;
     }
@@ -10,6 +11,8 @@
         font-family: 'Open Sans', sans-serif;
         font-size: 16px;
     }
+
+    /** dropdown manu CSS **/
     .dropdown-menu {
         min-width: 110px !important;
         right:0 !important;
@@ -38,6 +41,8 @@
         color: #fff !important;
         background-color: transparent;
     }
+
+    /* logo CSS */
     #nav_logo {
         width: 138px;
         height: 40px;
@@ -99,6 +104,8 @@
     * {
         margin: 0;
     }
+
+    /* page layout and with AJAX*/
     html, body {
         height: 100%;
     }
@@ -110,12 +117,15 @@
         content: "";
         display: block;
     }
+
+    /* facebook button css */
     .fb-like {
         position:absolute !important;
         top: 3.5px;
         right: 2px;
     }
 
+    /* CSS for desktop view */
     @media(min-width:768px) {
         #nav_list {
             margin-right:15px;

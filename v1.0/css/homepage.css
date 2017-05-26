@@ -30,6 +30,7 @@
             height: 150px;
             width: 150px;
             border: white solid 4px;
+            border-radius: 10px;
             text-align: center;
         }
         .button_right {
@@ -39,6 +40,7 @@
             height: 150px;
             width: 150px;
             border: white solid 4px;
+            border-radius: 10px;
             text-align: center;
         }
         /** mouseover effect over buttons **/
@@ -73,6 +75,7 @@
                 width: 130px;
                 border: white solid 4px;
                 margin-left: 10px;
+                border-radius: 10px;
                 text-align: center;
             }
             .button_right {
@@ -82,6 +85,7 @@
                 width: 130px;
                 border: white solid 4px;
                 margin-right: 10px;
+                border-radius: 10px;
                 text-align: center;
             }
             .button_right:hover {
@@ -116,6 +120,7 @@
                 width: 175px;
                 border: white solid 4px;
                 margin-left: 10px;
+                border-radius: 10px;
                 text-align: center;
             }
             .button_right {
@@ -125,6 +130,7 @@
                 width: 175px;
                 border: white solid 4px;
                 margin-right: 10px;
+                border-radius: 10px;
                 text-align: center;
             }
             .button_right:hover {
@@ -323,7 +329,7 @@
                 margin-left:auto !important;
             }
         }
-
+        /** CSS for screens with resolution for phablets **/
         @media only screen and (min-width: 426px) and (max-width: 768px){
             .card_two {
                 margin-top: 25px;
@@ -335,11 +341,13 @@
                 width:90%;
                 padding-top: 25px;
             }
+
             #iphone{
                 margin-right:auto;
                 margin-left:auto !important;
             }
         }
+        /** CSS for screens with resolution larger than tablets**/
         @media (min-width: 768px) {
             .col-sm-9 {
                 width: auto;
@@ -366,6 +374,12 @@
             }
             .card_intro, #feature_cards, .card_three, .card_four {
                 width:80%;
+            }
+            #prelogin_jumbotron {
+                            padding-top: 150px;
+            padding-bottom: 150px;
+            color: white;
+            background-color: #05305B;
             }
         }
 
@@ -402,28 +416,52 @@
             font-size: 1.5em !important;
         }
 
+        /** affiliate logo CSS **/
         #afflogo {
             height: 200px;
         }
+
+        /** iphone mock up layout **/
         #iphone {
             height: 420px;
         }
 
+        /** highlighting cycling list CSS **/
         #slider ul, #slider_mobile ul {
             list-style-type: none;
             padding-top: 10px;
             color: silver;
         }
+                #slider ul {
+            max-width: 450px;
+            padding:0;
+            display: inline-block;
+            text-align: left;
+        }
+
+        #slider li {
+            padding-bottom: 15px;
+            font-size: 1.4em;
+        }
+
+        
+        #slider {
+            width: 450px;
+        }
+        /** highlighting cycling list for mobile CSS **/
         #slider_mobile li {
             margin-top: auto;
             margin-bottom: auto;
             padding-top: 10px;
             display: none;
         }
+
+        /** class for which ever list item is highlighted CSS **/
         .active {
             color: black;
         }
 
+        /** welcome text and join us button CSS **/
         .join_txt {
             text-align: left;
         }
@@ -438,49 +476,61 @@
             color: white;
             border: #0A8E62 solid 2px;
         }
-        #slider ul {
-            max-width: 450px;
-            padding:0;
-            display: inline-block;
-            text-align: left;
-        }
 
-        #slider li {
-            padding-top: 15px;
-        }
+        /* slider tablet layout CSS */
+        @media only screen and (max-width: 981px){
         #slider {
-            width:450px;
+            width:300px;
         }
+         #slider li {
+            padding-bottom: 15px;
+            font-size: 1.3em;
+        }
+    }
+        /* mobile slider CSS */
         #slider_mobile ul {
             margin-right:auto;
             margin-left:auto;
             text-align:;
             padding: 0;
         }
+
+        /* CSS for what the text that lights up */
         #slider_mobile .active {
             width: 207px;
             margin-left:auto;
             margin-right:auto;
         }
+
+        /* iphone mock up CSS */
         #iphone {
             width:207px;
             margin-left:30px;
             padding:0;
             text-align:left;
         }
+        /* card CSS */
         .card_intro, .card_two, .card_three, .card_four {
             border-radius: 10px;
         }
+
+        /* feature card layout CSS */
         #feature_cards {
             padding: 0;
         }
 
+        /* prelogin jumbotron CSS */
         #prelogin_jumbotron {
             padding-top: 150px;
             padding-bottom: 150px;
             color: white;
             background-color: #05305B;
         }
+        /* title CSS for the intro card */
         #introtitle {
             color: #0A8E62;
+        }
+        /* title CSS for feature card*/
+        .promo_text {
+            color: #5B86B2;
         }

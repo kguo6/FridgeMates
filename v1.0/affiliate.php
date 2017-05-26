@@ -130,6 +130,7 @@
             </div>
         </div> 
 
+        <!-- card telling visitors describing what our affiilate page is-->
         <div class="container-fluid card_one">
             <div class="row">
 
@@ -148,6 +149,7 @@
         
         <div class="container-fluid bg5">
             <div clas="row">
+            <!-- first affiliated app-->
                 <div class="col-sm-4">
                     <div class="panel">
                         <div class="panel-heading">
@@ -164,6 +166,7 @@
                     </div>
                 </div>
 
+                <!-- second affiliated app -->
                 <div class="col-sm-4">
                     <div class="panel">
                         <div class="panel-heading">
@@ -180,6 +183,7 @@
                     </div>
                 </div>
 
+                <!-- third affiliated app -->
                 <div class="col-sm-4">
                     <div class="panel">
                         <div class="panel-heading">
