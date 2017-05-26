@@ -77,10 +77,51 @@ body a:hover{
   padding-left: 0px;
 }
 
-.profile img {
-  
+.img-thumbnail {
+  width:236px !important;
+  height:192px !important;
 }
-
+.profile {
+  text-align:center;
+}
+.profile h2, .profile p {
+  text-align:left;
+}
+#ryan {
+  background-image:url("../images/ryan.jpg");
+  background-repeat:no-repeat;
+  background-size: 236px;
+  margin-right:auto;
+  margin-left:auto;
+}
+#kenny {
+  background-image:url("../images/kenny.jpg");
+  background-repeat:no-repeat;
+  background-size: 236px;
+  margin-right:auto;
+  margin-left:auto;
+}
+#wayne {
+  background-image:url("../images/wayne.jpg");
+  background-repeat:no-repeat;
+  background-size: 236px;
+  margin-right:auto;
+  margin-left:auto;
+}
+#vincent {
+  background-image:url("../images/vincent.jpg");
+  background-repeat:no-repeat;
+  background-size: 236px;
+  margin-right:auto;
+  margin-left:auto;
+}
+#shang {
+  background-image:url("../images/shang.jpg");
+  background-repeat:no-repeat;
+  background-size: 236px;
+  margin-right:auto;
+  margin-left:auto;
+}
 /* intro content CSS */
 .content {
   padding: 40px 40px 40px 40px;
