@@ -128,7 +128,7 @@
         <!-- Jumbotron -->
         <div class="jumbotron text-center">
             <h1>Support</h1>
-            <p>Got a question? Need a hand? Check us out </p>
+            <p>Got a question? Need a hand? Check us out!</p>
         </div>
       </div>
         <!-- Frequently Asked Questions Section -->
@@ -229,8 +229,8 @@
                       </div>
                     </a>
                   <div id="collapse6" class="panel-collapse collapse">
-                    <div class="panel-body">You can check the deletion of an item on the History section of the Manage
-                        tab in the My Fridges Page. The History section will display the item name and the user that
+                    <div class="panel-body">You can check the deletion of an item in the History section on the Manage
+                        tab in the My Fridges page. The History section will display the item name and the user that
                         deleted the item.
                     </div>
                   </div>
@@ -245,7 +245,7 @@
                       </div>
                     </a>
                   <div id="collapse7" class="panel-collapse collapse">
-                    <div class="panel-body">In the manage tab, under users, all authorized users will be displayed.
+                    <div class="panel-body">In the Manage tab, under Users, all authorized users will be displayed.
                         To transfer ownership, click on the transfer button on the right side of the authorized person
                         you want to make the new owner.
                     </div>
@@ -257,7 +257,7 @@
                       <div class="panel-heading">
                         <h4 class="panel-title">
 
-                            Q: WHERE DID MY GREEN BAR GO?!?!
+                            Q: Where did my green bar go?
                         </h4>
                       </div>
                     </a>
@@ -311,7 +311,7 @@
                       <label for = "subject" class = "col-sm-3 col-form-label"> Subject: </label>
                       <div class = "col-sm-9">
                         <select class="form-control" name="email_subject" id = "emailsubject" >
-                          <option disabled selected value> -- select an option -- </option>
+                          <option disabled selected value> -- Select an Option -- </option>
                           <option value="Product Questions">Product Questions</option>
                           <option value="Bug Report">Bug Report</option>
                           <option value="Customer Service">Feedback</option>
@@ -329,7 +329,7 @@
                       <div class="col-sm-offset-3 col-sm-9">
                         <!-- Success Message -->
                         <div class = "success">
-                          <button type="submit" class = "btn btn-primary" name = "submit">Submit</button>
+                          <button type="submit" class = "btn btn-primary submit_btn" name = "submit">Submit</button>
                           <!-- Error Message -->
                           <div class = "error"></div>
                         </div>

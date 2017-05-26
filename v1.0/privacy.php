@@ -181,7 +181,7 @@
             <!-- Questions Section -->
 						<h3>Questions And Contact Information</h3>
             <hr>
-						  <p>If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information contact our Privacy Compliance Officer at <span class = "hyper">support@fridgemates.ca </span></p>
+						  <p>If you would like to: access, correct, amend or delete any personal information we have about you, register a complaint, or simply want more information contact our Privacy Compliance Officer at <a href="emailto:support@fridgemates.ca">support@fridgemates.ca </a></p>
 
           </div>
 				</div>

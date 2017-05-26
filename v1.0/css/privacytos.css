@@ -2,6 +2,10 @@ body {
 	background-color: #dbf0ff;
 }
 
+body a:hover {
+	text-decoration: none;
+}
+
 /* Content Container */
 .panel {
 	font-family: Helvetica;

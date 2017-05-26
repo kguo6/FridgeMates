@@ -2,18 +2,25 @@ body {
   background-color: #dbf0ff;
 }
 
+body a:hover{ 
+  text-decoration: none;
+}
+
 /* Heading Screen */
 .jumbotron {
   margin-top: 25px;
   background-color:#05305B;
   color: white;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  margin-bottom: 10px;
 }
 
 /*FAQ Section*/
 .faq {
   background-color: #FFFFFF;
   border-radius: 3.5px;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.3s;
   box-shadow: 5px 0px 40px rgba(0, 0, 0, 0.3);
 }
 .panel-body {
@@ -24,8 +31,8 @@ body {
 }
 
 .panel-heading {
-  background-color: #05305B;
-  color: white;
+  background-color: #e4e4e4;
+  color: #05305B;
 }
 
 
@@ -124,3 +131,18 @@ textarea {
       width: 90%;
     }
 }
+
+/* Submit button CSS */
+
+.success {
+  border: none;
+  text-align: right;
+}
+.error {
+  text-align: right;
+}
+
+.submit_btn:hover {
+
+}
+
