@@ -70,7 +70,7 @@
     </div>
 </div>
 
-<div class="container-fluid">
+<div class="container-fluid" id="feature_cards">
     <div class="col-sm-4 card_two">
         <h3>Know what is in your Fridge?</h3>
         <hr class="card_one_line">

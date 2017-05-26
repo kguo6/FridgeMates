@@ -183,7 +183,7 @@
         /** second info card CSS (fridgemate info) **/
         .card_two {
             width: 30%;
-            margin: 0px 1.66%;
+            margin: 0px;
             background-color: white;
             box-shadow: 0 0 20px silver;
             min-height: 275px;
@@ -197,15 +197,14 @@
             box-shadow: 0 0 20px silver;
             background-color: white;
             width:80%;
-            height: 475px;
             padding-top: 25px;
-
+            text-align:center;
       
         }
         /** fourth info card CSS (affiliates) **/
         .card_four {
             text-align: center;
-            width: 90%;
+            width: 80%;
             background-color: white;
             margin-bottom: 20px;
             margin-top: 25px;
@@ -336,7 +335,27 @@
         }
         @media (min-width: 768px) {
             .col-sm-9 {
-                width: 450px;
+                width: auto;
+                margin-left:40px;
+                margin-top: 60px;
+            }
+            #iphone {
+                text-align:left;
+                margin-bottom:35px;
+            }
+            .row {
+                max-width: 800px;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            #feature_cards {
+                padding:0;
+                width:80%;
+                margin-left:auto;
+                margin-right:auto;
+            }
+            .card_two:nth-child(2) {
+                margin: 0 5%;
             }
         }
 
@@ -402,7 +421,7 @@
             margin-bottom: 10px;
         }
         #slider ul {
-            width: 450px;
+            max-width: 450px;
             padding: 0;
             display: inline-block;
         }
@@ -422,6 +441,13 @@
         }
         #iphone {
             width:207px;
-            margin-left:60px;
+            margin-left:30px;
             padding:0;
+            text-align:left;
+        }
+        .card_intro, .card_two, .card_three, .card_four {
+            border-radius: 10px;
+        }
+        #feature_cards {
+            padding: 0;
         }
